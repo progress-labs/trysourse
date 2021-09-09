@@ -1,37 +1,76 @@
-<div class="container">
-  <a href="{{ routes.root_url }}">
-    Logo
-  </a>
+<div style="background-color: {{ section.settings.announcement_color }}">
+  <div class="container text-center py-2">
+    <a href="{{ section.settings.announcement_link }}" class="text-sm font-semibold" style="color: {{ section.settings.announcement_text_color }}">{{ section.settings.announcement_content }}</a>
+  </div>
+</div>
 
-  {% render 'layout-menu' %}
-
+<div class="container py-8 flex justify-between items-center">
+  <ul class="flex w-1/3">
+    {% for link in linklists[section.settings.menu_header].links %}
+      <li class="mr-12">
+        <a href="{{ link.url }}" class="font-semibold text-primary">{{ link.title }}</a>
+     </li>
+    {% endfor %}
+  </ul>
   <div>
-    {% if shop.customer_accounts_enabled %}
-      {% if customer %}
-        <a href="{{ routes.account_url }}">
-          {{ 'action.account' | t }}
-        </a>
-        {{ 'action.log_out' | t | customer_logout_link }}
-      {% else %}
-        {{ 'action.log_in' | t | customer_login_link }}
-        {{ 'action.register' | t | customer_register_link }}
-      {% endif %}
-    {% endif %}
-
-    <a href="{{ routes.cart_url }}">
-      {{ 'action.cart' | t }}
+    <a href="/">
+        <img src="{{ 'logo.static.png' | asset_img_url: '300x' }}" class="w-40 mx-auto" alt="logo" />
     </a>
   </div>
+  <ul class="flex w-1/3 justify-end">
+    <li class="mr-12">
+      <a href="/" class="font-semibold text-primary">Account</a>
+    </li>
+    <li class="mr-12">
+      <a href="/" class="font-semibold text-bright-lila bg-primary px-3 py-3 rounded-l-3xl rounded-br-3xl">Get 10%</a>
+    </li>
+    <li class="flex items-center">
+      <img src="{{ 'icon-cart.static.png' | asset_img_url: '300x' }}" class="w-6" alt="icon" />
+      <span class="font-semibold text-primary ml-1 block">8</span>
+    </li>
+  </ul>
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.header.name",
+  "name": "Header",
   "settings": [
     {
-      "type": "paragraph",
-      "content": "t:sections.header.settings.paragraph"
+      "type": "header",
+      "content": "Announcement bar"
+    },
+    {
+      "type": "text",
+      "id": "announcement_content",
+      "label": "Content"
+    },
+    {
+      "type": "url",
+      "id": "announcement_link",
+      "label": "Link"
+    },
+    {
+      "type": "color",
+      "id": "announcement_color",
+      "label": "Background Color",
+      "default": "#4E4E74"
+    },
+    {
+      "type": "color",
+      "id": "announcement_text_color",
+      "label": "Text Color",
+      "default": "#EFD5E5"
+    },
+    {
+      "type": "link_list",
+      "id": "menu_header",
+      "label": "Header Menu"
     }
-  ]
+  ],
+  "presets": [
+        {
+            "name": "Header"
+        }
+    ]
 }
 {% endschema %}

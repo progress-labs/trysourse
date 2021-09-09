@@ -1,1 +1,23 @@
-{}
+{
+  "current": {
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "announcement_content": "Free shipping with all subscription orders",
+          "announcement_link": "\/",
+          "announcement_color": "#4e4e74",
+          "announcement_text_color": "#efd5e5"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  }
+}

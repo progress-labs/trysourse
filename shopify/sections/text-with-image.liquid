@@ -1,0 +1,49 @@
+<div class="container py-20 lg:py-8 flex flex-col lg:flex-row items-center">
+    <div class="lg:w-1/2 lg:mr-16">
+        <h1 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h1>
+        <div class="font-semibold text-primary text-lg mt-5">
+            {{ section.settings.content }}
+        </div>
+    </div>
+    <div class="lg:w-1/2 mt-10 lg:mt-0">
+        <img src="{{ section.settings.desktop_image| img_url: '1000x' }}" class="min-h-148 rounded-tl-4xl rounded-br-4xl hidden lg:block" alt="image">
+
+        <img src="{{ section.settings.mobile_image| img_url: '1000x' }}" class="min-h-92 md:min-h-104 rounded-tl-3xl rounded-br-3xl block lg:hidden" alt="image">
+    </div>
+</div>
+
+{% schema %}
+
+{
+    "name": "About Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+           "type": "richtext",
+           "id": "content",
+           "label": "Content"
+        },
+        {
+           "type": "image_picker",
+           "id": "desktop_image",
+           "label": "Desktop Image"
+        },
+        {
+           "type": "image_picker",
+           "id": "mobile_image",
+           "label": "Mobile Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Text with Image",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}
