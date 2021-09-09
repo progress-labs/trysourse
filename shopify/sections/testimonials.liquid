@@ -1,0 +1,109 @@
+<div class="container pt-20">
+    <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+    <div class="grid grid-cols-3 gap-10 pt-12">
+        <div class="">
+            {% for block in section.blocks %}
+            <div class="" style="color: {{ block.settings.background_color }};" class=">
+                <div>
+                    <img src="{{ block.settings.source_image| img_url: '1000x' }}" alt="image">
+                </div>
+            </div>
+            <div class="">
+                {{ block.settings.testimonial_content }}{{ block.settings.testimonial_date }}
+            </div>
+            <a href="{{ block.settings.source_url }}" style="color: {{ block.settings.source_text_color }};">{{ block.settings.testimonial_source }}</a>
+        {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Testimonials Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "testimonial",
+            "name": "Testimonial",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "background_color",
+                    "label": "Background Color",
+                    "options": [
+                        {
+                            "value": "bg-bright-orange",
+                            "label" : "Orange"
+                        },
+                        {
+                            "value": "bg-bright-pink",
+                            "label" : "Pink"
+                        },
+                        {
+                            "value": "bg-primary",
+                            "label" : "Purple"
+                        }
+                    ]
+                },
+                {
+                    "type": "image_picker",
+                    "id": "source_image",
+                    "label": "Source Image"
+                },
+                {
+                    "type": "richtext",
+                    "id": "testimonial_content",
+                    "label": "Content"
+                },
+                {
+                    "type": "text",
+                    "id": "testimonial_date",
+                    "label": "Date"
+                },
+                {
+                    "type": "text",
+                    "id": "testimonial_source",
+                    "label": "Source"
+                },
+                {
+                    "type": "url",
+                    "id": "source_url",
+                    "label": "Source link"
+                },
+                {
+                    "type": "select",
+                    "id": "source_text_color",
+                    "label": "Text Color",
+                    "options": [
+                        {
+                            "value": "text-bright-orange",
+                            "label" : "Orange"
+                        },
+                        {
+                            "value": "text-bright-pink",
+                            "label" : "Pink"
+                        },
+                        {
+                            "value": "text-primary",
+                            "label" : "Purple"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Testimonials",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

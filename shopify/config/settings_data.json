@@ -7,12 +7,19 @@
           "announcement_content": "Free shipping with all subscription orders",
           "announcement_link": "\/",
           "announcement_color": "#4e4e74",
-          "announcement_text_color": "#efd5e5"
+          "announcement_text_color": "#efd5e5",
+          "menu_header": "header"
         }
       },
       "footer": {
         "type": "footer",
         "settings": {
+          "quick_links": "quick-links",
+          "contact_title": "Get in touch",
+          "contact_content": "<p>Sign up to say in the loop. Receive updates, access to exclusive deals, and more.<\/p>",
+          "newsletter_title": "Newsletter",
+          "legal_links": "legal",
+          "copy_content": "© 2021 Sourse"
         }
       }
     },

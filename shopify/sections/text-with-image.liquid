@@ -12,6 +12,11 @@
     </div>
 </div>
 
+<div class="hidden lg:flex">
+    <div class="w-1/3 min-h-160 bg-center bg-cover bg-no-repeat" style="background-image: url({{ section.settings.bg_image_01| img_url: '1000x' }});"></div>
+    <div class="w-2/3 min-h-160 bg-center bg-cover bg-no-repeat" style="background-image: url({{ section.settings.bg_image_02| img_url: '1000x' }});"></div>
+</div>
+
 {% schema %}
 
 {
@@ -36,6 +41,16 @@
            "type": "image_picker",
            "id": "mobile_image",
            "label": "Mobile Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "bg_image_01",
+            "label": "Background Image First"
+        },
+        {
+            "type": "image_picker",
+            "id": "bg_image_02",
+            "label": "Background Image Second"
         }
     ],
     "presets": [

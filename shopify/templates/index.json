@@ -4,9 +4,59 @@
       "type": "main-index",
       "settings": {
       }
+    },
+    "1631211471b8f1cd7c": {
+      "type": "hero-index",
+      "settings": {
+        "background_color": "#efd5e5",
+        "title": "Supplements designed with humans in mind",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sem quis nisi vestibulum dignissim at sit amet est. Etiam ligula quam, pulvinar porta lacinia in, iaculis elementum magna. <\/p>",
+        "btn_text": "Shop Now",
+        "btn_url": "\/",
+        "desktop_image": "shopify:\/\/shop_images\/bg-home-hero.static.png",
+        "mobile_image": "shopify:\/\/shop_images\/mobile-image_04ee2983-4fce-4adf-a982-e61570929f02.png",
+        "logo_image": "shopify:\/\/shop_images\/logo-badge-purple.static.png"
+      }
+    },
+    "16312154336e14db6b": {
+      "type": "text-with-image",
+      "settings": {
+        "title": "Our story",
+        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sem quis nisi vestibulum dignissim at sit amet est. Etiam ligula quam, pulvinar porta lacinia in, iaculis elementum magna. <\/p>",
+        "desktop_image": "shopify:\/\/shop_images\/about-desktop-image.png",
+        "mobile_image": "shopify:\/\/shop_images\/about-mobile-image.png",
+        "bg_image_01": "shopify:\/\/shop_images\/image_12.png",
+        "bg_image_02": "shopify:\/\/shop_images\/image_13.png"
+      }
+    },
+    "1631215439ea1860d6": {
+      "type": "testimonials",
+      "blocks": {
+        "97910aea-45bd-45a5-bf39-68dfcebf90ce": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "bg-primary",
+            "source_image": "shopify:\/\/shop_images\/Rectangle_80.png",
+            "testimonial_content": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ipsum sed enim consequat tincidunt id quis libero.  1.1.2021”<\/p>",
+            "testimonial_date": "",
+            "testimonial_source": "@influencer",
+            "source_url": "\/",
+            "source_text_color": "text-primary"
+          }
+        }
+      },
+      "block_order": [
+        "97910aea-45bd-45a5-bf39-68dfcebf90ce"
+      ],
+      "settings": {
+        "title": "From our community"
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1631211471b8f1cd7c",
+    "16312154336e14db6b",
+    "1631215439ea1860d6"
   ]
 }
