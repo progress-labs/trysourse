@@ -1,0 +1,52 @@
+<div class="container pt-24 md:pt-40">
+    <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl text-center">{{ section.settings.title }}</h2>
+    <div class="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-44 pt-16">
+        {% for block in section.blocks %}
+            <div class="text-center">
+                <div>
+                    <img src="{{ block.settings.ingredients_image| img_url: '1000x' }}" class="border-4 border-primary rounded-full mx-auto" alt="image">
+                </div>
+                <h3 class="font-bold text-primary text-2xl mt-5">{{ block.settings.ingredient_name }}</h3>
+            </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+{% schema %}
+{
+    "name": "Ingredients",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "ingredients",
+            "name": "Ingredient",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "ingredients_image",
+                    "label": "Ingredient Image"
+                },
+                {
+                    "type": "text",
+                    "id": "ingredient_name",
+                    "label": "Ingredient Name"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Ingredients",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

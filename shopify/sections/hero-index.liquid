@@ -1,9 +1,8 @@
-
 <div style="background-color: {{ section.settings.background_color }}" class="hidden lg:block">
     <div class="container py-8 flex items-center">
         <div class="w-1/2">
             <div class="relative">
-                <img src="{{ section.settings.desktop_image| img_url: '1000x' }}" class="min-h-180 rounded-tl-4xl rounded-br-4xl object-cover" alt="image">
+                <img src="{{ section.settings.desktop_image| img_url: '1000x' }}" class="max-h-180 rounded-tl-6xl rounded-br-6xl object-cover" alt="image">
                 <div class="absolute bottom-3 right-3">
                     <img src="{{ section.settings.logo_image| img_url: '1000x' }}" class="object-cover" alt="image">
                 </div>
@@ -14,7 +13,7 @@
             <div class="font-semibold text-neutrals-gray text-lg mt-5">
                 {{ section.settings.content }}
             </div>
-            <a href="{{ section.settings.btn_url }}" class="font-bold text-xl text-bright-lila bg-primary px-10 py-3 rounded-l-3xl rounded-br-3xl inline-block mt-8">{{ section.settings.btn_text }}</a>
+            <a href="{{ section.settings.btn_url }}" class="font-bold text-xl text-bright-lila bg-primary px-10 py-3 rounded-l-5xl rounded-br-5xl inline-block mt-8">{{ section.settings.btn_text }}</a>
         </div>
     </div>
 </div>
@@ -23,14 +22,14 @@
 <div style="background-color: {{ section.settings.background_color }}" class="block lg:hidden">
     <div class="container py-8 relative">
         <div>
-            <img src="{{ section.settings.mobile_image| img_url: '1000x' }}" class="w-full min-h-140 md:min-h-180 rounded-tl-4xl rounded-br-4xl object-cover" alt="image">
+            <img src="{{ section.settings.mobile_image| img_url: '1000x' }}" class="w-full max-h-140 rounded-tl-6xl rounded-br-6xl object-cover" alt="image">
         </div>
         <div class="absolute top-44 md:top-72 lg:top-64 left-8 md:left-16 right-8 md:right-16 bottom-0">
-            <h1 class="font-bold text-primary text-4xl md:text-5xl lg:text-6xl">{{ section.settings.title }}</h1>
-            <div class="font-semibold text-neutrals-gray md:text-lg mt-5">
+            <h1 class="font-bold text-bright-lila text-4xl md:text-5xl">{{ section.settings.title }}</h1>
+            <div class="font-semibold text-white md:text-lg mt-5">
                 {{ section.settings.content }}
             </div>
-            <a href="{{ section.settings.btn_url }}" class="font-bold text-xl text-bright-lila bg-primary px-10 py-3 rounded-l-3xl rounded-br-3xl inline-block mt-8">{{ section.settings.btn_text }}</a>
+            <a href="{{ section.settings.btn_url }}" class="font-bold text-xl text-bright-lila bg-primary px-10 py-3 rounded-l-5xl rounded-br-5xl inline-block mt-8">{{ section.settings.btn_text }}</a>
         </div>
     </div>
 </div>

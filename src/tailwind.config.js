@@ -68,8 +68,9 @@ module.exports = {
         "240": "60rem",
       },
       borderRadius: {
-        '3xl': '10rem',
-        '4xl': '12rem',
+        '4xl': '2rem',
+        '5xl': '10rem',
+        '6xl': '12rem',
       },
       minHeight: (theme) => ({
         ...theme('spacing'),

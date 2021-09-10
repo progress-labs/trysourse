@@ -18,8 +18,8 @@
         "logo_image": "shopify:\/\/shop_images\/logo-badge-purple.static.png"
       }
     },
-    "16312154336e14db6b": {
-      "type": "text-with-image",
+    "1631280121ce6bcf1b": {
+      "type": "images-with-text",
       "settings": {
         "title": "Our story",
         "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sem quis nisi vestibulum dignissim at sit amet est. Etiam ligula quam, pulvinar porta lacinia in, iaculis elementum magna. <\/p>",
@@ -35,10 +35,31 @@
         "97910aea-45bd-45a5-bf39-68dfcebf90ce": {
           "type": "testimonial",
           "settings": {
-            "background_color": "bg-primary",
+            "background_color": "bg-bright-orange",
             "source_image": "shopify:\/\/shop_images\/Rectangle_80.png",
             "testimonial_content": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ipsum sed enim consequat tincidunt id quis libero.  1.1.2021”<\/p>",
-            "testimonial_date": "",
+            "testimonial_source": "@influencer",
+            "source_url": "\/",
+            "source_text_color": "text-bright-orange"
+          }
+        },
+        "eb7e96e4-1db5-4284-9c54-f9b557d7acff": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "bg-bright-pink",
+            "source_image": "shopify:\/\/shop_images\/Rectangle_81.png",
+            "testimonial_content": "<p>“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget ipsum ”<\/p>",
+            "testimonial_source": "@influencer",
+            "source_url": "\/",
+            "source_text_color": "text-bright-pink"
+          }
+        },
+        "b7184366-6997-4f1c-82f6-b163a966255c": {
+          "type": "testimonial",
+          "settings": {
+            "background_color": "bg-primary",
+            "source_image": "shopify:\/\/shop_images\/Rectangle_82.png",
+            "testimonial_content": "<p>“Morbi eget ipsum sed enim consequat tincidunt id quis libero.  1.1.2021”<\/p>",
             "testimonial_source": "@influencer",
             "source_url": "\/",
             "source_text_color": "text-primary"
@@ -46,17 +67,67 @@
         }
       },
       "block_order": [
-        "97910aea-45bd-45a5-bf39-68dfcebf90ce"
+        "97910aea-45bd-45a5-bf39-68dfcebf90ce",
+        "eb7e96e4-1db5-4284-9c54-f9b557d7acff",
+        "b7184366-6997-4f1c-82f6-b163a966255c"
       ],
       "settings": {
         "title": "From our community"
+      }
+    },
+    "1631227453f0aca43e": {
+      "type": "ingredients",
+      "blocks": {
+        "3ca3a12d-5627-47d1-80f4-4856aded3518": {
+          "type": "ingredients",
+          "settings": {
+            "ingredients_image": "shopify:\/\/shop_images\/Ellipse_10.png",
+            "ingredient_name": "b-12"
+          }
+        },
+        "8ed48d66-6f8c-431a-a2b4-d2059d00d38c": {
+          "type": "ingredients",
+          "settings": {
+            "ingredients_image": "shopify:\/\/shop_images\/Ellipse_11.png",
+            "ingredient_name": "chocolate"
+          }
+        },
+        "8fd21720-4e71-43fb-b4aa-54de436a5cac": {
+          "type": "ingredients",
+          "settings": {
+            "ingredients_image": "shopify:\/\/shop_images\/Ellipse_12.png",
+            "ingredient_name": "collagen"
+          }
+        }
+      },
+      "block_order": [
+        "3ca3a12d-5627-47d1-80f4-4856aded3518",
+        "8ed48d66-6f8c-431a-a2b4-d2059d00d38c",
+        "8fd21720-4e71-43fb-b4aa-54de436a5cac"
+      ],
+      "settings": {
+        "title": "Our Ingredients"
+      }
+    },
+    "16312802913faebe1f": {
+      "type": "text-with-image",
+      "settings": {
+        "title": "Nothing Artificial",
+        "content": "<p>We created the first vitamin infused candy that you can feel good about. A delicious daily ritual.<\/p>",
+        "desktop_image": "shopify:\/\/shop_images\/image_14.png",
+        "feature_image_01": "shopify:\/\/shop_images\/GF_Badge.png",
+        "feature_image_02": "shopify:\/\/shop_images\/AF_Badge.png",
+        "feature_image_03": "shopify:\/\/shop_images\/Frame.png",
+        "feature_image_04": "shopify:\/\/shop_images\/Vegan_Badge.png"
       }
     }
   },
   "order": [
     "main",
     "1631211471b8f1cd7c",
-    "16312154336e14db6b",
-    "1631215439ea1860d6"
+    "1631280121ce6bcf1b",
+    "1631215439ea1860d6",
+    "1631227453f0aca43e",
+    "16312802913faebe1f"
   ]
 }
