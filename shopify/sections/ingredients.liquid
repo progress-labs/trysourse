@@ -1,16 +1,17 @@
 <div class="container pt-24 md:pt-40">
-    <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl text-center">{{ section.settings.title }}</h2>
-    <div class="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-44 pt-16">
-        {% for block in section.blocks %}
-            <div class="text-center">
-                <div>
-                    <img src="{{ block.settings.ingredients_image| img_url: '1000x' }}" class="border-4 border-primary rounded-full mx-auto" alt="image">
+    <div class="w-5/6 mx-auto">
+        <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl text-center">{{ section.settings.title }}</h2>
+        <div class="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-44 pt-20">
+            {% for block in section.blocks %}
+                <div class="text-center">
+                    <div>
+                        <img src="{{ block.settings.ingredients_image| img_url: '1000x' }}" class="border-4 border-primary rounded-full mx-auto" alt="image">
+                    </div>
+                    <h4 class="font-bold text-primary text-2xl mt-5">{{ block.settings.ingredient_name }}</h4>
                 </div>
-                <h3 class="font-bold text-primary text-2xl mt-5">{{ block.settings.ingredient_name }}</h3>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
-
 </div>
 
 {% schema %}

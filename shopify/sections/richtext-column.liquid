@@ -1,0 +1,37 @@
+<div>
+    <div class="container py-24">
+        <div class="w-5/6 mx-auto grid grid-cols-2 gap-24">
+            <div class="font-semibold text-neutrals-gray text-xl">
+                {{ section.settings.content_column_01 }}
+            </div>
+            <div class="font-semibold text-neutrals-gray text-xl">
+                {{ section.settings.content_column_02 }}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+
+{
+    "name": "About Content",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "content_column_01",
+            "label": "Content Column 01"
+        },
+        {
+            "type": "richtext",
+            "id": "content_column_02",
+            "label": "Content Column 02"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Richtext with Column",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

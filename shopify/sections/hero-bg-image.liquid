@@ -1,0 +1,46 @@
+<div class="bg-center bg-cover bg-no-repeat w-full min-h-190 hidden lg:flex items-center" style="background-image: url({{ section.settings.desktop_image| img_url: '1000x' }});">
+    <div class="container py-16">
+        <div class="w-3/4">
+            <h1 class="font-semibold text-8xl text-bright-yellow">{{ section.settings.title }}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="bg-center bg-cover bg-no-repeat w-full min-h-112 md:min-h-140 flex lg:hidden items-center" style="background-image: url({{ section.settings.mobile_image| img_url: '1000x' }});">
+    <div class="container py-16">
+       <div class="md:w-4/5">
+            <h1 class="font-semibold text-5xl md:text-6xl text-bright-yellow">{{ section.settings.title }}</h1>
+       </div>
+    </div>
+</div>
+
+{% schema %}
+
+{
+    "name": "Hero Background Image",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+           "type": "image_picker",
+           "id": "desktop_image",
+           "label": "Desktop Image"
+        },
+        {
+            "type": "image_picker",
+            "id": "mobile_image",
+            "label": "Mobile Image"
+         }
+    ],
+    "presets": [
+        {
+            "name": "Hero Background Image",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

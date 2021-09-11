@@ -75,6 +75,16 @@
         "title": "From our community"
       }
     },
+    "163129441467bc86ba": {
+      "type": "quote",
+      "settings": {
+        "quote_content": "<p>These clean ingredient dark chocolates are infused with plant-based collagen to improve skin moisture, texture, and elasticity in two weeks.<\/p>",
+        "company_logo_01": "shopify:\/\/shop_images\/image_18.png",
+        "company_logo_02": "shopify:\/\/shop_images\/image_17.png",
+        "company_logo_03": "shopify:\/\/shop_images\/image_16.png",
+        "company_logo_04": "shopify:\/\/shop_images\/image_15.png"
+      }
+    },
     "1631227453f0aca43e": {
       "type": "ingredients",
       "blocks": {
@@ -120,6 +130,13 @@
         "feature_image_03": "shopify:\/\/shop_images\/Frame.png",
         "feature_image_04": "shopify:\/\/shop_images\/Vegan_Badge.png"
       }
+    },
+    "16313078400c183d61": {
+      "type": "product-blocks",
+      "settings": {
+        "title": "Combinations",
+        "collection": "frontpage"
+      }
     }
   },
   "order": [
@@ -127,7 +144,9 @@
     "1631211471b8f1cd7c",
     "1631280121ce6bcf1b",
     "1631215439ea1860d6",
+    "163129441467bc86ba",
     "1631227453f0aca43e",
-    "16312802913faebe1f"
+    "16312802913faebe1f",
+    "16313078400c183d61"
   ]
 }

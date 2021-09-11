@@ -1,0 +1,22 @@
+<div>
+    <a href="{{ product.url }}">
+        <img class="w-full h-72 object-cover" src="{{ product.featured_image | img_url: '1000x' }}" alt="image" />
+    </a>
+    <span class="bg-[#F2F2F2] w-5/6 h-1.5 block mx-auto mt-3"></span>
+    <div class="pt-5">
+        <a href="{{ product.url }}" class="font-bold text-lg text-primary">{{ product.title }}</a>
+        <div class="font-semibold text-neutrals-gray-light pt-1">
+            Clean ingredient dark chocolates infused with vitamin B12
+        </div>
+        <div class="flex items-center mt-5">
+            {% for item in (1..5) %}
+            <span class="block">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: #4E4E74;" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+            </span>
+            {% endfor %}
+            <a href="/" class="font-semibold text-sm text-primary underline ml-2">301 Ratings</a>
+        </div>
+        <a href="{{ product.url }}" class="font-bold  text-bright-lila bg-primary px-10 py-3 rounded-tl-3xl rounded-br-3xl inline-block mt-5">1-Month Supply {{ product.price | money }}</a>
+        <a href="{{ product.url }}" class="font-semibold text-sm text-primary underline block mt-3">Details</a>
+    </div>
+</div>
