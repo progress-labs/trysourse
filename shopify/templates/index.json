@@ -75,6 +75,14 @@
         "title": "From our community"
       }
     },
+    "16313078400c183d61": {
+      "type": "product-blocks",
+      "settings": {
+        "title": "Combinations",
+        "collection": "test-collection",
+        "products_qty": 3
+      }
+    },
     "163129441467bc86ba": {
       "type": "quote",
       "settings": {
@@ -130,13 +138,6 @@
         "feature_image_03": "shopify:\/\/shop_images\/Frame.png",
         "feature_image_04": "shopify:\/\/shop_images\/Vegan_Badge.png"
       }
-    },
-    "16313078400c183d61": {
-      "type": "product-blocks",
-      "settings": {
-        "title": "Combinations",
-        "collection": "frontpage"
-      }
     }
   },
   "order": [
@@ -144,9 +145,9 @@
     "1631211471b8f1cd7c",
     "1631280121ce6bcf1b",
     "1631215439ea1860d6",
+    "16313078400c183d61",
     "163129441467bc86ba",
     "1631227453f0aca43e",
-    "16312802913faebe1f",
-    "16313078400c183d61"
+    "16312802913faebe1f"
   ]
 }

@@ -4,8 +4,8 @@
   </div>
 </div>
 
-<div class="bg-neutrals-white-bone">
-  <div class="container py-8 flex justify-between items-center">
+<div class="{% if template == 'index' %} bg-bright-lila {% else %} bg-neutrals-white-bone {% endif %} lg:bg-neutrals-white-bone">
+  <div class="container py-8 hidden lg:flex justify-between items-center">
     <ul class="flex w-1/3">
       {% for link in linklists[section.settings.menu_header].links %}
         <li class="mr-12">
@@ -31,7 +31,17 @@
       </li>
     </ul>
   </div>
+  <div class="container block lg:hidden">
+    <div class="flex items-center justify-between py-7">
+      <div class="ml-5"></div>
+      <a href="/"><img src="{{ 'logo.static.png' | asset_img_url: '300x' }}" class="w-32 mx-auto" alt="logo" /></a>
+      <div class="">
+        <img src="{{ 'icon-menu.static.png' | asset_img_url: '300x' }}" class="" alt="icon menu" />
+      </div>
+    </div>
+  </div>
 </div>
+
 
 {% schema %}
 {

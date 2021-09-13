@@ -3,8 +3,8 @@
         <div>
             <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
         </div>
-        <ul class="grid grid-cols-3 gap-24 mt-20">
-            {% for product in collections[section.settings.collection].products  %}
+        <ul class="grid mt-20 {% if section.settings.products_qty == 2 %} grid-cols-1 md:grid-cols-3 gap-24 {% else %} grid-cols-4 gap-10 {% endif %}">
+            {% for product in collections[section.settings.collection].products limit: section.settings.products_qty %}
             <li class="">
                 {% render 'product-item', product: product %}
             </li>
@@ -26,7 +26,16 @@
              "type": "collection",
              "id": "collection",
              "label": "Collection"
-         }
+         },
+         {
+            "type": "range",
+            "id": "products_qty",
+            "label": "How many products to show",
+            "min": 2,
+            "max": 4,
+            "step": 1,
+            "default": 2
+        }
      ],
      "presets": [
          {
