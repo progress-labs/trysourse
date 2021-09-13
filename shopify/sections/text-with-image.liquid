@@ -1,29 +1,30 @@
-
-<div class="relative min-h-164 flex flex-col-reverse lg:flex-row items-center mt-24 md:mt-40">
-    <div class="w-full lg:w-1/2 h-100 md:h-164 lg:absolute bg-no-repeat bg-center bg-cover top-0 right-0 bottom-0 z-20" style="background-image: url( {{ section.settings.desktop_image| img_url: '1000x' }});">
-    </div>
-    <div class="absolute top-64 md:top-52 lg:top-0 left-0 lg:left-auto right-0 bottom-0 lg:w-1/2 z-30 flex items-center justify-center">
-       <div class="grid grid-cols-2 gap-12 md:gap-24">
-            <div>
-                <img src="{{ section.settings.feature_image_01 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
-            </div>
-            <div>
-                <img src="{{ section.settings.feature_image_02 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
-            </div>
-            <div>
-                <img src="{{ section.settings.feature_image_03 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
-            </div>
-            <div>
-                <img src="{{ section.settings.feature_image_04 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
-            </div>
-       </div>
-    </div>
-    <div class="container">
-        <div class="w-full lg:w-1/2 lg:mr-auto pb-16 lg:pb-0">
-            <div class="md:w-2/3">
-                <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
-                <div class="font-semibold text-primary text-lg mt-5 md:pr-16">
-                    {{ section.settings.content }}
+<div class="bg-neutrals-white-bone">
+    <div class="relative min-h-164 flex flex-col-reverse lg:flex-row items-center">
+        <div class="w-full lg:w-1/2 h-100 md:h-164 lg:absolute bg-no-repeat bg-center bg-cover top-0 right-0 bottom-0 z-20" style="background-image: url( {{ section.settings.desktop_image| img_url: '1000x' }});">
+        </div>
+        <div class="absolute top-64 md:top-52 lg:top-0 left-0 lg:left-auto right-0 bottom-0 lg:w-1/2 z-30 flex items-center justify-center">
+        <div class="grid grid-cols-2 gap-12 md:gap-24">
+                <div>
+                    <img src="{{ section.settings.feature_image_01 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
+                </div>
+                <div>
+                    <img src="{{ section.settings.feature_image_02 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
+                </div>
+                <div>
+                    <img src="{{ section.settings.feature_image_03 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
+                </div>
+                <div>
+                    <img src="{{ section.settings.feature_image_04 | img_url: '1000x' }}" class="h-32 md:h-auto w-32 md:w-auto" alt="image">
+                </div>
+        </div>
+        </div>
+        <div class="container">
+            <div class="w-full lg:w-1/2 lg:mr-auto pb-16 lg:pb-0">
+                <div class="md:w-2/3">
+                    <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+                    <div class="font-semibold text-primary text-lg mt-5 md:pr-16">
+                        {{ section.settings.content }}
+                    </div>
                 </div>
             </div>
         </div>

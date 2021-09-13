@@ -1,14 +1,16 @@
-<div class="container pt-24 md:pt-40">
-    <div>
-        <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-24 md:pt-40">
+        <div>
+            <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+        </div>
+        <ul class="grid grid-cols-3 gap-24 mt-20">
+            {% for product in collections[section.settings.collection].products  %}
+            <li class="">
+                {% render 'product-item', product: product %}
+            </li>
+            {% endfor %}
+        </ul>
     </div>
-    <ul class="grid grid-cols-3 gap-24 mt-20">
-        {% for product in collections[section.settings.collection].products  %}
-        <li class="">
-            {% render 'product-item', product: product %}
-        </li>
-        {% endfor %}
-    </ul>
 </div>
 
 {% schema %}

@@ -1,0 +1,37 @@
+<div class="bg-neutrals-white-bone">
+    <div class="container">
+        <div class="w-5/6 mx-auto">
+            <div class="font-bold text-neutrals-gray text-xl">
+                {{ section.settings.content }}
+            </div>
+            <div>
+                <img src="{{ section.settings.logo_image | img_url: '1000x' }}" class="mx-auto" alt="image">
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+
+{
+    "name": "Richtext with Logo",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_image",
+            "label": "Badge Logo"
+         }
+    ],
+    "presets": [
+        {
+            "name": "Richtext with Logo",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

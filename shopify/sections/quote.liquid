@@ -1,27 +1,29 @@
-<div class="container pt-24 md:pt-40">
-    <div class="w-3/4 mx-auto">
-        <div>
-            <img src="{{ 'icon-quote-up.static.png' | asset_img_url: '300x' }}" alt="icon quote">
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-24 md:pt-40">
+        <div class="w-3/4 mx-auto">
+            <div>
+                <img src="{{ 'icon-quote-up.static.png' | asset_img_url: '300x' }}" alt="icon quote">
+            </div>
+            <div class="w-3/4 mx-auto text-center">
+                <h3 class="font-semibold text-3xl text-primary">{{ section.settings.quote_content }}</h3>
+            </div>
+            <div>
+                <img src="{{ 'icon-quote-down.static.png' | asset_img_url: '300x' }}" class="ml-auto" alt="icon quote">
+            </div>
         </div>
-        <div class="w-3/4 mx-auto text-center">
-            <h3 class="font-semibold text-3xl text-primary">{{ section.settings.quote_content }}</h3>
-        </div>
-        <div>
-            <img src="{{ 'icon-quote-down.static.png' | asset_img_url: '300x' }}" class="ml-auto" alt="icon quote">
-        </div>
-    </div>
-    <div class="grid grid-cols-4 gap-20 items-center mt-24">
-        <div class="">
-            <img src="{{ section.settings.company_logo_01| img_url: '1000x' }}" class="border-b-4 pb-8 border-bright-lila w-auto max-h-24" alt="image" >
-        </div>
-        <div >
-            <img src="{{ section.settings.company_logo_02| img_url: '1000x' }}" alt="image" class="pb-8 filter grayscale w-auto max-h-24">
-        </div>
-        <div>
-            <img src="{{ section.settings.company_logo_03| img_url: '1000x' }}" alt="image" class="pb-8 filter grayscale w-auto max-h-24">
-        </div>
-        <div>
-            <img src="{{ section.settings.company_logo_04| img_url: '1000x' }}" alt="image" class="pb-8 filter grayscale w-auto max-h-24">
+        <div class="grid grid-cols-4 gap-20 items-center mt-24">
+            <div class="">
+                <img src="{{ section.settings.company_logo_01| img_url: '1000x' }}" class="border-b-4 pb-8 border-bright-lila w-auto max-h-24" alt="image" >
+            </div>
+            <div >
+                <img src="{{ section.settings.company_logo_02| img_url: '1000x' }}" alt="image" class="pb-8 filter grayscale w-auto max-h-24">
+            </div>
+            <div>
+                <img src="{{ section.settings.company_logo_03| img_url: '1000x' }}" alt="image" class="pb-8 filter grayscale w-auto max-h-24">
+            </div>
+            <div>
+                <img src="{{ section.settings.company_logo_04| img_url: '1000x' }}" alt="image" class="pb-8 filter grayscale w-auto max-h-24">
+            </div>
         </div>
     </div>
 </div>
