@@ -1,0 +1,65 @@
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-16">
+        <div class="lg:w-5/6 mx-auto">
+            <h3 class="font-semibold text-[#333333] text-4xl">{{ section.settings.category_title }}</h3>
+            <div class="pt-5">
+                {% for block in section.blocks %}
+                    <div class="border-b-4 border-bright-lila py-10">
+                        <div class="flex items-center justify-between">
+                            <div class="font-semibold text-neutrals-gray text-2xl">
+                                {{ block.settings.question }}
+                            </div>
+                            <div>
+                                <svg width="28" height="28" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="17.5" cy="17.5" r="17.5" fill="#4E4E74"/>
+                                    <rect x="27" y="16" width="3" height="19" transform="rotate(90 27 16)" fill="#EFD5E5"/>
+                                </svg>
+
+                            </div>
+                        </div>
+                        <div class="font-semibold text-neutrals-gray mt-7">
+                            {{ block.settings.answer }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "FAQ Blocks",
+    "settings": [
+        {
+            "type": "text",
+            "id": "category_title",
+            "label": "Category"
+        }
+    ],
+    "blocks":[
+    {
+      "type": "text",
+      "name": "Question",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+        {
+            "name": "FAQ",
+            "category": "Custom Sections"
+        }
+    ]
+}
+{% endschema %}

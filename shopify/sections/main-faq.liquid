@@ -1,0 +1,38 @@
+<div class="bg-center bg-cover bg-no-repeat w-full hidden lg:flex items-center" style="background-image: url({{ section.settings.bg_hero_desktop| img_url: '1000x' }});">
+    <div class="container py-28">
+        <div class="text-center">
+            <h1 class="font-semibold text-8xl text-primary uppercase">{{ section.settings.page_title }}</h1>
+        </div>
+    </div>
+</div>
+
+<div class="bg-center bg-cover bg-no-repeat w-full flex lg:hidden items-center" style="background-image: url({{ section.settings.bg_hero_mobile| img_url: '1000x' }});">
+    <div class="container py-28">
+        <div class="text-center">
+            <h1 class="font-semibold text-5xl md:text-6xl text-primary uppercase">{{ section.settings.page_title }}</h1>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "FAQ",
+    "settings": [
+        {
+            "type": "text",
+            "id": "page_title",
+            "label": "Page Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "bg_hero_desktop",
+            "label": "Background Hero Desktop"
+         },
+         {
+            "type": "image_picker",
+            "id": "bg_hero_mobile",
+            "label": "Background Hero Mobile"
+         }
+    ]
+}
+{% endschema %}
