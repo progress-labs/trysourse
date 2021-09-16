@@ -1,0 +1,14 @@
+{
+  "sections": {
+    "main": {
+      "type": "collection-individual",
+      "settings": {
+        "collection_individual_title": "Individual Products",
+        "collection": "individual-bundle"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

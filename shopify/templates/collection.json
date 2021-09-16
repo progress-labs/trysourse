@@ -1,10 +1,24 @@
 {
   "sections": {
     "main": {
-      "type": "main-collection"
+      "type": "main-collection",
+      "settings": {
+        "title": "All Products",
+        "collection": "shop-all"
+      }
+    },
+    "1631735832484b8837": {
+      "type": "product-blocks",
+      "settings": {
+        "title": "Bundles",
+        "content": "<p>These clean ingredient dark chocolates are powered by 250mcg Vitamin B12 to improve mood, energy, and brain function.*<\/p>",
+        "collection": "shop-all",
+        "products_qty": 4
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "1631735832484b8837"
   ]
 }
