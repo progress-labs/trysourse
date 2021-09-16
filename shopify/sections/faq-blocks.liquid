@@ -2,27 +2,40 @@
     <div class="container pt-16">
         <div class="lg:w-5/6 mx-auto">
             <h3 class="font-semibold text-[#333333] text-4xl">{{ section.settings.category_title }}</h3>
-            <div class="pt-5">
-                {% for block in section.blocks %}
-                    <div class="border-b-4 border-bright-lila py-10">
-                        <div class="flex items-center justify-between">
-                            <div class="font-semibold text-neutrals-gray text-2xl">
-                                {{ block.settings.question }}
+            <renderless-faq-block v-slot="{ toggleFaqItem, faqItemActive }">
+                <div class="pt-5">
+                    {% for block in section.blocks %}
+                        <div class="border-b-4 border-bright-lila py-10">
+                            <div class="flex items-center justify-between cursor-pointer" @click="toggleFaqItem('{{ block.settings.question }}')">
+                                <div class="font-semibold text-neutrals-gray text-2xl">
+                                    {{ block.settings.question }}
+                                </div>
+                                <div>
+                                    <div v-if="faqItemActive == '{{ block.settings.question }}'">
+                                        <!-- minus icon -->
+                                        <svg width="28" height="28" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.5" cy="17.5" r="17.5" fill="#4E4E74"/>
+                                            <rect x="27" y="16" width="3" height="19" transform="rotate(90 27 16)" fill="#EFD5E5"/>
+                                        </svg>
+                                    </div>
+                                    <div v-else>
+                                        <!-- plus icon -->
+                                        <svg width="28" height="28" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="17.5" cy="17.5" r="17.5" fill="#4E4E74"/>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16 27H19L19 19H27V16L19 16L19 8H16L16 16L8 16V19H16L16 27Z" fill="#EFD5E5"/>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
-                            <div>
-                                <svg width="28" height="28" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="17.5" cy="17.5" r="17.5" fill="#4E4E74"/>
-                                    <rect x="27" y="16" width="3" height="19" transform="rotate(90 27 16)" fill="#EFD5E5"/>
-                                </svg>
-
+                            <div class="max-h-0 overflow-hidden relative transition-all" :class="{ 'max-h-infinite': faqItemActive == '{{ block.settings.question }}' }">
+                                <div class="font-semibold text-neutrals-gray mt-7">
+                                    {{ block.settings.answer }}
+                                </div>
                             </div>
                         </div>
-                        <div class="font-semibold text-neutrals-gray mt-7">
-                            {{ block.settings.answer }}
-                        </div>
-                    </div>
-                {% endfor %}
-            </div>
+                    {% endfor %}
+                </div>
+            </renderless-faq-block>
         </div>
     </div>
 </div>
