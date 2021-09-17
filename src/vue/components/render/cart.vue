@@ -17,22 +17,25 @@
   >
     <div class="bg-neutrals-white-bone md:w-2/3 xl:w-2/5 ml-auto">
       <div class="p-5 md:p-10">
-        <span @click="toggle" class="cursor-pointer">
-            <svg
-              class="ml-auto"
-              width="23"
-              height="23"
-              viewBox="0 0 23 23"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M8.19709 11.0781L0.148269 19.1909L2.96547 22.0305L11.0178 13.9142L19.0632 22.0035L21.8839 19.1674L13.835 11.0745L22.005 2.83961L19.1877 0L11.0143 8.23843L2.82071 5.46894e-05L0 2.83618L8.19709 11.0781Z"
-                fill="#4E4E74"
-              />
-            </svg>
+        <span
+          class="cursor-pointer"
+          @click="toggle"
+        >
+          <svg
+            class="ml-auto"
+            width="23"
+            height="23"
+            viewBox="0 0 23 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M8.19709 11.0781L0.148269 19.1909L2.96547 22.0305L11.0178 13.9142L19.0632 22.0035L21.8839 19.1674L13.835 11.0745L22.005 2.83961L19.1877 0L11.0143 8.23843L2.82071 5.46894e-05L0 2.83618L8.19709 11.0781Z"
+              fill="#4E4E74"
+            />
+          </svg>
         </span>
         <div
           class="
@@ -46,32 +49,40 @@
             md:pb-8
           "
         >
-          <h4 class="font-semibold text-primary text-3xl">Your cart</h4>
+          <h4 class="font-semibold text-primary text-3xl">
+            Your cart
+          </h4>
           <div class="flex items-center">
             <img
               src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/icon-cart.static_300x.png?v=4433916468253890482"
               class="w-6"
               alt="icon"
-            />
+            >
             <span class="font-semibold text-primary ml-1 block">8</span>
           </div>
         </div>
         <div class="mt-12">
           <div class="flex items-center mb-10">
-            <a href="/" class="w-1/6">
+            <a
+              href="/"
+              class="w-1/6"
+            >
               <img
                 src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/product-image.static_300x.png?v=6565519922396648927"
                 class="w-14 h-auto mx-auto"
                 alt="product image"
-              />
+              >
             </a>
             <div class="ml-10 w-5/6">
               <div class="flex justify-between">
                 <div>
-                  <a href="/" class="font-bold text-lg text-primary"
-                    >Glow Bites</a
-                  >
-                  <p class="text-sm text-neutrals-gray block">1-month supply</p>
+                  <a
+                    href="/"
+                    class="font-bold text-lg text-primary"
+                  >Glow Bites</a>
+                  <p class="text-sm text-neutrals-gray block">
+                    1-month supply
+                  </p>
                 </div>
                 <div class="font-semibold text-lg text-neutrals-gray">
                   $29.90
@@ -112,7 +123,7 @@
                       text-md text-neutrals-gray-dark
                     "
                     value="1"
-                  />
+                  >
                   <button
                     class="
                       text-neutrals-gray-dark
@@ -124,25 +135,34 @@
                     +
                   </button>
                 </div>
-                <a href="/" class="text-neutrals-gray underline">Remove</a>
+                <a
+                  href="/"
+                  class="text-neutrals-gray underline"
+                >Remove</a>
               </div>
             </div>
           </div>
           <div class="flex items-center mb-10">
-            <a href="/" class="w-1/6">
+            <a
+              href="/"
+              class="w-1/6"
+            >
               <img
                 src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/product-image.static_300x.png?v=6565519922396648927"
                 class="w-14 h-auto mx-auto"
                 alt="product image"
-              />
+              >
             </a>
             <div class="ml-10 w-5/6">
               <div class="flex justify-between">
                 <div>
-                  <a href="/" class="font-bold text-lg text-primary"
-                    >Glow Bites</a
-                  >
-                  <p class="text-sm text-neutrals-gray block">1-month supply</p>
+                  <a
+                    href="/"
+                    class="font-bold text-lg text-primary"
+                  >Glow Bites</a>
+                  <p class="text-sm text-neutrals-gray block">
+                    1-month supply
+                  </p>
                 </div>
                 <div class="font-semibold text-lg text-neutrals-gray">
                   $29.90
@@ -183,7 +203,7 @@
                       text-md text-neutrals-gray-dark
                     "
                     value="1"
-                  />
+                  >
                   <button
                     class="
                       text-neutrals-gray-dark
@@ -195,7 +215,10 @@
                     +
                   </button>
                 </div>
-                <a href="/" class="text-neutrals-gray underline">Remove</a>
+                <a
+                  href="/"
+                  class="text-neutrals-gray underline"
+                >Remove</a>
               </div>
             </div>
           </div>
@@ -205,20 +228,26 @@
             Add and save 10%
           </h5>
           <div class="flex items-center mb-10">
-            <a href="/" class="w-1/6">
+            <a
+              href="/"
+              class="w-1/6"
+            >
               <img
                 src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/product-image.static_300x.png?v=6565519922396648927"
                 class="w-14 h-auto mx-auto"
                 alt="product image"
-              />
+              >
             </a>
             <div class="ml-10 w-5/6">
               <div class="flex justify-between">
                 <div>
-                  <a href="/" class="font-bold text-lg text-primary"
-                    >Glow Bites</a
-                  >
-                  <p class="text-sm text-neutrals-gray block">1-month supply</p>
+                  <a
+                    href="/"
+                    class="font-bold text-lg text-primary"
+                  >Glow Bites</a>
+                  <p class="text-sm text-neutrals-gray block">
+                    1-month supply
+                  </p>
                 </div>
                 <div class="flex">
                   <div
@@ -270,7 +299,7 @@
                         text-md text-neutrals-gray-dark
                       "
                       value="1"
-                    />
+                    >
                     <button
                       class="
                         text-neutrals-gray-dark
@@ -294,8 +323,7 @@
                     rounded-l-3xl rounded-br-3xl
                     inline-block
                   "
-                  >Add</a
-                >
+                >Add</a>
               </div>
             </div>
           </div>
@@ -306,7 +334,9 @@
               Subtotal
             </h6>
             <div class="w-2/5 text-right">
-              <div class="font-semibold text-neutrals-gray text-lg">$59.80</div>
+              <div class="font-semibold text-neutrals-gray text-lg">
+                $59.80
+              </div>
               <div class="font-semibold text-neutrals-gray-light text-sm mt-2">
                 You’re only $40.20 away from free shipping
               </div>
@@ -338,8 +368,7 @@
                 mt-6
                 md:mt-10
               "
-              >Checkout - $59.80</a
-            >
+            >Checkout - $59.80</a>
           </div>
           <span
             class="
@@ -350,8 +379,7 @@
               md:mt-10
               text-center
             "
-            >Free shipping on all subscriptions</span
-          >
+          >Free shipping on all subscriptions</span>
         </div>
       </div>
     </div>
