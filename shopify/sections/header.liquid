@@ -45,7 +45,40 @@
 
     <!-- here goes mobile menu -->
     <div class="bg-black/70 fixed inset-0 z-50 opacity-0 pointer-events-none transition-opacity" :class="{ 'opacity-100 pointer-events-auto': isMenuOpen }">
+      <div style="background-color: {{ section.settings.announcement_color }}">
+        <div class="container text-center py-2">
+          <a href="{{ section.settings.announcement_link }}" class="text-sm font-semibold" style="color: {{ section.settings.announcement_text_color }}">{{ section.settings.announcement_content }}</a>
+        </div>
+      </div>
+      <div class="bg-primary px-10 py-6 flex flex-col h-[calc(100vh-40px)]">
+        <div class="flex items-center justify-between">
+          <div class="ml-5"></div>
+          <a href="/"><img src="{{ 'logo-white.static.png' | asset_img_url: '300x' }}" class="w-32 mx-auto" alt="logo" /></a>
+          <div class="cursor-pointer" @click="toggleMenu">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.63672 1.63672L8.00068 8.00068M8.00068 8.00068L14.3646 14.3646M8.00068 8.00068L14.3646 1.63672M8.00068 8.00068L1.63672 14.3646" stroke="#FFFDF8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+        <div class="flex flex-col justify-between h-full flex-1">
+          <ul class="pt-12">
+            <li class="pb-7"><a href="/" class="font-bold text-white text-3xl">Shop +</a></li>
+            <li class="pb-7"><a href="/" class="font-bold text-white text-3xl">About</a></li>
+            <li class="pb-7"><a href="/" class="font-bold text-white text-3xl">Account</a></li>
+            <li class="pb-7">
+              <button class="flex" @click="toggleCart">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M27.7499 24.2332C27.3062 27.0727 24.8605 29.166 21.9865 29.166L10.0968 29.166C7.22284 29.166 4.77709 27.0727 4.33341 24.2332L2.5105 12.5665C1.95772 9.02878 4.69321 5.83268 8.2739 5.83268L23.8094 5.83268C27.3901 5.83269 30.1256 9.02878 29.5728 12.5666L27.7499 24.2332Z" fill="#FFFDF8"/>
+                  <path d="M20.416 10.209C20.416 12.6252 18.4573 14.584 16.041 14.584C13.6248 14.584 11.666 12.6252 11.666 10.209" stroke="#4E4E74" stroke-width="2.91667"/>
+                </svg>
+                <span class="font-bold text-white text-3xl ml-1.5 block">Cart {% raw %} ({{ cartItems }}) {% endraw %}</span>
+              </button>
+            </li>
+          </ul>
+          <a href="/" class="bg-white w-full text-center font-semibold text-primary px-3 py-3 rounded-l-3xl rounded-br-3xl">Get 10%</a>
+        </div>
 
+      </div>
     </div>
 </renderless-header>
 

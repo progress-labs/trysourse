@@ -15,7 +15,7 @@
     "
     :class="{ 'pointer-events-auto opacity-100': visible }"
   >
-    <div class="bg-neutrals-white-bone md:w-2/3 xl:w-2/5 ml-auto">
+    <div class="bg-neutrals-white-bone md:w-2/3 xl:w-2/5 ml-auto overflow-auto relative">
       <div class="p-5 md:p-10">
         <span
           class="cursor-pointer"
@@ -73,25 +73,25 @@
                 alt="product image"
               >
             </a>
-            <div class="ml-10 w-5/6">
+            <div class="ml-5 md:ml-10 w-5/6">
               <div class="flex justify-between">
                 <div>
                   <a
                     href="/"
-                    class="font-bold text-lg text-primary"
+                    class="font-bold md:text-lg text-primary"
                   >Glow Bites</a>
                   <p class="text-sm text-neutrals-gray block">
                     1-month supply
                   </p>
                 </div>
-                <div class="font-semibold text-lg text-neutrals-gray">
+                <div class="font-semibold md:text-lg text-neutrals-gray">
                   $29.90
                 </div>
               </div>
               <div class="flex justify-between mt-2">
                 <div
                   class="
-                    w-full
+                    w-1/3
                     md:w-1/4
                     border-2 border-neutrals-gray-light
                     px-3
@@ -149,29 +149,29 @@
             >
               <img
                 src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/product-image.static_300x.png?v=6565519922396648927"
-                class="w-14 h-auto mx-auto"
+                class="w-12 md:w-14 h-auto mx-auto"
                 alt="product image"
               >
             </a>
-            <div class="ml-10 w-5/6">
+            <div class="ml-5 md:ml-10 w-5/6">
               <div class="flex justify-between">
                 <div>
                   <a
                     href="/"
-                    class="font-bold text-lg text-primary"
+                    class="font-bold md:text-lg text-primary"
                   >Glow Bites</a>
                   <p class="text-sm text-neutrals-gray block">
                     1-month supply
                   </p>
                 </div>
-                <div class="font-semibold text-lg text-neutrals-gray">
+                <div class="font-semibold md:text-lg text-neutrals-gray">
                   $29.90
                 </div>
               </div>
               <div class="flex justify-between mt-2">
                 <div
                   class="
-                    w-full
+                    w-1/3
                     md:w-1/4
                     border-2 border-neutrals-gray-light
                     px-3
@@ -219,15 +219,28 @@
                   href="/"
                   class="text-neutrals-gray underline"
                 >Remove</a>
+              </div>
+            </div>
+          </div>
+          <div class="flex md:hidden justify-between mt-10">
+            <h6 class="font-semibold text-lg  text-neutrals-gray-dark">
+              Subtotal
+            </h6>
+            <div class="w-1/2 text-right">
+              <div class="font-semibold text-neutrals-gray text-lg">
+                $59.80
+              </div>
+              <div class="font-semibold text-neutrals-gray-light text-sm mt-2">
+                You’re only $40.20 away from free shipping
               </div>
             </div>
           </div>
         </div>
-        <div class="border-t-4 border-[#dcdade] pt-12">
-          <h5 class="font-bold text-neutrals-gray-dark text-xl mb-8">
+        <div class="md:border-t-4 border-[#dcdade] pt-24 md:pt-12">
+          <h5 class="font-bold text-neutrals-gray-dark md:text-xl mb-3 md:mb-8">
             Add and save 10%
           </h5>
-          <div class="flex items-center mb-10">
+          <div class="flex items-center mb-6 md:mb-10">
             <a
               href="/"
               class="w-1/6"
@@ -238,12 +251,12 @@
                 alt="product image"
               >
             </a>
-            <div class="ml-10 w-5/6">
+            <div class="ml-5 md:ml-10 w-5/6">
               <div class="flex justify-between">
                 <div>
                   <a
                     href="/"
-                    class="font-bold text-lg text-primary"
+                    class="font-bold md:text-lg text-primary"
                   >Glow Bites</a>
                   <p class="text-sm text-neutrals-gray block">
                     1-month supply
@@ -253,19 +266,19 @@
                   <div
                     class="
                       font-semibold
-                      text-neutrals-gray/50 text-lg
+                      text-neutrals-gray/50 md:text-lg
                       line-through
                     "
                   >
                     $29.90
                   </div>
-                  <div class="font-semibold text-lg text-neutrals-gray ml-2">
+                  <div class="font-semibold md:text-lg text-neutrals-gray ml-2">
                     $26.90
                   </div>
                 </div>
               </div>
               <div class="flex justify-between mt-2">
-                <div class="w-full md:w-1/4">
+                <div class="w-1/3 md:w-1/4">
                   <div
                     class="
                       w-full
@@ -328,8 +341,8 @@
             </div>
           </div>
         </div>
-        <div class="border-t-8 border-primary">
-          <div class="flex justify-between items-center mt-10">
+        <div class="border-t-8 border-[#dcdade] md:border-primary">
+          <div class="hidden md:flex justify-between items-center mt-10">
             <h6 class="font-semibold text-xl text-neutrals-gray-dark">
               Subtotal
             </h6>
@@ -377,7 +390,7 @@
               block
               mt-6
               md:mt-10
-              text-center
+              text-center mb-4 md:mb-0
             "
           >Free shipping on all subscriptions</span>
         </div>
