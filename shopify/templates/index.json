@@ -86,6 +86,42 @@
     },
     "163129441467bc86ba": {
       "type": "quote",
+      "blocks": {
+        "dcde8734-a3df-4d28-a7a5-88219ac35d05": {
+          "type": "quote",
+          "settings": {
+            "quote_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque fermentum dui faucibus in ornare. Adipiscing diam donec adipiscing tristique risus nec feugiat in. Morbi leo urna molestie at elementum eu facilisis. Lacus sed viverra tellus in hac. Arcu dictum varius duis at. Non tellus orci ac auctor augue mauris augue. Vitae semper quis lectus nulla at volutpat diam ut venenatis. Venenatis a condimentum vitae sapien pellentesque habitant morbi tristique senectus. Non diam phasellus vestibulum lorem sed risus ultricies. Ornare aenean euismod elementum nisi quis eleifend quam. Cursus risus at ultrices mi. Congue eu consequat ac felis donec et odio pellentesque diam. Vitae proin sagittis nisl rhoncus mattis rhoncus urna neque.<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/image_18.png"
+          }
+        },
+        "2c3ca7e8-1ba9-4bf0-aa99-ead02823443c": {
+          "type": "quote",
+          "settings": {
+            "quote_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae aliquet nec ullamcorper sit amet. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. In ante metus dictum at tempor commodo ullamcorper. Sit amet nisl purus in mollis. Id ornare arcu odio ut sem nulla pharetra. Consequat interdum varius sit amet mattis vulputate enim nulla aliquet. Odio tempor orci dapibus ultrices in iaculis nunc. Felis eget velit aliquet sagittis id consectetur. Quis risus sed vulputate odio.<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/image_15.png"
+          }
+        },
+        "92e71e5d-ed60-4212-a58f-8af380f81341": {
+          "type": "quote",
+          "settings": {
+            "quote_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Facilisis gravida neque convallis a cras semper auctor. Elit duis tristique sollicitudin nibh sit amet commodo. Nec feugiat in fermentum posuere. Morbi tincidunt ornare massa eget egestas purus. Placerat vestibulum lectus mauris ultrices. Faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis. Turpis nunc eget lorem dolor sed viverra ipsum nunc aliquet. Iaculis urna id volutpat lacus laoreet non curabitur. Nibh cras pulvinar mattis nunc sed blandit.<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/image_17.png"
+          }
+        },
+        "ed660da6-fb89-4054-9332-3446fb20a1af": {
+          "type": "quote",
+          "settings": {
+            "quote_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/image_16.png"
+          }
+        }
+      },
+      "block_order": [
+        "dcde8734-a3df-4d28-a7a5-88219ac35d05",
+        "2c3ca7e8-1ba9-4bf0-aa99-ead02823443c",
+        "92e71e5d-ed60-4212-a58f-8af380f81341",
+        "ed660da6-fb89-4054-9332-3446fb20a1af"
+      ],
       "settings": {
         "quote_content": "<p>These clean ingredient dark chocolates are infused with plant-based collagen to improve skin moisture, texture, and elasticity in two weeks.<\/p>",
         "company_logo_01": "shopify:\/\/shop_images\/image_18.png",
