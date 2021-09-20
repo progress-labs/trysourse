@@ -12,7 +12,7 @@ module.exports = {
      * ignore certain files
      * docs: https://stylelint.io/user-guide/configure#ignorefiles
      */
-    // 'my-file.css',
+     '../src/css/swiper.css',
     // '**/my-directory/*.css'
   ],
   rules: {
