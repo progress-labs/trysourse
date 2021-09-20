@@ -79,6 +79,7 @@
       "type": "product-blocks",
       "settings": {
         "title": "Combinations",
+        "content": "",
         "collection": "test-collection",
         "products_qty": 3
       }

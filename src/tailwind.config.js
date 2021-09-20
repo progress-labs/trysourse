@@ -75,6 +75,10 @@ module.exports = {
         '5xl': '10rem',
         '6xl': '12rem',
       },
+      width: {
+          '2/1': "200%",
+          '2.5/1': "250%",
+      },
       minHeight: (theme) => ({
         ...theme('spacing'),
         '200': '50rem',
