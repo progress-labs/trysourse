@@ -9,6 +9,9 @@
                             <img src="{{ block.settings.ingredients_image| img_url: '1000x' }}" class="border-4 border-primary rounded-full mx-auto" alt="image">
                         </div>
                         <h4 class="font-bold text-primary text-2xl mt-5">{{ block.settings.ingredient_name }}</h4>
+                        <div class="font-semibold text-neutrals-gray-light pt-2">
+                            {{ block.settings.ingredient_description }}
+                        </div>
                     </div>
                 {% endfor %}
             </div>
@@ -40,6 +43,11 @@
                     "type": "text",
                     "id": "ingredient_name",
                     "label": "Ingredient Name"
+                },
+                {
+                    "type": "richtext",
+                    "id": "ingredient_description",
+                    "label": "Ingredient Description"
                 }
             ]
         }

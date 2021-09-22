@@ -132,21 +132,24 @@
           "type": "ingredients",
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_10.png",
-            "ingredient_name": "b-12"
+            "ingredient_name": "B-12",
+            "ingredient_description": "<p>These clean ingredient dark chocolates are infused.<\/p>"
           }
         },
         "8ed48d66-6f8c-431a-a2b4-d2059d00d38c": {
           "type": "ingredients",
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_11.png",
-            "ingredient_name": "chocolate"
+            "ingredient_name": "Chocolate",
+            "ingredient_description": "<p>These clean ingredient dark chocolates are infused.<\/p>"
           }
         },
         "8fd21720-4e71-43fb-b4aa-54de436a5cac": {
           "type": "ingredients",
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_12.png",
-            "ingredient_name": "collagen"
+            "ingredient_name": "Collagen",
+            "ingredient_description": "<p>These clean ingredient dark chocolates are infused.<\/p>"
           }
         }
       },

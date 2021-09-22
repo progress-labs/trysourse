@@ -1,6 +1,6 @@
 <div class="bg-neutrals-white-bone">
     <div class="container pt-24 md:pt-40">
-        <div class="w-full {% if section.settings.products_qty == 3 %} w-full md:w-11/12 mx-auto {% elsif section.settings.products_qty == 4 %} w-full {% else %} w-full {% endif %}">
+        <div class="w-full {% if section.settings.products_qty == 3 %} w-full lg:w-11/12 mx-auto {% elsif section.settings.products_qty == 4 %} w-full {% else %} w-full {% endif %}">
             <div class="mb-20">
                 <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
                 {% if section.settings.title != blank %}
@@ -10,8 +10,8 @@
                 {% endif %}
             </div>
             <div class="relative overflow-x-auto lg:overflow-hidden">
-                <div class="w-2.5/1 md:w-2/1 lg:w-auto pb-6 lg:pb-0">
-                    <ul class="flex md:grid md:grid-cols-2 gap-8 md:gap-10 {% if section.settings.products_qty == 2 %} md:grid-cols-2 md:gap-24 {% elsif section.settings.products_qty == 3 %} md:grid-cols-3 md:gap-18 {% else %} lg:grid-cols-4 lg:gap-10 {% endif %}">
+                <div class=" lg:w-auto pb-6 lg:pb-0 {% if section.settings.products_qty == 3 %} w-2.5/1 md:w-1.5/1 lg:w-auto {% else %} w-3.5/1 md:w-2.05/1 lg:w-auto {% endif %}">
+                    <ul class="flex lg:grid gap-8 md:gap-10 {% if section.settings.products_qty == 2 %} md:grid-cols-2 md:gap-24 {% elsif section.settings.products_qty == 3 %} md:grid-cols-3 md:gap-18 {% else %} lg:grid-cols-4 lg:gap-10 {% endif %}">
                         {% for product in collections[section.settings.collection].products limit: section.settings.products_qty %}
                         <li class="">
                             {% render 'product-item', product: product %}

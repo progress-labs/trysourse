@@ -1,0 +1,29 @@
+<div class="bg-neutrals-white-bone">
+    <div class="container py-20 md:py-24">
+        <div class="lg:w-5/6 mx-auto">
+            <div class="font-semibold text-neutrals-gray text-xl">
+                {{ section.settings.content }}
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+
+{
+    "name": "About Content",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Richtext",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}
