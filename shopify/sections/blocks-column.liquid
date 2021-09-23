@@ -1,13 +1,13 @@
-<div class="bg-neutrals-white-bone">
+<div class="bg-neutrals-white-bone {% if section.settings.hide_mobile %} hidden md:block {% endif%}">
     <div class="container pt-24 md:pt-48">
-        <div class="lg:w-11/12 mx-auto">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-10 lg:gap-24">
+        <div class="w-full {% if section.settings.column_qty == "2" %} w-full lg:w-2/3 mx-auto {% else %} lg:w-11/12 mx-auto {% endif %}">
+            <div class="grid grid-cols-1 gap-14 md:gap-10 {% if section.settings.column_qty == "2" %} md:grid-cols-2 md:gap-16 lg:gap-24 {% else %} md:grid-cols-3 lg:gap-24 {% endif %}">
                 {% for block in section.blocks %}
                     <div>
                         <div>
-                            <img src="{{ block.settings.image| img_url: '1000x' }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-32 h-32" alt="image">
+                            <img src="{{ block.settings.image| img_url: '1000x' }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 {% if section.settings.column_qty == "2" %} w-56 h-56 {% else %} w-32 h-32 {% endif %}" alt="image">
                         </div>
-                        <h4 class="font-bold text-bright-pink text-lg mt-5 text-center md:text-left">{{ block.settings.title }}</h4>
+                        <h4 class="font-bold text-bright-pink mt-5 text-center md:text-left {% if section.settings.column_qty == "2" %} text-2xl {% else %} text-lg {% endif %}">{{ block.settings.title }}</h4>
                         <div class="font-semibold text-[#858585] pt-3">
                             {{ block.settings.content }}
                         </div>
@@ -21,6 +21,29 @@
 {% schema %}
 {
     "name": "Blocks Column",
+    "settings": [
+        {
+            "type": "checkbox",
+            "id": "hide_mobile",
+            "label": "Hide on mobile",
+            "default": false
+        },
+        {
+            "type": "select",
+            "id": "column_qty",
+            "label": "How many items to show",
+            "options": [
+                {
+                  "value": "2",
+                  "label" : "2 Columns"
+                },
+                {
+                  "value": "3",
+                  "label" : "3 Columns"
+                }
+            ]
+          }
+    ],
 
     "blocks": [
         {

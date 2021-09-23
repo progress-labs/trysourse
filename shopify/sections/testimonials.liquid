@@ -22,6 +22,88 @@
 </div>
 
 {% schema %}
-{ "name": "Testimonials", "settings": [ { "type": "text", "id": "title", "label": "Title" } ], "blocks": [ { "type": "testimonial", "name": "Testimonial", "settings": [ { "type": "select", "id": "background_color", "label": "Background Color", "options": [ { "value": "bg-bright-orange", "label" : "Orange" }, { "value": "bg-bright-pink", "label" : "Pink" }, { "value": "bg-primary", "label" : "Purple" } ] }, { "type": "image_picker", "id": "source_image", "label": "Source Image" }, { "type": "richtext", "id": "testimonial_content", "label": "Content" }, { "type": "text", "id": "testimonial_source", "label": "Source" }, { "type": "url", "id": "source_url", "label": "Source link" }, { "type": "select", "id": "source_text_color", "label": "Text Color", "options": [ { "value": "text-bright-orange", "label" : "Orange" }, { "value": "text-bright-pink", "label" : "Pink" }, { "value": "text-primary", "label" : "Purple" } ] } ] } ], "presets": [ { "name": "Testimonials", "category": "Custom Sections" } ] }
+{
+  "name": "Testimonials",
+  "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title"
+      }
+  ],
+
+  "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Testimonial",
+        "settings": [
+            {
+              "type": "select",
+              "id": "background_color",
+              "label": "Background Color",
+              "options": [
+                  {
+                    "value": "bg-bright-orange",
+                    "label" : "Orange"
+                  },
+                  {
+                    "value": "bg-bright-pink",
+                    "label" : "Pink"
+                  },
+                  {
+                    "value": "bg-primary",
+                    "label" : "Purple"
+                  }
+              ]
+            },
+            {
+              "type": "image_picker",
+              "id": "source_image",
+              "label": "Source Image"
+            },
+            {
+              "type": "richtext",
+              "id": "testimonial_content",
+              "label": "Content"
+            },
+            {
+              "type": "text",
+              "id": "testimonial_source",
+              "label": "Source"
+            },
+            {
+              "type": "url",
+              "id": "source_url",
+              "label": "Source link"
+            },
+            {
+              "type": "select",
+              "id": "source_text_color",
+              "label": "Text Color",
+              "options": [
+                  {
+                    "value": "text-bright-orange",
+                    "label" : "Orange"
+                  },
+                  {
+                    "value": "text-bright-pink",
+                    "label" : "Pink"
+                  },
+                  {
+                    "value": "text-primary",
+                    "label" : "Purple"
+                  }
+              ]
+            }
+        ]
+      }
+  ],
+  "presets": [
+      {
+        "name": "Testimonials",
+        "category": "Custom Sections"
+      }
+  ]
+}
 
 {% endschema %}

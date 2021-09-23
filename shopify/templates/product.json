@@ -17,6 +17,35 @@
         "image": "shopify:\/\/shop_images\/image_9.png"
       }
     },
+    "1632419623f3250c92": {
+      "type": "blocks-column",
+      "blocks": {
+        "7b6c0c38-dece-4e89-9e2b-914f1c720cc6": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_11.png",
+            "title": "Items 01",
+            "content": "<p>Vitamin B12 is an essential nutrient that can be missing from your diet. A majority of adults are low in B12, about 65% of the population. B12 plays a vital role in your body’s ability to create red blood cells. Being low or deficient in B12 can cause you to be lethargic, moody, and forgetful.<br\/><br\/>B12 is a water-soluble vitamin that is found naturally in microbe. It is essential to the function of all cells in the human body. Foods that are rich in Vitamin B12 include oysters, clams, and animal liver. B12 is not found naturally in plants.<\/p>"
+          }
+        },
+        "851b0507-dd1f-42e4-936e-fcd8ebc94381": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Ellipse_11.png",
+            "title": "Item 02",
+            "content": "<p>Dark chocolate is an excellent delivery system for vitamins. When you take pills, your digestive system works hard to digest them. This leaves you with about 30% nutrient absorption after a few hours. When you chew a food-based vitamin like ours, you absorb 90%. AND the effects are quick - 10-15 minutes!<br\/><br\/>Chocolate is also a natural prebiotic with antioxidants that can protect your body from environmental stressors. This can be important for overall health.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "7b6c0c38-dece-4e89-9e2b-914f1c720cc6",
+        "851b0507-dd1f-42e4-936e-fcd8ebc94381"
+      ],
+      "settings": {
+        "hide_mobile": true,
+        "column_qty": "2"
+      }
+    },
     "163236219290cd687d": {
       "type": "blocks-column",
       "blocks": {
@@ -51,6 +80,8 @@
         "7387d1e2-3f63-4b32-aa10-05be32bea70d"
       ],
       "settings": {
+        "hide_mobile": false,
+        "column_qty": "3"
       }
     },
     "1632358250423e718f": {
@@ -111,6 +142,7 @@
     "main",
     "16323576198743df89",
     "163235771503eeb72c",
+    "1632419623f3250c92",
     "163236219290cd687d",
     "1632358250423e718f",
     "1632360517732e0765"
