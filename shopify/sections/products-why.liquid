@@ -1,0 +1,39 @@
+<div class="bg-neutrals-white-bone pt-24 md:pt-48">
+    <div class="container">
+        <div class="md:w-3/4 lg:w-1/2 mx-auto">
+            <div class="flex items-center">
+                <div class="w-1/12 mx-auto font-bold text-bright-pink text-2xl uppercase transform -rotate-90">
+                    {{ section.settings.title }}
+                </div>
+                <div class="w-11/12 font-semibold text-neutrals-gray md:text-lg ml-10">
+                    {{ section.settings.content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Products Why",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Products Why",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

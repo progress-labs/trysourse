@@ -1,0 +1,56 @@
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-24 md:pt-48">
+        <div class="lg:w-11/12 mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-14 md:gap-10 lg:gap-24">
+                {% for block in section.blocks %}
+                    <div>
+                        <div>
+                            <img src="{{ block.settings.image| img_url: '1000x' }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-32 h-32" alt="image">
+                        </div>
+                        <h4 class="font-bold text-bright-pink text-lg mt-5 text-center md:text-left">{{ block.settings.title }}</h4>
+                        <div class="font-semibold text-[#858585] pt-3">
+                            {{ block.settings.content }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Blocks Column",
+
+    "blocks": [
+        {
+            "type": "item",
+            "name": "Item",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+                },
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title"
+                },
+                {
+                    "type": "richtext",
+                    "id": "content",
+                    "label": "Content"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Blocks Column",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}

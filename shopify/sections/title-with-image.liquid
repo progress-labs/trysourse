@@ -1,0 +1,37 @@
+<div class="bg-neutrals-white-bone pt-24">
+    <div class="container">
+        <div class="lg:w-5/6 mx-auto flex flex-col-reverse md:flex-row justify-between items-center">
+            <div class="md:w-1/2 font-semibold text-neutrals-gray-dark text-3xl md:text-4xl lg:text-5xl mt-5 md:mt-0">
+                {{ section.settings.title }}
+            </div>
+            <div class="w-1/2 md:w-auto mx-auto ">
+                <img src="{{ section.settings.image| img_url: '1000x' }}" alt="image">
+            </div>
+        </div>
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Title with Image",
+    "settings": [
+        {
+            "type": "richtext",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Title with Image",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}
