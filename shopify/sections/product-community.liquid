@@ -6,7 +6,7 @@
                 {% for block in section.blocks %}
                     <div>
                         <div>
-                            <img src="{{ block.settings.user_image| img_url: '1000x' }}" class="w-full" alt="image">
+                            <img src="{{ block.settings.user_image| img_url: '1000x' }}" class="md:w-full" alt="image">
                         </div>
                         <a href="{{ block.settings.link_url }}" class="font-bold text-lg text-neutrals-gray block mt-5">{{ block.settings.link_text }}</a>
                     </div>

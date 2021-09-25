@@ -5,11 +5,6 @@
       "settings": {
       }
     },
-    "16323576198743df89": {
-      "type": "main-product",
-      "settings": {
-      }
-    },
     "163235771503eeb72c": {
       "type": "title-with-image",
       "settings": {
@@ -140,7 +135,6 @@
   },
   "order": [
     "main",
-    "16323576198743df89",
     "163235771503eeb72c",
     "1632419623f3250c92",
     "163236219290cd687d",
