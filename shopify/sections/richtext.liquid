@@ -1,7 +1,11 @@
 <div class="bg-neutrals-white-bone">
     <div class="container py-20 md:py-24">
         <div class="lg:w-5/6 mx-auto">
-            <div class="font-semibold text-neutrals-gray text-xl">
+            <h3 class="font-semibold text-[#333333] text-4xl">{{ section.settings.title }}</h3>
+            <div class="font-semibold text-neutrals-gray text-2xl mt-8">
+                {{ section.settings.subtitle }}
+            </div>
+            <div class="font-semibold text-neutrals-gray text-xl mt-12" >
                 {{ section.settings.content }}
             </div>
         </div>
@@ -10,8 +14,18 @@
 {% schema %}
 
 {
-    "name": "About Content",
+    "name": "Richtext Content",
     "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle"
+        },
         {
             "type": "richtext",
             "id": "content",

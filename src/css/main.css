@@ -43,3 +43,7 @@ input[type=number].input-no-arrows::-webkit-outer-spin-button {
 html {
     @apply font-body antialiased;
 }
+
+#rc_login {
+    display: none !important;
+}

@@ -1,55 +1,66 @@
-<h1 class="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-16">
-  {{ 'customer.entry.log_in' | t }}
-</h1>
+<div class="lg:w-3/4 mx-auto mt-14 md:mt-24">
+  <h1 class="text-3xl md:text-4xl font-header font-black text-primary text-left mb-12 md:mb-16">
+    {{ 'customer.entry.log_in' | t }}
+  </h1>
+</div>
 
 {% form 'customer_login' %}
-  {% if form.errors %}
-    {% capture error_text %}
-      {{ form.errors | default_errors }}
-      {% endcapture%}
+  <div class="lg:w-3/4 mx-auto relative">
+    <div class="hidden md:block absolute -top-12 -right-10 lg:-right-48">
+      <img src="//cdn.shopify.com/s/files/1/0359/5639/2074/files/Badge_Logo.png?v=1632857984" class="" alt="badge logo pink">
+    </div>
+    {% if form.errors %}
+      {% capture error_text %}
+        {{ form.errors | default_errors }}
+        {% endcapture%}
 
-      {% render 'layout-message',
-        type: 'error'
-        text: error_text
-        class: 'mb-8'
-      %}
+        {% render 'layout-message',
+          type: 'error'
+          text: error_text
+          class: 'mb-8'
+        %}
     {% endif %}
 
-    <div class="mb-4 sm:mb-6">
-      <label for="CustomerEmail" class="block">
-        {{ 'form.email' | t }}
-      </label>
+      <div class="md:w-3/5 lg:w-3/4">
+        <div class="mb-4 sm:mb-6">
+          <label for="CustomerEmail" class="block text-neutrals-gray text-sm pb-1">
+            {{ 'form.email' | t }}
+          </label>
 
-      <input type="email" id="CustomerEmail" name="customer[email]" class="w-full" required="required">
+          <input type="email" id="CustomerEmail" name="customer[email]" class="w-full rounded-md text-neutrals-gray" required="required">
+        </div>
+
+        {% if form.password_needed %}
+          <div class="">
+            <label for="CustomerPassword" class="block text-neutrals-gray text-sm pb-1">
+              {{ 'form.password' | t }}
+            </label>
+
+            <input type="password" id="CustomerPassword" name="customer[password]" class="w-full rounded-md text-neutrals-gray" required="required">
+          </div>
+        {% endif %}
+      </div>
+
+      {% if form.password_needed %}
+        <button class="text-primary underline text-sm mt-8" @click.prevent="show('forgot-password')">
+          {{ 'action.forgot_your_password' | t }}
+        </button>
+      {% endif %}
+
+      <div class="flex flex-col md:flex-row gap-4 sm:gap-6 mt-14">
+        <button type="submit" class="button button-primary font-header font-black text-white text-xl bg-primary text-center px-4 md:px-12
+        py-3 rounded-l-3xl rounded-br-3xl w-3/5 md:w-auto mx-auto md:mx-0">
+          {{ 'action.sign_in' | t }}
+        </button>
+
+        <div class="w-full sm:w-auto flex justify-center items-center">
+          <span class="hidden">{{ 'common.or' | t }}&nbsp;</span>
+
+          <a href="{{ routes.root_url }}account/register" class="font-header font-black text-primary text-xl md:ml-10">
+            {{ 'action.create_account' | t }}
+          </a>
+        </div>
+      </div>
     </div>
 
-    {% if form.password_needed %}
-      <div class="mb-4 sm:mb-10">
-        <label for="CustomerPassword" class="block">
-          {{ 'form.password' | t }}
-        </label>
-
-        <input type="password" id="CustomerPassword" name="customer[password]" class="w-full" required="required">
-      </div>
-    {% endif %}
-
-    <div class="flex flex-wrap gap-4 sm:gap-6">
-      <button type="submit" class="button button-primary">
-        {{ 'action.sign_in' | t }}
-      </button>
-
-      <div class="w-full sm:w-auto flex justify-center items-center">
-        <span>{{ 'common.or' | t }}&nbsp;</span>
-
-        <a href="{{ routes.root_url }}account/register" class="underline">
-          {{ 'action.create_account' | t }}
-        </a>
-      </div>
-    </div>
-
-    {% if form.password_needed %}
-      <button class="text-gray-600 text-sm mt-8" @click.prevent="show('forgot-password')">
-        {{ 'action.forgot_your_password' | t }}
-      </button>
-    {% endif %}
   {% endform %}

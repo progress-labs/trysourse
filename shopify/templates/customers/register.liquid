@@ -1,67 +1,74 @@
 <div class="container max-w-screen-sm">
-  <h1 class="text-2xl md:text-3xl font-bold text-center mb-6 md:mb-16">
-    {{ 'customer.entry.create_account' | t }}
-  </h1>
-
-  {% form 'create_customer' %}
-    <input type="hidden" name="customer[tags]" value="locale={{ request.locale.iso_code }}"/>
-
-    {% if form.errors %}
-      {% capture error_text %}
-        {{ form.errors | default_errors }}
-        {% endcapture%}
-
-        {% render 'layout-message',
-          type: 'error'
-          text: error_text
-          class: 'mb-8'
-        %}
-      {% endif %}
-
-      <div class="mb-4 sm:mb-6">
-        <label for="FirstName" class="block">
-          {{ 'form.first_name' | t }}
-        </label>
-
-        <input type="text" id="FirstName" name="customer[first_name]" {% if form.first_name %} value="{{ form.first_name }}" {% endif %} class="w-full" required="required">
+  <div class="w-4/5 mx-auto mt-14 md:mt-24">
+    <h1 class="text-3xl md:text-4xl font-header font-black text-primary text-left mb-12 md:mb-16">
+      {{ 'customer.entry.create_account' | t }}
+    </h1>
+    <div class="w-5/6 relative">
+      <div class="hidden md:block absolute -top-16 -right-10 lg:-right-72">
+        <img src="//cdn.shopify.com/s/files/1/0359/5639/2074/files/Badge_Logo.png?v=1632857984" class="" alt="badge logo pink">
       </div>
+      {% form 'create_customer' %}
+        <input type="hidden" name="customer[tags]" value="locale={{ request.locale.iso_code }}"/>
 
-      <div class="mb-4 sm:mb-6">
-        <label for="LastName" class="block">
-          {{ 'form.last_name' | t }}
-        </label>
+        {% if form.errors %}
+          {% capture error_text %}
+            {{ form.errors | default_errors }}
+            {% endcapture%}
 
-        <input type="text" id="LastName" name="customer[last_name]" {% if form.last_name %} value="{{ form.last_name }}" {% endif %} class="w-full" required="required">
+            {% render 'layout-message',
+              type: 'error'
+              text: error_text
+              class: 'mb-8'
+            %}
+          {% endif %}
+
+          <div class="mb-4 sm:mb-6">
+            <label for="FirstName" class="block">
+              {{ 'form.first_name' | t }}
+            </label>
+
+            <input type="text" id="FirstName" name="customer[first_name]" {% if form.first_name %} value="{{ form.first_name }}" {% endif %} class="w-full rounded-md text-neutrals-gray" required="required">
+          </div>
+
+          <div class="mb-4 sm:mb-6">
+            <label for="LastName" class="block">
+              {{ 'form.last_name' | t }}
+            </label>
+
+            <input type="text" id="LastName" name="customer[last_name]" {% if form.last_name %} value="{{ form.last_name }}" {% endif %} class="w-full rounded-md text-neutrals-gray" required="required">
+          </div>
+
+          <div class="mb-4 sm:mb-6">
+            <label for="CustomerEmail" class="block">
+              {{ 'form.email' | t }}
+            </label>
+
+            <input type="email" id="CustomerEmail" name="customer[email]" value="{% if form.email %}{{ form.email }}{% endif %}" class="w-full rounded-md text-neutrals-gray" required="required">
+          </div>
+
+          <div class="mb-4 sm:mb-10">
+            <label for="CreatePassword" class="block">
+              {{ 'form.password' | t }}
+            </label>
+
+            <input type="password" id="CreatePassword" name="customer[password]" class="w-full rounded-md" required="required">
+          </div>
+
+          <div class="flex flex-wrap gap-4 sm:gap-6">
+            <button type="submit" class="button button-primary font-header font-black text-primary text-xl">
+              {{ 'action.create_account' | t }}
+            </button>
+
+            <div class="w-full sm:w-auto flex justify-center items-center">
+              <span class="hidden">{{ 'common.or' | t }}&nbsp;</span>
+
+              <a href="{{ routes.root_url }}account/login" class="uont-header font-black text-white text-xl bg-primary text-center px-4 md:px-12
+              py-3 rounded-l-3xl rounded-br-3xl w-3/5 md:w-auto mx-auto md:mx-0 md:ml-10">
+                {{ 'action.sign_in' | t }}
+              </a>
+            </div>
+          </div>
+        {% endform %}
       </div>
-
-      <div class="mb-4 sm:mb-6">
-        <label for="CustomerEmail" class="block">
-          {{ 'form.email' | t }}
-        </label>
-
-        <input type="email" id="CustomerEmail" name="customer[email]" value="{% if form.email %}{{ form.email }}{% endif %}" class="w-full" required="required">
-      </div>
-
-      <div class="mb-4 sm:mb-10">
-        <label for="CreatePassword" class="block">
-          {{ 'form.password' | t }}
-        </label>
-
-        <input type="password" id="CreatePassword" name="customer[password]" class="w-full" required="required">
-      </div>
-
-      <div class="flex flex-wrap gap-4 sm:gap-6">
-        <button type="submit" class="button button-primary">
-          {{ 'action.create_account' | t }}
-        </button>
-
-        <div class="w-full sm:w-auto flex justify-center items-center">
-          <span>{{ 'common.or' | t }}&nbsp;</span>
-
-          <a href="{{ routes.root_url }}account/login" class="underline">
-            {{ 'action.sign_in' | t }}
-          </a>
-        </div>
-      </div>
-    {% endform %}
+    </div>
   </div>

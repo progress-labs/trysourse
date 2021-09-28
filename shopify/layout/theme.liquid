@@ -23,7 +23,7 @@
     {{ content_for_header }}
   </head>
 
-  <body>
+  <body class="bg-neutrals-white-bone">
     <div {% unless request.page_type == 'captcha' %}id="app"{% endunless %}>
       {% section 'header' %}
       {% section 'cart' %}
