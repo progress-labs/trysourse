@@ -1,14 +1,14 @@
 <div class="bg-neutrals-white-bone">
     <div class="container pt-24 md:pt-48">
         <div class="lg:w-11/12 mx-auto">
-            <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+            <h2 class="font-header font-black text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 pt-20">
                 {% for block in section.blocks %}
                     <div>
                         <div>
                             <img src="{{ block.settings.user_image| img_url: '1000x' }}" class="md:w-full" alt="image">
                         </div>
-                        <a href="{{ block.settings.link_url }}" class="font-bold text-lg text-neutrals-gray block mt-5">{{ block.settings.link_text }}</a>
+                        <a href="{{ block.settings.link_url }}" class="font-header font-black text-lg text-neutrals-gray block mt-5">{{ block.settings.link_text }}</a>
                     </div>
                 {% endfor %}
             </div>

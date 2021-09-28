@@ -7,7 +7,7 @@
                         <div>
                             <img src="{{ block.settings.image| img_url: '1000x' }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 {% if section.settings.column_qty == "2" %} w-56 h-56 {% else %} w-32 h-32 {% endif %}" alt="image">
                         </div>
-                        <h4 class="font-bold text-bright-pink mt-5 text-center md:text-left {% if section.settings.column_qty == "2" %} text-2xl {% else %} text-lg {% endif %}">{{ block.settings.title }}</h4>
+                        <h4 class="font-header font-bold text-bright-pink mt-5 text-center md:text-left {% if section.settings.column_qty == "2" %} text-2xl {% else %} text-lg {% endif %}">{{ block.settings.title }}</h4>
                         <div class="font-semibold text-[#858585] pt-3">
                             {{ block.settings.content }}
                         </div>

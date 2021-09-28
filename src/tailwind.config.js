@@ -10,6 +10,11 @@ module.exports = {
   mode: 'jit',
   darkMode: false,
   theme: {
+    fontFamily: {
+      header: ['Surt-RegularExtended', "sans-serif"],
+      body: ['Surt-Regular', "sans-serif"]
+    },
+
     extend: {
       colors: {
         primary:'#4E4E74',
@@ -90,6 +95,26 @@ module.exports = {
           "infinite": "999px"
       })
     },
+
+    lineHeight: {
+      none: '1',
+      tight: '1.25',
+      snug: '1.375',
+      normal: '1.5',
+      relaxed: '1.625',
+      loose: '2',
+      3: '.75rem',
+      4: '1rem',
+      5: '1.25rem',
+      6: '1.5rem',
+      7: '1.75rem',
+      8: '2rem',
+      9: '2.25rem',
+      10: '2.5rem',
+      14: '3.5rem',
+      16: '4.25rem',
+      28: '7rem',
+    },
     container: {
       center: true,
       padding: '1rem'
@@ -97,7 +122,7 @@ module.exports = {
   },
   variants: {},
   plugins: [
-
+    require("@tailwindcss/forms")
   ],
   purge: {
     enabled: process.env.NODE_ENV === 'production',

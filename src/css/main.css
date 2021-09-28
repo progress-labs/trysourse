@@ -39,3 +39,7 @@ input[type=number].input-no-arrows::-webkit-outer-spin-button {
         @apply !w-full my-3;
     }
 }
+
+html {
+    @apply font-body antialiased;
+}

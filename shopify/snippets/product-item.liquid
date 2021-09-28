@@ -4,7 +4,7 @@
     </a>
     <span class="bg-[#F2F2F2] w-5/6 h-1.5 block mx-auto mt-3"></span>
     <div class="pt-5">
-        <a href="{{ product.url }}" class="font-bold text-lg text-primary">{{ product.title }}</a>
+        <a href="{{ product.url }}" class="font-header font-black text-lg text-primary">{{ product.title }}</a>
         <div class="font-semibold text-neutrals-gray-light pt-1">
             Clean ingredient dark chocolates infused with vitamin B12
         </div>
@@ -16,7 +16,7 @@
             {% endfor %}
             <a href="/" class="font-semibold text-sm text-primary underline ml-2">301 Ratings</a>
         </div>
-        <a href="{{ product.url }}" class="font-bold  text-bright-lila bg-primary px-10 py-3 rounded-tl-3xl rounded-br-3xl inline-block mt-5">1-Month Supply {{ product.price | money }}</a>
+        <a href="{{ product.url }}" class="font-black text-bright-lila bg-primary px-10 py-3 rounded-tl-3xl rounded-br-3xl inline-block mt-5">1-Month Supply {{ product.price | money }}</a>
         <a href="{{ product.url }}" class="font-semibold text-sm text-primary underline block mt-3">Details</a>
     </div>
 </div>

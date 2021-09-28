@@ -22,12 +22,12 @@
     "fix:shopify": "cd shopify && shopify theme check -a"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.3.3",
     "axios": "^0.21.4",
     "swiper": "^7.0.6",
     "tailwindcss": "^2.2.7",
     "vue": "^3.1.5",
-    "vuex": "^4.0.2",
-    "@tailwindcss/forms": "^0.3.3"
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.14.8",

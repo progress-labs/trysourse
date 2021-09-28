@@ -1,7 +1,7 @@
 <div class="bg-neutrals-white-bone">
   <div class="container pt-24 md:pt-40">
     <div class="xl:w-11/12 mx-auto">
-      <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+      <h2 class="font-header font-black text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
       <div class="grid grid-cols-1 xl:grid-cols-3 gap-14 xl:gap-36 pt-16">
         {% for block in section.blocks %}
           <div>
@@ -10,10 +10,10 @@
                 <img src="{{ block.settings.source_image| img_url: '1000x' }}" class="rounded-tl-4xl rounded-br-4xl" alt="image">
               </div>
             </div>
-            <div class="md:w-3/5 xl:w-full font-semibold text-neutrals-gray md:min-h-24 xl:min-h-32 mt-8">
+            <div class="md:w-3/5 xl:w-full font-header font-semibold text-neutrals-gray md:min-h-24 xl:min-h-32 mt-8">
               {{ block.settings.testimonial_content }}
             </div>
-            <a href="{{ block.settings.source_url }}" class="font-bold text-lg mt-4 md:mt-0 {{ block.settings.source_text_color }}">{{ block.settings.testimonial_source }}</a>
+            <a href="{{ block.settings.source_url }}" class="font-header font-black text-lg mt-4 md:mt-0 block {{ block.settings.source_text_color }}">{{ block.settings.testimonial_source }}</a>
           </div>
         {% endfor %}
       </div>

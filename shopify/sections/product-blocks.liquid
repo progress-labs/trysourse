@@ -2,7 +2,7 @@
     <div class="container pt-24 md:pt-40">
         <div class="w-full {% if section.settings.products_qty == 3 %} w-full lg:w-11/12 mx-auto {% elsif section.settings.products_qty == 4 %} w-full {% else %} w-full {% endif %}">
             <div class="mb-20">
-                <h2 class="font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
+                <h2 class="font-header font-bold text-primary text-3xl md:text-4xl lg:text-5xl">{{ section.settings.title }}</h2>
                 {% if section.settings.title != blank %}
                     <div class="md:w-2/3 lg:w-2/5 font-semibold text-neutrals-gray text-xl mt-8">
                         {{ section.settings.content }}

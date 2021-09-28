@@ -30,7 +30,7 @@
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0">
                     <div class="flex flex-col md:flex-row justify-between">
-                        <h2 class="font-bold text-bright-pink text-4xl md:text-5xl">Hype Bites</h2>
+                        <h2 class="font-header font-bold text-bright-pink text-4xl md:text-5xl">Hype Bites</h2>
                         <div class="flex items-center mt-5">
                             {% for item in (1..5) %}
                             <span class="block">
@@ -41,18 +41,100 @@
                         </div>
                     </div>
                     <div>
-                        <div class="flex mt-10 md:mt-16">
-                            <div class="font-bold text-xs text-neutrals-gray uppercase mr-9 pb-2 border-b-4 border-bright-pink tracking-wide">Description</div>
-                            <div class="font-bold text-xs text-neutrals-gray uppercase mr-9 pb-2 tracking-wide">How to use</div>
-                            <div class="font-bold text-xs text-neutrals-gray uppercase mr-9 pb-2 tracking-wide">Benefits</div>
+                        <div class="flex gap-7 md:gap-10 mt-10 md:mt-16">
+                            <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 border-b-4 border-bright-pink tracking-widest">Description</div>
+                            <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 tracking-widest">How to use</div>
+                            <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 tracking-widest">Benefits</div>
                         </div>
-                        <div class="font-semibold text-2xl text-neutrals-gray mt-10">These clean ingredient dark chocolates are powered by 250mcg Vitamin B12 to improve mood, energy, and brain function.*</div>
+                        {%- comment -%}TAB DESCRIPTION CONTENT{%- endcomment -%}
+                        <div class="font-header font-semibold text-xl md:text-2xl text-neutrals-gray mt-10">These clean ingredient dark chocolates are powered by 250mcg Vitamin B12 to improve mood, energy, and brain function.*</div>
+                        {%- comment -%}TAB HOW TO USE CONTENT{%- endcomment -%}
+                        <div class="md:w-5/6 mt-10 md:mt-16 flex flex-col md:flex-row items-center md:ml-8 hidden">
+                            <div class="w-32 h-32 p-2.5 flex items-center justify-center bg-bright-pink">
+                                <div>
+                                  <img src="{{ 'htu-image.static.png' | asset_img_url: '1000x' }}" class="rounded-tl-4xl rounded-br-4xl" alt="image">
+                                </div>
+                            </div>
+                            <div class="md:w-3/4 md:ml-5 mt-5 md:mt-0">
+                                <div class="flex">
+                                    <div class="bg-[#954969] px-2.5 py-0.5 rounded-lg font-header font-semibold text-xl md:text-2xl text-white">
+                                        Eat
+                                    </div>
+                                    <div class="font-header font-semibold text-xl md:text-2xl text-neutrals-gray ml-2 py-0.5">
+                                        two bites each day.
+                                    </div>
+                                </div>
+                                <div class="font-semibold text-lg text-neutrals-gray-light mt-3">
+                                    They are like a piece of candy, so just pop them in, chew them up and enjoy.
+                                </div>
+                            </div>
+
+                        </div>
+                        {%- comment -%}TAB BENEFITS CONTENT{%- endcomment -%}
+                        <div class="mt-10 md:mt-16 hidden">
+                            <div class="flex items-center">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14" fill="#FFFDF8" stroke="#4E4E74" stroke-width="2"/>
+                                    <path d="M15.66 22L19 15H11L14.34 8" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="block ml-5 font-semibold text-lg text-neutrals-gray">Fast absorption</span>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14" fill="#FFFDF8" stroke="#4E4E74" stroke-width="2"/>
+                                    <path d="M18.5898 17.3833L18.8558 16.9833C19.4011 16.1658 20.2001 15.5503 21.1296 15.2315C22.0591 14.9128 23.0676 14.9085 23.9998 15.2193V15.2193" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.0651 15.7929L14.2651 9.80894L15.5751 10.4639C15.8103 10.5813 16.0801 10.6091 16.3342 10.5422C16.5883 10.4752 16.8094 10.318 16.9561 10.0999L18.1001 8.38294C18.2386 8.1748 18.3009 7.92515 18.2763 7.67635C18.2517 7.42754 18.1417 7.19492 17.9651 7.01794L16.5251 5.57794C16.203 5.25572 15.772 5.06558 15.3168 5.04486C14.8617 5.02414 14.4152 5.17433 14.0651 5.46594V5.46594C10.658 8.30495 8.10991 12.0377 6.70713 16.2449L6.10713 18.0309C5.96133 18.4705 5.96037 18.9451 6.10437 19.3852C6.24836 19.8253 6.52974 20.2076 6.90713 20.4759L8.43813 21.5699C9.89203 22.6087 11.5838 23.2651 13.3578 23.4788C15.1319 23.6926 16.9311 23.4567 18.5901 22.7929V22.7929L19.6721 24.9569" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5897 16.3C17.6283 15.6593 16.4989 15.3174 15.3437 15.3174C14.1884 15.3174 13.059 15.6593 12.0977 16.3V16.3" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="block ml-5 font-semibold text-lg text-neutrals-gray">Prebiotics</span>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14" fill="#FFFDF8" stroke="#4E4E74" stroke-width="2"/>
+                                    <path d="M11.0002 6.99965C15.4184 9.20877 20.7909 14.5813 23.0001 18.9996C25.2092 23.4178 23.4183 25.2086 19.0001 22.9995C14.5819 20.7904 9.20932 15.4179 7.0002 10.9996C4.79109 6.58137 6.58193 4.79053 11.0002 6.99965" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.0001 7.00048C23.4183 4.79137 25.2092 6.58221 23.0001 11.0004C20.791 15.4187 15.4184 20.7912 11.0002 23.0003C6.58192 25.2095 4.79108 23.4186 7.0002 19.0004C9.20932 14.5822 14.5819 9.2096 19.0001 7.00048" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.3617 15C15.3617 15.207 15.1997 15.375 14.9997 15.375C14.7997 15.375 14.6377 15.207 14.6377 15C14.6377 14.793 14.7997 14.625 14.9997 14.625C15.1997 14.625 15.3617 14.793 15.3617 15Z" stroke="#4E4E74" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="block ml-5 font-semibold text-lg text-neutrals-gray">Antioxidants</span>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14" fill="#FFFDF8" stroke="#4E4E74" stroke-width="2"/>
+                                    <path d="M12.7414 15.9599C12.2636 15.4173 12 14.7191 12 13.9961C12 13.2731 12.2636 12.5749 12.7414 12.0323L14.2495 10.3196C14.3434 10.213 14.4588 10.1277 14.5882 10.0692C14.7176 10.0107 14.858 9.98047 15 9.98047C15.142 9.98047 15.2824 10.0107 15.4118 10.0692C15.5412 10.1277 15.6567 10.213 15.7505 10.3196L17.2586 12.0323C17.7364 12.5749 18 13.2731 18 13.9961C18 14.7191 17.7364 15.4172 17.2586 15.9599V15.9599C16.9762 16.2806 16.6287 16.5375 16.2393 16.7135C15.8498 16.8895 15.4274 16.9805 15 16.9805C14.5727 16.9805 14.1502 16.8895 13.7608 16.7135C13.3713 16.5375 13.0238 16.2806 12.7414 15.9599V15.9599Z" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17.5 20.25H12.5" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20 6H10C7.79086 6 6 7.79086 6 10V20C6 22.2091 7.79086 24 10 24H20C22.2091 24 24 22.2091 24 20V10C24 7.79086 22.2091 6 20 6Z" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="block ml-5 font-semibold text-lg text-neutrals-gray">Red Blood Cell Growth</span>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14" fill="#FFFDF8" stroke="#4E4E74" stroke-width="2"/>
+                                    <path d="M9.59961 6C9.59961 15 20.3996 15 20.3996 24" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.3996 6C20.3996 15 9.59961 15 9.59961 24" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.63965 6.90039H20.3596" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.7402 10.5H19.2602" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M20.3596 23.0996H9.63965" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.2002 19.5H10.7402" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="block ml-5 font-semibold text-lg text-neutrals-gray">Boosted Energy</span>
+                            </div>
+                            <div class="flex items-center mt-4">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="15" cy="15" r="14" fill="#FFFDF8" stroke="#4E4E74" stroke-width="2"/>
+                                    <path d="M13 12.5V13.5" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M17 12.5V13.5" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15 18.5005C12.812 18.5005 11.5 17.1885 11.5 17.1885" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M18.5 17.1885C18.5 17.1885 17.188 18.5005 15 18.5005" stroke="#4E4E74" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="block ml-5 font-semibold text-lg text-neutrals-gray">Mood enhancement</span>
+                            </div>
+                        </div>
                     </div>
                     <div>
                         <div class="flex flex-col md:flex-row gap-7 md:gap-10 mt-10 md:mt-20">
                             <div class="flex">
-                                <input class="rounded-full p-3 bg-[#BDBDBD] checked:bg-[#BDBDBD] checked:focus:ring-0 focus:ring-0 checked:focus:border-transparent checked:focus:bg-[#BDBDBD] checked:hover:bg-[#BDBDBD]" type="checkbox">
-                                <div class="ml-1">
+                                <input class="rounded-full p-3 bg-[#BDBDBD] checked:bg-[#BDBDBD] border-0 focus:border-0 checked:focus:border-0 checked:focus:ring-0 focus:ring-0 checked:focus:bg-[#BDBDBD] checked:hover:bg-[#BDBDBD]" type="checkbox">
+                                <div class="ml-2">
                                     <span class="active:font-bold text-neutrals-gray block">
                                         $29.90 - 1 Month Supply
                                     </span>
@@ -62,8 +144,8 @@
                                 </div>
                             </div>
                             <div class="flex">
-                                <input class="rounded-full p-3 bg-[#BDBDBD] checked:bg-[#BDBDBD] checked:focus:ring-0 focus:ring-0 checked:focus:border-transparent checked:focus:bg-[#BDBDBD] checked:hover:bg-[#BDBDBD]" type="checkbox">
-                                <div class="ml-1">
+                                <input class="rounded-full p-3 bg-[#BDBDBD] checked:bg-[#BDBDBD] border-0 focus:border-0 checked:focus:border-0 checked:focus:ring-0 focus:ring-0 checked:focus:bg-[#BDBDBD] checked:hover:bg-[#BDBDBD]" type="checkbox">
+                                <div class="ml-2">
                                     <span class="active:font-bold text-neutrals-gray block">
                                         $34 - One time purchase
                                     </span>
@@ -74,12 +156,12 @@
                             </div>
                         </div>
                         <div class="flex items-center mt-10">
-                            <a href="/" class="font-bold text-white text-xl bg-bright-pink px-12 py-3 rounded-l-3xl rounded-br-3xl mr-10 inline-block">Subscribe</a>
+                            <a href="/" class="font-header font-black text-white text-xl bg-bright-pink px-12 py-3 rounded-l-3xl rounded-br-3xl mr-10 inline-block">Subscribe</a>
                             <div class="w-1/3 md:w-1/6">
                                 <div class="w-full border-2 border-neutrals-gray-light px-3 py-0.5 flex rounded-lg">
-                                  <button class=" text-neutrans-gray-dark rounded-l-lg cursor-pointer outline-none m-auto">−</button>
-                                  <input type="number" class="input-no-arrows outline-none focus:outline-none text-center w-full font-semibold text-md text-neutrals-gray-dark" value="1">
-                                  <button class="text-neutrals-gray-dark rounded-r-lg cursor-pointer m-auto">+</button>
+                                  <button class="py-0.5 text-neutrans-gray-dark rounded-l-lg cursor-pointer outline-none m-auto">−</button>
+                                  <input type="number" class="py-0.5 bg-transparent input-no-arrows border-0 outline-none focus:outline-none text-center w-full font-semibold text-md text-neutrals-gray-dark" value="1">
+                                  <button class="py-0.5 text-neutrals-gray-dark rounded-r-lg cursor-pointer m-auto">+</button>
                                 </div>
                             </div>
                         </div>
