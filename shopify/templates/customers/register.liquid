@@ -1,9 +1,9 @@
 <div class="container max-w-screen-sm">
-  <div class="w-4/5 mx-auto mt-14 md:mt-24">
+  <div class="md:w-4/5 mx-auto mt-14 md:mt-24">
     <h1 class="text-3xl md:text-4xl font-header font-black text-primary text-left mb-12 md:mb-16">
       {{ 'customer.entry.create_account' | t }}
     </h1>
-    <div class="w-5/6 relative">
+    <div class="md:w-5/6 relative">
       <div class="hidden md:block absolute -top-16 -right-10 lg:-right-72">
         <img src="//cdn.shopify.com/s/files/1/0359/5639/2074/files/Badge_Logo.png?v=1632857984" class="" alt="badge logo pink">
       </div>
@@ -23,7 +23,7 @@
           {% endif %}
 
           <div class="mb-4 sm:mb-6">
-            <label for="FirstName" class="block">
+            <label for="FirstName" class="block text-neutrals-gray text-sm pb-1">
               {{ 'form.first_name' | t }}
             </label>
 
@@ -31,7 +31,7 @@
           </div>
 
           <div class="mb-4 sm:mb-6">
-            <label for="LastName" class="block">
+            <label for="LastName" class="block text-neutrals-gray text-sm pb-1">
               {{ 'form.last_name' | t }}
             </label>
 
@@ -39,7 +39,7 @@
           </div>
 
           <div class="mb-4 sm:mb-6">
-            <label for="CustomerEmail" class="block">
+            <label for="CustomerEmail" class="block text-neutrals-gray text-sm pb-1">
               {{ 'form.email' | t }}
             </label>
 
@@ -47,14 +47,14 @@
           </div>
 
           <div class="mb-4 sm:mb-10">
-            <label for="CreatePassword" class="block">
+            <label for="CreatePassword" class="block text-neutrals-gray text-sm pb-1">
               {{ 'form.password' | t }}
             </label>
 
             <input type="password" id="CreatePassword" name="customer[password]" class="w-full rounded-md" required="required">
           </div>
 
-          <div class="flex flex-wrap gap-4 sm:gap-6">
+          <div class="flex flex-col md:flex-row gap-4 sm:gap-6 mt-14">
             <button type="submit" class="button button-primary font-header font-black text-primary text-xl">
               {{ 'action.create_account' | t }}
             </button>
@@ -62,7 +62,7 @@
             <div class="w-full sm:w-auto flex justify-center items-center">
               <span class="hidden">{{ 'common.or' | t }}&nbsp;</span>
 
-              <a href="{{ routes.root_url }}account/login" class="uont-header font-black text-white text-xl bg-primary text-center px-4 md:px-12
+              <a href="{{ routes.root_url }}account/login" class="font-header font-black text-white text-xl bg-primary text-center px-4 md:px-12
               py-3 rounded-l-3xl rounded-br-3xl w-3/5 md:w-auto mx-auto md:mx-0 md:ml-10">
                 {{ 'action.sign_in' | t }}
               </a>
