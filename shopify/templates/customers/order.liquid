@@ -1,100 +1,93 @@
 <div class="bg-neutrals-white-bone">
-    <div class="container pt-16 lg:pt-24">
-        <div class="flex justify-between items-center">
-            <a href="/" class="font-semibold underline text-bright-blue">Back</a>
-            <h2 class="font-header font-black text-primary text-3xl md:text-4xl lg:text-5xl text-center">Order Details</h2>
-            <div></div>
-        </div>
-
-        <div class="pt-16 md:pt-20 lg:pt-24 pb-14 border-b-8 border-[#dcdade]">
-            <h4 class="font-semibold text-2xl text-primary">Order Information</h4>
-            <div class="mt-10 flex justify-between">
-                <div class="flex flex-col lg:flex-row gap-7 lg:gap-16">
-                    <div>
-                        <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Order</span>
-                        <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">A4759</h4>
-                    </div>
-                    <div>
-                        <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Order date</span>
-                        <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">12/31/2021</h4>
-                    </div>
-                    <div>
-                        <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Status</span>
-                        <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">Fulfilled</h4>
-                    </div>
-                    <div>
-                        <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Total</span>
-                        <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">$29.90</h4>
-                    </div>
-                </div>
-                <div class="text-right">
-                    <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Tracking & Details</span>
-                    <h4 class="font-semibold text-xl lg:text-2xl underline text-bright-blue mt-2">Order Details</h4>
-                </div>
-            </div>
-        </div>
-        <div>
-            {% for item in (1..4) %}
-                <div class="flex justify-between items-center border-b border-[#dcdade] py-8">
-                    <div class="flex items-center">
-                        <div>
-                            <img
-                            src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/product-image.static_300x.png?v=6565519922396648927"
-                            class="w-14 h-auto mx-auto"
-                            alt="product image">
-                        </div>
-                        <div class="ml-10">
-                            <h6 class="font-header font-bold text-primary text-lg">Hype Bites</h6>
-                            <span class="text-neutrals-gray text-sm">2 Bags - 60 Pieces</span>
-                        </div>
-                    </div>
-                    <span class="font-semibold text-neutrals-gray text-right">$29.90</span>
-                </div>
-            {% endfor %}
-        </div>
-        <div class="mt-12 border-b border-[#dcdade] pb-8">
-            <div class="flex justify-between">
-                <span class="font-semibold text-neutrals-gray">Subtotal</span>
-                <span class="font-semibold text-neutrals-gray text-right">$119.60</span>
-            </div>
-            <div class="flex justify-between mt-2">
-                <span class="font-semibold text-neutrals-gray">Discount</span>
-                <span class="font-semibold text-neutrals-gray text-right">-$5.00</span>
-            </div>
-            <div class="flex justify-between mt-2">
-                <span class="font-semibold text-neutrals-gray">Shipping (Free)</span>
-                <span class="font-semibold text-neutrals-gray text-right">$0.00</span>
-            </div>
-        </div>
-        <div class="mt-10 flex justify-between">
-            <div>
-                <span class="font-semibold text-neutrals-gray">Total</span>
-                <span class="text-sm text-neutrals-gray block pt-1">Includes ($4.55 Tax)</span>
-            </div>
-            <span class="font-semibold text-neutrals-gray text-right">$114.60</span>
-        </div>
-        <div class="flex justify-end mt-8">
-            <a href="/" class="bg-primary font-semibold text-white px-6 py-1.5 rounded-2xl">Order again</a>
-        </div>
-        <div class="mt-12 flex flex-col md:flex-row gap-12 md:gap-20">
-            <div>
-                <h4 class="font-semibold text-2xl text-primary">Shipped</h4>
-                <p class="font-bold text-black leading-7 mt-4">Patrick Johnson <br /> 456 Main St <br /> New York, NY <br /> 10108</p>
-                <div class="flex gap-4 mt-4">
-                    <button class="font-semibold text-bright-blue underline">Set as default</button>
-                    <button class="font-semibold text-bright-blue underline">Delete</button>
-                    <a href="/" class="font-semibold text-bright-blue underline">Edit</a>
-                </div>
-            </div>
-            <div>
-                <h4 class="font-semibold text-2xl text-primary">Billed to</h4>
-                <p class="font-bold text-black leading-7 mt-4">Patrick Johnson <br /> 456 Main St <br /> New York, NY <br /> 10108</p>
-                <div class="flex gap-4 mt-4">
-                    <button class="font-semibold text-bright-blue underline">Set as default</button>
-                    <button class="font-semibold text-bright-blue underline">Delete</button>
-                    <a href="/" class="font-semibold text-bright-blue underline">Edit</a>
-                </div>
-            </div>
-        </div>
+  <div class="container pt-16 lg:pt-24">
+    <div class="flex justify-between items-center">
+      <a href="{{ routes.account_url }}" class="font-semibold underline text-bright-blue">Back</a>
+      <h2 class="font-header font-black text-primary text-3xl md:text-4xl lg:text-5xl text-center">Order Details</h2>
+      <div></div>
     </div>
+
+    <div class="pt-16 md:pt-20 lg:pt-24 pb-14 border-b-8 border-[#dcdade]">
+      <h4 class="font-semibold text-2xl text-primary">Order Information</h4>
+      <div class="mt-10 flex justify-between">
+        <div class="flex flex-col lg:flex-row gap-7 lg:gap-16">
+          <div>
+            <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Order</span>
+            <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">{{ order.name }}</h4>
+          </div>
+          <div>
+            <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Order date</span>
+            <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">{{ order.created_at | date: "%d/%m/%Y" }}</h4>
+          </div>
+          <div>
+            <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Status</span>
+            <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2 capitalize">{{ order.fulfillment_status }}</h4>
+          </div>
+          <div>
+            <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Total</span>
+            <h4 class="font-semibold text-xl lg:text-2xl text-primary mt-2">{{ order.total_price | money }}</h4>
+          </div>
+        </div>
+        <div class="text-right">
+          <span class="font-semibold text-xs text-neutrals-gray uppercase tracking-widest">Tracking & Details</span>
+          <a href="{{ order.order_status_url }}" class="block font-semibold text-xl lg:text-2xl underline text-bright-blue mt-2">Order Details</a>
+        </div>
+      </div>
+    </div>
+    <div>
+      {% for line_item in order.line_items %}
+        <div class="flex justify-between items-center border-b border-[#dcdade] py-8">
+          <div class="flex items-center">
+            <div>
+              <img src="{{ line_item.image | img_url: '300x' }}" class="w-14 h-auto mx-auto" alt="product image"/>
+            </div>
+            <div class="ml-10">
+              <h6 class="font-header font-bold text-primary text-lg">{{ line_item.product.title }}</h6>
+              <span class="text-neutrals-gray text-sm">{{ line_item.quantity }}
+                Bag(s)</span>
+            </div>
+          </div>
+          <span class="font-semibold text-neutrals-gray text-right">{{ line_item.final_line_price | money }}</span>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="mt-12 border-b border-[#dcdade] pb-8">
+      <div class="flex justify-between">
+        <span class="font-semibold text-neutrals-gray">Subtotal</span>
+        <span class="font-semibold text-neutrals-gray text-right">{{ order.line_items_subtotal_price | money }}</span>
+      </div>
+      <div class="flex justify-between mt-2">
+        <span class="font-semibold text-neutrals-gray">Discount</span>
+        <span class="font-semibold text-neutrals-gray text-right">-{{ order.total_discounts | money }}</span>
+      </div>
+      <div class="flex justify-between mt-2">
+        <span class="font-semibold text-neutrals-gray">Shipping
+          {% if order.shipping_price == 0 %}(Free){% endif %}
+        </span>
+        <span class="font-semibold text-neutrals-gray text-right">{{ order.shipping_price | money }}</span>
+      </div>
+    </div>
+    <div class="mt-10 flex justify-between">
+      <div>
+        <span class="font-semibold text-neutrals-gray">Total</span>
+        <span class="text-sm text-neutrals-gray block pt-1">Includes ({{ order.tax_price | money }}
+          Tax)</span>
+      </div>
+      <span class="font-semibold text-neutrals-gray text-right">{{ order.total_price | money }}</span>
+    </div>
+    <div class="flex justify-end mt-8">
+      <a href="/" class="bg-primary font-semibold text-white px-6 py-1.5 rounded-2xl">Order again</a>
+    </div>
+    <div class="mt-12 flex flex-col md:flex-row gap-12 md:gap-20">
+      <div>
+        <h4 class="font-semibold text-2xl text-primary">Shipped</h4>
+        <div class="font-bold text-black leading-7 mt-4">
+          {{ order.shipping_address | format_address }}
+        </div>
+      </div>
+      <div>
+        <h4 class="font-semibold text-2xl text-primary">Billed to</h4>
+        <div class="font-bold text-black leading-7 mt-4">{{ order.billing_address | format_address }}</div>
+      </div>
+    </div>
+  </div>
 </div>

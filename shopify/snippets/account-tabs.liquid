@@ -1,0 +1,11 @@
+<h2 class="font-header font-black text-primary md:text-4xl lg:text-5xl text-center">My Account</h2>
+<div class="flex justify-center gap-8 mt-8 md:mt-10">
+  <a href="{{ routes.account_url }}" class="font-bold text-xs text-neutrals-gray uppercase pb-2 tracking-wide {% if template == 'customers/account' %} border-b-4 border-primary {% endif %}">Orders</a>
+  <a href="/tools/recurring/login/" class="font-bold text-xs text-neutrals-gray uppercase pb-2 tracking-wide">
+    <span class="hidden md:inline-block">Manage</span>
+    Subscriptions</a>
+  <a href="/account/addresses" class="font-bold text-xs text-neutrals-gray uppercase pb-2 tracking-wide {% if template == 'customers/addresses' %} border-b-4 border-primary {% endif %}">
+    <span class="hidden md:inline-block">My
+    </span>
+    Addresses</a>
+</div>
