@@ -21,6 +21,12 @@
           "legal_links": "legal",
           "copy_content": "© 2021 Sourse"
         }
+      },
+      "cart": {
+        "type": "cart",
+        "settings": {
+          "free_shipping": 10000
+        }
       }
     },
     "content_for_index": [

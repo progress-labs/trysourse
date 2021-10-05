@@ -1,22 +1,30 @@
-<div>
-    <a href="{{ product.url }}">
-        <img class="w-full h-72 object-cover" src="{{ product.featured_image | img_url: '1000x' }}" alt="image" />
-    </a>
-    <span class="bg-[#F2F2F2] w-5/6 h-1.5 block mx-auto mt-3"></span>
-    <div class="pt-5">
-        <a href="{{ product.url }}" class="font-header font-black text-lg text-primary">{{ product.title }}</a>
-        <div class="font-semibold text-neutrals-gray-light pt-1">
-            Clean ingredient dark chocolates infused with vitamin B12
-        </div>
-        <div class="flex items-center mt-5">
-            {% for item in (1..5) %}
-            <span class="block">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: #4E4E74;" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-            </span>
-            {% endfor %}
-            <a href="/" class="font-semibold text-sm text-primary underline ml-2">301 Ratings</a>
-        </div>
-        <a href="{{ product.url }}" class="font-black text-bright-lila bg-primary px-10 py-3 rounded-tl-3xl rounded-br-3xl inline-block mt-5">1-Month Supply {{ product.price | money }}</a>
-        <a href="{{ product.url }}" class="font-semibold text-sm text-primary underline block mt-3">Details</a>
+<renderless-product-item v-slot="{ loading, addToCart }">
+  <a href="{{ product.url }}">
+    <img class="w-full h-72 object-cover" src="{{ product.featured_image | img_url: '1000x' }}" alt="image"/>
+  </a>
+  <span class="bg-[#F2F2F2] w-5/6 h-1.5 block mx-auto mt-3"></span>
+  <div class="pt-5">
+    <a href="{{ product.url }}" class="font-header font-black text-lg text-primary">{{ product.title }}</a>
+    <div class="font-semibold text-neutrals-gray-light pt-1">
+      {{ product.metafields.product.short_description }}
     </div>
-</div>
+    <div class="flex items-center mt-5">
+      {% for item in (1..5) %}
+        <span class="block">
+          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" style="fill: #4E4E74;">
+            <path fill="none" d="M0 0h24v24H0z"/>
+            <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
+        </span>
+      {% endfor %}
+      <a href="/" class="font-semibold text-sm text-primary underline ml-2">301 Ratings</a>
+    </div>
+    <button @click.prevent="addToCart('{{ product.variants[0].id }}')" class="font-black text-bright-lila bg-primary px-10 py-3 rounded-tl-3xl rounded-br-3xl mt-5 flex justify-center items-center w-full">
+      <svg v-cloak="v-cloak" v-show="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24">
+        <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+        <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+      </svg>
+      1-Month Supply
+      {{ product.price | money_without_trailing_zeros }}</button>
+    <a href="{{ product.url }}" class="font-semibold text-sm text-primary underline block mt-3">Details</a>
+  </div>
+</renderless-product-item>

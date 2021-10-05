@@ -3,47 +3,54 @@
 @import "tailwindcss/utilities";
 @import "swiper.css";
 
-
-input[type=number].input-no-arrows::-webkit-inner-spin-button,
-input[type=number].input-no-arrows::-webkit-outer-spin-button {
+input[type="number"].input-no-arrows::-webkit-inner-spin-button,
+input[type="number"].input-no-arrows::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
 .mySwiper .swiper-slide img {
-    @apply border-b-4 border-transparent pb-4;
+  @apply border-b-4 border-transparent pb-4;
 }
 
 .mySwiper .swiper-slide:not(.swiper-slide-thumb-active) {
-    @apply filter grayscale opacity-70;
+  @apply filter grayscale opacity-70;
 }
 
 .mySwiper .swiper-slide.swiper-slide-thumb-active {
-    @apply opacity-100;
+  @apply opacity-100;
 }
 
 .mySwiper .swiper-slide.swiper-slide-thumb-active img {
-    @apply  border-bright-lila;
+  @apply border-bright-lila;
 }
 
 @media (max-width: 767px) {
-    .mySwiper .swiper-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-    }
+  .mySwiper .swiper-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .mySwiper .swiper-slide {
-        @apply !w-full my-3;
-    }
+  .mySwiper .swiper-slide {
+    @apply !w-full my-3;
+  }
 }
 
 html {
-    @apply font-body antialiased;
+  @apply font-body antialiased;
 }
 
 #rc_login {
-    display: none !important;
+  display: none !important;
+}
+
+.product-tab-how-title span {
+  @apply bg-[#954969] px-2.5 py-0.5 rounded-lg font-header font-semibold text-xl md:text-2xl text-white;
+}
+
+[v-cloak] {
+  display: none !important;
 }

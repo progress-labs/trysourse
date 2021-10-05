@@ -1,1 +1,15 @@
-<render-cart></render-cart>
+<render-cart free-shipping-amount="{{ section.settings.free_shipping }}"></render-cart>
+
+{% schema %}
+{
+    "name": "Cart",
+    "settings": [
+        {
+            "type": "number",
+            "id": "free_shipping",
+            "label": "Amount for free shipping",
+            "info": "In cents, eg: $12 is 1200"
+        }
+    ]
+}
+{% endschema %}

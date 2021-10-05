@@ -1,5 +1,12 @@
 import axios from 'axios'
-import { headerConfigs } from '../config';
+
+const headerConfigs = {
+    credentials: 'same-origin',
+    headers: {
+        'Content-Type': 'application/json',
+        'X-Requested-With': 'xmlhttprequest',
+    },
+};
 
 const state = {
     cartData: {
@@ -51,6 +58,16 @@ const actions = {
     },
     show({ commit }) {
         commit('SHOW')
+
+        if (state.visible) {
+            document
+                .querySelector("body")
+                .classList.add("max-h-screen", "relative", "overflow-hidden");
+        } else {
+            document
+                .querySelector("body")
+                .classList.remove("max-h-screen", "relative", "overflow-hidden");
+        }
     },
     hide({ commit }) {
         commit('HIDE')
@@ -69,6 +86,7 @@ const actions = {
     },
 
     removeItem({ commit }, payload) {
+        commit('cartLoading');
         let products = Array.isArray(payload) ? payload : [payload];
 
         const mappedPayload = products.reduce((acc, i) => {
@@ -76,12 +94,13 @@ const actions = {
             return acc
         }, {});
 
-        axios.post("/cart/update.js",
+        return axios.post("/cart/update.js",
             {
                 updates: mappedPayload
             }, headerConfigs)
             .then(response => {
                 commit("initCart", response.data)
+                commit('cartLoading');
             }).catch(error => error.message)
     },
 
@@ -90,7 +109,7 @@ const actions = {
 
         let products = Array.isArray(payload) ? payload : [payload];
 
-        axios.post('/cart/add.js', {
+        return axios.post('/cart/add.js', {
             items: products
         }, headerConfigs).then(() => {
             dispatch('initCart').then(() => dispatch('show'))
@@ -98,14 +117,14 @@ const actions = {
     },
 
     updateItem({ commit }, { product, quantity }) {
-        console.log(product, quantity)
-
-        axios.post("/cart/update.js",
+        commit('cartLoading');
+        return axios.post("/cart/update.js",
             {
                 updates: { [product.key]: quantity }
             }, headerConfigs)
             .then(response => {
                 commit("initCart", response.data)
+                commit('cartLoading');
             }).catch(error => error.message)
     }
 }

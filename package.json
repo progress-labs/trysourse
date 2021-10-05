@@ -22,6 +22,7 @@
     "fix:shopify": "cd shopify && shopify theme check -a"
   },
   "dependencies": {
+    "@shopify/theme-currency": "^4.1.1",
     "@tailwindcss/forms": "^0.3.3",
     "axios": "^0.21.4",
     "swiper": "^7.0.6",
