@@ -3,6 +3,7 @@
     <div class="flex flex-col md:flex-row gap-7 md:gap-10 mt-10 md:mt-20">
       <div class="flex">
         <input
+          v-model="doesItHaveSubscription"
           class="
             rounded-full
             p-3
@@ -17,8 +18,7 @@
           name="subscription"
           type="radio"
           :value="true"
-          v-model="doesItHaveSubscription"
-        />
+        >
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoneyValue(discountedPrice) }}
@@ -31,6 +31,7 @@
       </div>
       <div class="flex">
         <input
+          v-model="doesItHaveSubscription"
           class="
             rounded-full
             p-3
@@ -45,8 +46,7 @@
           name="subscription"
           type="radio"
           :value="false"
-          v-model="doesItHaveSubscription"
-        />
+        >
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoney(product.price) }} - One time purchase
@@ -98,6 +98,7 @@
             −
           </button>
           <input
+            v-model="quantity"
             type="number"
             class="
               py-0.5
@@ -111,8 +112,7 @@
               font-semibold
               text-md text-neutrals-gray-dark
             "
-            v-model="quantity"
-          />
+          >
           <button
             class="
               py-0.5

@@ -34,7 +34,10 @@
       />
       <div class="m-5 md:m-10 relative flex-1 flex flex-col justify-between">
         <div>
-          <span class="cursor-pointer block" @click="toggle">
+          <span
+            class="cursor-pointer block"
+            @click="toggle"
+          >
             <svg
               class="ml-auto"
               width="23"
@@ -63,13 +66,15 @@
               md:pb-8
             "
           >
-            <h4 class="font-semibold text-primary text-3xl">Your cart</h4>
+            <h4 class="font-semibold text-primary text-3xl">
+              Your cart
+            </h4>
             <div class="flex items-center">
               <img
                 src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/icon-cart.static_300x.png?v=4433916468253890482"
                 class="w-6"
                 alt="icon"
-              />
+              >
               <span class="font-semibold text-primary ml-1 block">{{
                 cartItems
               }}</span>
@@ -79,28 +84,32 @@
         <div class="relative overflow-auto flex flex-1">
           <div class="pt-6 md:pt-12 max-h-[50vh] w-full">
             <div
-              class="flex mb-5 md:mb-10"
               v-for="product in cart.items"
               :key="product.id"
+              class="flex mb-5 md:mb-10"
             >
-              <a href="/" class="w-1/6">
+              <a
+                href="/"
+                class="w-1/6"
+              >
                 <img
                   :src="product.featured_image.url"
                   class="w-12 md:w-20 h-auto mx-auto"
                   alt="product image"
-                />
+                >
               </a>
               <div class="ml-5 md:ml-10 w-5/6">
                 <div class="flex justify-between">
                   <div>
-                    <a href="/" class="font-bold md:text-lg text-primary"
-                      >{{ product.product_title }}
+                    <a
+                      href="/"
+                      class="font-bold md:text-lg text-primary"
+                    >{{ product.product_title }}
                       {{
                         product.selling_plan_allocation
                           ? "(Monthly Subscription)"
                           : null
-                      }}</a
-                    >
+                      }}</a>
                     <p class="text-sm text-neutrals-gray block">
                       {{ product.quantity }}-month(s) supply
                     </p>
@@ -134,6 +143,7 @@
                       −
                     </button>
                     <input
+                      v-model="product.quantity"
                       type="number"
                       class="
                         input-no-arrows
@@ -147,8 +157,7 @@
                         bg-neutrals-white-bone
                         border-0
                       "
-                      v-model="product.quantity"
-                    />
+                    >
                     <button
                       class="
                         text-neutrals-gray-dark
@@ -189,14 +198,14 @@
               </div>
               <div class="hidden md:block">
                 <div
-                  class="font-semibold text-neutrals-gray-light text-sm mt-2"
                   v-if="valueToFreeShipping != 0"
+                  class="font-semibold text-neutrals-gray-light text-sm mt-2"
                 >
                   You’re only {{ valueToFreeShipping }} away from free shipping
                 </div>
                 <div
-                  class="font-semibold text-neutrals-gray-light text-sm mt-2"
                   v-else
+                  class="font-semibold text-neutrals-gray-light text-sm mt-2"
                 >
                   Congrats, you got free shipping!
                 </div>
@@ -244,8 +253,7 @@
               md:mt-10
               text-center
             "
-            >Free shipping on all subscriptions</span
-          >
+          >Free shipping on all subscriptions</span>
         </div>
       </div>
     </div>
