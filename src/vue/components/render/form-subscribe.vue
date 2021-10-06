@@ -2,10 +2,11 @@
   <div>
     <form
       v-if="!formSubmitted"
-      @submit.prevent="formSubmit"
       class="flex w-full mt-6"
+      @submit.prevent="formSubmit"
     >
       <input
+        v-model="form.email"
         class="
           w-2/3
           md:w-3/4
@@ -20,8 +21,7 @@
         "
         placeholder="Email Address"
         type="email"
-        v-model="form.email"
-      />
+      >
       <button
         class="
           w-1/3
