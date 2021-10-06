@@ -54,3 +54,37 @@ html {
 [v-cloak] {
   display: none !important;
 }
+
+.swiper.product-featured-image,
+.swiper.product-thumbnails {
+  @apply h-auto;
+}
+
+/* Ovewriting recharge stuff */
+.rc_layout__container {
+  padding: 6rem 0;
+}
+
+.rc_layout__container .row.grid {
+  justify-content: center;
+  display: flex !important;
+}
+
+.recharge .rc_layout__full {
+  justify-content: center;
+}
+
+.rc_layout__container .flex,
+.rc_layout__container .child-flex > * {
+  flex: none !important;
+}
+
+.jdgm-preview-badge .jdgm-star.jdgm-star,
+.jdgm-prev-badge__text {
+  @apply text-bright-orange font-semibold text-sm;
+}
+
+.product-item-stars .jdgm-preview-badge .jdgm-star.jdgm-star,
+.product-item-stars .jdgm-prev-badge__text {
+  @apply text-primary font-semibold text-sm;
+}

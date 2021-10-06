@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="{{ request.locale.iso_code }}">
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin="crossorigin">
     <link rel="preload" href="{{ 'bundle.css' | asset_url }}" as="style">
     <link rel="preload" href="{{ 'bundle.js' | asset_url }}" as="script">
 
@@ -17,6 +18,8 @@
 
     {% render 'font' %}
 
+    {% render 'judgeme_core' %}
+
     {{ 'bundle.css' | asset_url | stylesheet_tag }}
 
     <!-- header hook for Shopify plugins -->
@@ -24,7 +27,7 @@
   </head>
 
   <body class="bg-neutrals-white-bone">
-    <div {% unless request.page_type == 'captcha' %}id="app"{% endunless %}>
+    <div {% unless request.page_type == 'captcha' %} id="app" {% endunless %}>
       {% section 'header' %}
       {% section 'cart' %}
 
@@ -38,4 +41,5 @@
     <!-- webpack bundle -->
     <script src="{{ 'bundle.js' | asset_url }}" defer="defer"></script>
   </body>
+
 </html>

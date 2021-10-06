@@ -9,6 +9,7 @@ const path = require('path')
 module.exports = {
   mode: 'jit',
   darkMode: false,
+  important: true,
   theme: {
     fontFamily: {
       header: ['Surt-RegularExtended', "sans-serif"],

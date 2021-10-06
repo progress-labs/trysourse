@@ -7,36 +7,44 @@
             </span>
             <div class="flex flex-col lg:flex-row justify-between mt-12">
                 <div class="w-full lg:w-2/5">
-                    <div class="relative w-full lg:mt-20">
-                        <div class="absolute -bottom-16 -left-3 hidden lg:block">
-                            <img src="{{ 'low-sugar.static.png' | asset_img_url: '1000x' }}" class="w-full" alt="product image" />
-                        </div>
+                    <renderless-product-images v-slot="{ setThumbsSwiper, thumbsSwiper }">
                         <div>
-                            <img src="{{ 'product-image-pdp.static.png' | asset_img_url: '1000x' }}" class="w-full" alt="image" />
+                            {% if product.images.size > 1 %}
+                            <div
+                                style="--swiper-navigation-color: #333; --swiper-pagination-color: #333"
+                                class="swiper product-featured-image"
+                            >
+                                <div class="swiper-wrapper">
+                                    {% for image in product.images %}
+                                    <div class="swiper-slide">
+                                        <img src="{{ image | img_url: '1000x' }}" class="w-full h-84 md:h-120 object-cover" />
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                            </div>
+
+                            <div thumbsSlider="" class="swiper product-thumbnails mt-8">
+                                <div class="swiper-wrapper ">
+                                    {% for image in product.images %}
+                                    <div class="swiper-slide mr-3 lg:mr-6">
+                                        <img src="{{ image | img_url: '300x' }}" class="h-16 md:h-28 w-full object-cover" />
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            {% else %}
+                                <img src="{{ product.featured_image | img_url: '1000x' }}" alt="" class="w-full" />
+                            {% endif %}
                         </div>
-                    </div>
-                    <div class="w-1/2 lg:w-2/3 mx-auto flex mt-10 lg:mt-24">
-                        <div class="mr-3 lg:mr-6">
-                            <img src="{{ 'product-01.static.png' | asset_img_url: '1000x' }}" class="w-full" alt="product image" />
-                        </div>
-                        <div class="mr-3 lg:mr-6">
-                            <img src="{{ 'product-02.static.png' | asset_img_url: '1000x' }}" class="w-full" alt="product image" />
-                        </div>
-                        <div class="lg:mr-6">
-                            <img src="{{ 'product-03.static.png' | asset_img_url: '1000x' }}" class="w-full" alt="product image" />
-                        </div>
-                    </div>
+                    </renderless-product-images>
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0">
-                    <div class="flex flex-col md:flex-row justify-between">
-                        <h2 class="font-header font-bold text-bright-pink text-4xl md:text-5xl">{{ product.title }}</h2>
-                        <div class="flex items-center mt-5">
-                            {% for item in (1..5) %}
-                            <span class="block">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="fill: #EF995E;" ><path fill="none" d="M0 0h24v24H0z"/><path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-                            </span>
-                            {% endfor %}
-                            <a href="/" class="font-semibold text-sm text-bright-orange underline ml-2">301 Ratings</a>
+                    <div class="flex flex-col md:flex-row justify-between items-center">
+                        <h2 class="font-header font-bold  text-4xl md:text-5xl text-bright-pink" style="{% if product.metafields.product.accent_color %} color: {{ product.metafields.product.accent_color }};{% endif %}">{{ product.title }}</h2>
+                        <div>
+                            {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
                         </div>
                     </div>
                     <renderless-product-tabs v-slot="{
@@ -44,6 +52,7 @@
                      }">
                         <div class="flex gap-7 md:gap-10 mt-10 md:mt-16">
                             <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 border-b-4  tracking-widest border-transparent cursor-pointer"
+                            style="{% if product.metafields.product.accent_color %} border-color: {{ product.metafields.product.accent_color }} !important;{% endif %}"
                             :class="activeTab == 'description' ? '!border-bright-pink' : null" @click="changeTab('description')">Description</div>
                             {% if product.metafields.product_tabs.how_title %}
                                 <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 border-b-4 tracking-widest border-transparent cursor-pointer" :class="activeTab == 'how' ? '!border-bright-pink' : null" @click="changeTab('how')">How to use</div>
@@ -84,7 +93,7 @@
                         </div>
                     </renderless-product-tabs>
                     <div>
-                        <render-product-form :product="{{ product | json | replace: '"', "'" }}"></render-product-form>
+                        <render-product-form :product="{{ product | json | replace: '"', "'" }}" color="{{ product.metafields.product.accent_color | remove: '#'}}"></render-product-form>
                         <div class="text-sm text-neutrals-gray-light mt-8">
                             Free Shipping. Cancel whenever. Ships in 1 week.
                         </div>
@@ -93,4 +102,105 @@
             </div>
         </div>
     </div>
+</div>
+
+{% if product.metafields.product.text_image_title %}
+   <div class="bg-neutrals-white-bone pt-24 md:pt-36 xl:pt-24">
+    <div class="container">
+        <div class="lg:w-5/6 mx-auto flex flex-col-reverse md:flex-row justify-between items-center">
+            <div class="md:w-[55%] font-header font-semibold text-neutrals-gray text-3xl md:text-4xl lg:text-5xl mt-5 md:mt-0">
+                {{ product.metafields.product.text_image_title }}
+            </div>
+            <div class="w-[45%] md:w-auto mx-auto ">
+                <img src="{{ product.metafields.product.text_image_image[0].src }}" alt="image" />
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+
+{% if product.metafields.product.columns_two_title.size > 0 %}
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-24 md:pt-48">
+        <div class="w-full lg:w-2/3 mx-auto ">
+            <div class="grid grid-cols-1 gap-14 md:grid-cols-2 md:gap-16 lg:gap-24">
+                {% for column in product.metafields.product.columns_two_title %}
+                    <div>
+                        <div>
+                            <img src="{{ product.metafields.product.columns_two_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-56 h-56" alt="image">
+                        </div>
+                        <h4 class="font-header font-bold text-bright-pink mt-5 text-center md:text-left text-2xl">{{ column }}</h4>
+                        <div class="font-semibold text-[#858585] pt-3">
+                            {{ product.metafields.product.columns_two_content[forloop.index0] }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product.metafields.product.columns_three_title.size > 0 %}
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-24 md:pt-48">
+        <div class="w-full lg:w-11/12 mx-auto">
+            <div class="grid grid-cols-1 gap-14 md:gap-10 md:grid-cols-3 lg:gap-24">
+                {% for column in product.metafields.product.columns_three_title %}
+                    <div>
+                        <div>
+                            <img src="{{ product.metafields.product.columns_three_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-32 h-32" alt="image">
+                        </div>
+                        <h4 class="font-header font-bold text-bright-pink mt-5 text-center md:text-left text-lg">{{ column }}</h4>
+                        <div class="font-semibold text-[#858585] pt-3">
+                            {{ product.metafields.product.columns_three_content[forloop.index0] }}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product.metafields.product.why_title %}
+<div class="bg-neutrals-white-bone pt-24 md:pt-48">
+    <div class="container">
+        <div class="w-full md:w-3/4 lg:w-1/2 mx-auto">
+            <div class="relative">
+                <div class="transform -rotate-90 text-vertical -translate-y-1/2 absolute -left-12 md:-left-8 top-1/2 bottom-0 font-header font-bold text-bright-pink text-2xl uppercase">
+                    {{ product.metafields.product.why_title }}
+                </div>
+                <div class="font-semibold text-neutrals-gray md:text-lg ml-16 md:ml-24">
+                    {{ product.metafields.product.why_content }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+{% if product.metafields.product.community_username.size > 0 %}
+<div class="bg-neutrals-white-bone">
+    <div class="container pt-24 md:pt-36">
+        <div class="lg:w-11/12 mx-auto">
+            <h2 class="font-header font-black text-primary text-3xl md:text-4xl lg:text-5xl">{{ product.metafields.product.community_title }}</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-10 pt-20">
+                {% for item in product.metafields.product.community_username %}
+                    <div>
+                        <div>
+                            <img src="{{ product.metafields.product.community_image[forloop.index0][0].src }}" class="w-full" alt="image">
+                        </div>
+                        <a href="{{ product.metafields.product.community_link[forloop.index0] }}" class="font-header font-black text-lg text-neutrals-gray block mt-5">{{ item }}</a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<div class="pt-24 md:pt-36 container">
+    {% render 'judgeme_widgets', widget_type: 'judgeme_review_widget', concierge_install: false %}
 </div>

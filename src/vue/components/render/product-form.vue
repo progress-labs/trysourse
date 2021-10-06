@@ -68,10 +68,13 @@
           rounded-l-3xl rounded-br-3xl
           mr-10
           inline-block
+          disabled:opacity-50 disabled:cursor-not-allowed
         "
+        :style="{ backgroundColor: `#${color}` }"
         @click="addToCart"
+        :disabled="!isSelectedVariantOutOfStock"
       >
-        Subscribe
+        {{ !isSelectedVariantOutOfStock ? 'Out of stock' : 'Subscribe' }}
       </button>
       <div class="w-1/3 md:w-1/6">
         <div
@@ -141,6 +144,10 @@ export default {
       type: Object,
       default: () => {},
     },
+    color: {
+        type: String,
+        default: '#C15D8D'
+    }
   },
   data() {
     return {
@@ -164,7 +171,7 @@ export default {
     discountedPrice: function () {
       let discount =
         (100 -
-          this.product.selling_plan_groups[0].selling_plans[0]
+          this.product.selling_plan_groups[0]?.selling_plans[0]
             .price_adjustments[0].value) /
         100;
       return this.product.price * discount;

@@ -8,15 +8,12 @@
     <div class="font-semibold text-neutrals-gray-light pt-1">
       {{ product.metafields.product.short_description }}
     </div>
-    <div class="flex items-center mt-5">
-      {% for item in (1..5) %}
-        <span class="block">
-          <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" width="24" height="24" style="fill: #4E4E74;">
-            <path fill="none" d="M0 0h24v24H0z"/>
-            <path d="M12 17l-5.878 3.59 1.598-6.7-5.23-4.48 6.865-.55L12 2.5l2.645 6.36 6.866.55-5.231 4.48 1.598 6.7z"/></svg>
-        </span>
-      {% endfor %}
-      <a href="/" class="font-semibold text-sm text-primary underline ml-2">301 Ratings</a>
+    <div class="flex items-center mt-5 product-item-stars">
+      {% render 'judgeme_widgets',
+      widget_type: 'judgeme_preview_badge',
+      jm_style: '',
+      concierge_install: false,
+      product: product %}
     </div>
     <button @click.prevent="addToCart('{{ product.variants[0].id }}')" class="font-black text-bright-lila bg-primary px-10 py-3 rounded-tl-3xl rounded-br-3xl mt-5 flex justify-center items-center w-full">
       <svg v-cloak="v-cloak" v-show="loading" class="animate-spin -ml-1 mr-3 h-5 w-5 text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24">
