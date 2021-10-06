@@ -71,8 +71,8 @@
           disabled:opacity-50 disabled:cursor-not-allowed
         "
         :style="{ backgroundColor: `#${color}` }"
-        @click="addToCart"
         :disabled="!isSelectedVariantOutOfStock"
+        @click="addToCart"
       >
         {{ !isSelectedVariantOutOfStock ? 'Out of stock' : 'Subscribe' }}
       </button>
