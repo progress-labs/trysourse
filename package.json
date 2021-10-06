@@ -25,6 +25,7 @@
     "@shopify/theme-currency": "^4.1.1",
     "@tailwindcss/forms": "^0.3.3",
     "axios": "^0.21.4",
+    "klaviyo-subscribe": "^1.0.0",
     "swiper": "^7.0.6",
     "tailwindcss": "^2.2.7",
     "vue": "^3.1.5",
