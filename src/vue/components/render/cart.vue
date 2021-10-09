@@ -34,10 +34,7 @@
       />
       <div class="m-5 md:m-10 relative flex-1 flex flex-col justify-between">
         <div>
-          <span
-            class="cursor-pointer block"
-            @click="toggle"
-          >
+          <span class="cursor-pointer block" @click="toggle">
             <svg
               class="ml-auto"
               width="23"
@@ -66,15 +63,27 @@
               md:pb-8
             "
           >
-            <h4 class="font-semibold text-primary text-3xl">
-              Your cart
-            </h4>
+            <h4 class="font-semibold text-primary text-3xl">Your cart</h4>
             <div class="flex items-center">
-              <img
-                src="//cdn.shopify.com/s/files/1/0359/5639/2074/t/29/assets/icon-cart.static_300x.png?v=4433916468253890482"
-                class="w-6"
-                alt="icon"
-              >
+              <span>
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.0285 16.6175C18.7243 18.5646 17.0472 20 15.0765 20L6.92353 20C4.9528 20 3.27572 18.5646 2.97148 16.6175L1.72148 8.61751C1.34244 6.19161 3.2182 4 5.67353 4L16.3265 4C18.7818 4 20.6576 6.19161 20.2785 8.61751L19.0285 16.6175Z"
+                    fill="#4E4E74"
+                  />
+                  <path
+                    d="M14 7C14 8.65685 12.6569 10 11 10C9.34315 10 8 8.65685 8 7"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+              </span>
               <span class="font-semibold text-primary ml-1 block">{{
                 cartItems
               }}</span>
@@ -88,28 +97,24 @@
               :key="product.id"
               class="flex mb-5 md:mb-10"
             >
-              <a
-                href="/"
-                class="w-1/6"
-              >
+              <a href="/" class="w-1/6">
                 <img
                   :src="product.featured_image.url"
                   class="w-12 md:w-20 h-auto mx-auto"
                   alt="product image"
-                >
+                />
               </a>
               <div class="ml-5 md:ml-10 w-5/6">
                 <div class="flex justify-between">
                   <div>
-                    <a
-                      href="/"
-                      class="font-bold md:text-lg text-primary"
-                    >{{ product.product_title }}
+                    <a href="/" class="font-bold md:text-lg text-primary"
+                      >{{ product.product_title }}
                       {{
                         product.selling_plan_allocation
                           ? "(Monthly Subscription)"
                           : null
-                      }}</a>
+                      }}</a
+                    >
                     <p class="text-sm text-neutrals-gray block">
                       {{ product.quantity }}-month(s) supply
                     </p>
@@ -157,7 +162,7 @@
                         bg-neutrals-white-bone
                         border-0
                       "
-                    >
+                    />
                     <button
                       class="
                         text-neutrals-gray-dark
@@ -253,7 +258,8 @@
               md:mt-10
               text-center
             "
-          >Free shipping on all subscriptions</span>
+            >Free shipping on all subscriptions</span
+          >
         </div>
       </div>
     </div>

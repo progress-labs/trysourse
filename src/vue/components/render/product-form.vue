@@ -18,7 +18,7 @@
           name="subscription"
           type="radio"
           :value="true"
-        >
+        />
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoneyValue(discountedPrice) }}
@@ -46,7 +46,7 @@
           name="subscription"
           type="radio"
           :value="false"
-        >
+        />
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoney(product.price) }} - One time purchase
@@ -70,11 +70,11 @@
           inline-block
           disabled:opacity-50 disabled:cursor-not-allowed
         "
-        :style="{ backgroundColor: `#${color}` }"
+        :style="{ backgroundColor: `#${color} !important` }"
         :disabled="!isSelectedVariantOutOfStock"
         @click="addToCart"
       >
-        {{ !isSelectedVariantOutOfStock ? 'Out of stock' : 'Subscribe' }}
+        {{ !isSelectedVariantOutOfStock ? "Out of stock" : "Subscribe" }}
       </button>
       <div class="w-1/3 md:w-1/6">
         <div
@@ -115,7 +115,7 @@
               font-semibold
               text-md text-neutrals-gray-dark
             "
-          >
+          />
           <button
             class="
               py-0.5
@@ -145,9 +145,9 @@ export default {
       default: () => {},
     },
     color: {
-        type: String,
-        default: '#C15D8D'
-    }
+      type: String,
+      default: "#C15D8D",
+    },
   },
   data() {
     return {

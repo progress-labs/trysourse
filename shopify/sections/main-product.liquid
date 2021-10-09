@@ -42,7 +42,7 @@
                 </div>
                 <div class="lg:w-1/2 mt-12 lg:mt-0">
                     <div class="flex flex-col md:flex-row justify-between items-center">
-                        <h2 class="font-header font-bold  text-4xl md:text-5xl text-bright-pink" style="{% if product.metafields.product.accent_color %} color: {{ product.metafields.product.accent_color }};{% endif %}">{{ product.title }}</h2>
+                        <h2 class="font-header font-bold  text-4xl md:text-5xl text-bright-pink" style="{% if product.metafields.product.accent_color %} color: {{ product.metafields.product.accent_color }} !important;{% endif %}">{{ product.title }}</h2>
                         <div>
                             {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false %}
                         </div>
