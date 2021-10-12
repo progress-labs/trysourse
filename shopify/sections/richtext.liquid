@@ -2,10 +2,12 @@
     <div class="container py-20 md:py-24">
         <div class="lg:w-5/6 mx-auto">
             <h3 class="font-semibold text-[#333333] text-4xl">{{ section.settings.title }}</h3>
-            <div class="font-semibold text-neutrals-gray text-2xl mt-8">
-                {{ section.settings.subtitle }}
-            </div>
-            <div class="font-semibold text-neutrals-gray text-xl mt-12" >
+            {% if section.settings.subtitle != blank %}
+                <div class="font-semibold text-neutrals-gray text-2xl mt-8 mb-12">
+                    {{ section.settings.subtitle }}
+                </div>
+            {% endif %}
+            <div class="font-semibold text-neutrals-gray text-xl" >
                 {{ section.settings.content }}
             </div>
         </div>
