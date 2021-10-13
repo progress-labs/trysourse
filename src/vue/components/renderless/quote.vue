@@ -3,7 +3,7 @@ import Swiper from "swiper/bundle";
 
 export default {
   mounted() {
-    var swiper = new Swiper(".mySwiper", {
+    const swiper = new Swiper(".mySwiper", {
       spaceBetween: 20,
       slidesPerView: 4,
       freeMode: true,
@@ -18,7 +18,7 @@ export default {
           }
       }
     });
-    var swiper2 = new Swiper(".mySwiper2", {
+    new Swiper(".mySwiper2", {
       spaceBetween: 10,
       navigation: {
         nextEl: ".swiper-button-next",

@@ -21,7 +21,7 @@
                                     </div>
                                     {% endfor %}
                                 </div>
-                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-nexthttps://trysourse.myshopify.com/admin/themes/127152128188/editor"></div>
                                 <div class="swiper-button-prev"></div>
                             </div>
 
@@ -123,10 +123,10 @@
 {% if product.metafields.product.columns_two_title.size > 0 %}
 <div class="bg-neutrals-white-bone">
     <div class="container pt-24 md:pt-48">
-        <div class="w-full lg:w-2/3 mx-auto ">
-            <div class="grid grid-cols-1 gap-14 md:grid-cols-2 md:gap-16 lg:gap-24">
+        <div class="w-full mx-auto {% if product.metafields.product.columns_two_title.size > 1 %}lg:w-2/3{% else %}lg:w-1/2{% endif %}">
+            <div class="flex flex-col md:flex-row gap-14 md:gap-16 lg:gap-24">
                 {% for column in product.metafields.product.columns_two_title %}
-                    <div>
+                    <div class="flex-1">
                         <div>
                             <img src="{{ product.metafields.product.columns_two_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-56 h-56" alt="image">
                         </div>
@@ -145,10 +145,10 @@
 {% if product.metafields.product.columns_three_title.size > 0 %}
 <div class="bg-neutrals-white-bone">
     <div class="container pt-24 md:pt-48">
-        <div class="w-full lg:w-11/12 mx-auto">
-            <div class="grid grid-cols-1 gap-14 md:gap-10 md:grid-cols-3 lg:gap-24">
+        <div class="w-full  mx-auto {% if product.metafields.product.columns_three_title.size == 2 %} lg:w-2/3 {% else %} lg:w-11/12 {% endif %}">
+            <div class="flex flex-col md:flex-row justify-center gap-14 md:gap-10 lg:gap-24">
                 {% for column in product.metafields.product.columns_three_title %}
-                    <div>
+                    <div class="flex-1">
                         <div>
                             <img src="{{ product.metafields.product.columns_three_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-32 h-32" alt="image">
                         </div>

@@ -68,7 +68,6 @@ export default {
     formSubmit() {
       subscribe(this.listId, this.form.email).then(() => {
         this.formSubmitted = true;
-        this.$emit("form-submitted");
       });
     },
   },
