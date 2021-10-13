@@ -16,13 +16,39 @@
     "1632252136b89f6faf": {
       "type": "richtext",
       "settings": {
+        "title": "",
+        "subtitle": "",
         "content": "<p>We started researching the industry and were shocked by the true scope of the problem. We couldn’t find a single company using clean ingredients.<\/p><p><br\/>As we started working, we were thrilled by one of our first discoveries: dark chocolate is an excellent delivery system for vitamins. Our first products are the result of our recent invention—plant-based functional candy. <\/p><p><br\/>Our mission is to design clean, delicious funcional foods using only sustainable ingredients. We want to make supplements fun and accessible for everyone.<br\/><br\/>We’re Jenne and Andrew, co-founders of Sourse.<\/p><p><br\/>The first time we met, we talked for hours about the future of food. We both held the belief that “functional” foods would become increasingly popular. Taking supplements can feel like medication, and we wanted to make this experience better.<\/p>"
       }
     },
-    "163225214532440681": {
-      "type": "richtext-with-logo",
+    "1634149168b5d51f67": {
+      "type": "signature",
+      "blocks": {
+        "685adf92-09fc-4976-9478-4b6233363b66": {
+          "type": "signature",
+          "settings": {
+            "founder_signature": "shopify:\/\/shop_images\/Hristo_Tsanev_Signature__transparent.png"
+          }
+        },
+        "ec861ad9-44c7-4c71-8400-45bb90060995": {
+          "type": "signature",
+          "settings": {
+            "founder_signature": "shopify:\/\/shop_images\/Hristo_Tsanev_Signature__transparent.png"
+          }
+        },
+        "d8818998-f425-4af2-8753-570977c22951": {
+          "type": "signature",
+          "settings": {
+            "founder_signature": "shopify:\/\/shop_images\/Hristo_Tsanev_Signature__transparent.png"
+          }
+        }
+      },
+      "block_order": [
+        "685adf92-09fc-4976-9478-4b6233363b66",
+        "ec861ad9-44c7-4c71-8400-45bb90060995",
+        "d8818998-f425-4af2-8753-570977c22951"
+      ],
       "settings": {
-        "content": "<p>We want to take the nauseating experience out of supplementing with products that taste great and are nourishing for even the strictest diets. A delicious daily ritual. That’s what we’re all about—we hope you enjoy! #EatYourVitamins<\/p>",
         "logo_image": "shopify:\/\/shop_images\/logo-badge-purple.static.png"
       }
     }
@@ -31,6 +57,6 @@
     "main",
     "1631322628063a622d",
     "1632252136b89f6faf",
-    "163225214532440681"
+    "1634149168b5d51f67"
   ]
 }

@@ -1,0 +1,49 @@
+<div class="bg-neutrals-white-bone">
+    <div class="container">
+        <div class="w-3/4 md:w-3/5 mx-auto">
+            <div class="flex flex-col md:flex-row gap-10 md:gap-16">
+                {% for block in section.blocks %}
+                <div>
+                    <img src="{{ block.settings.founder_signature| img_url: '1000x' }}" class="mx-auto" alt="image">
+                </div>
+            {% endfor %}
+            </div>
+            <div class="pt-10">
+                <img src="{{ section.settings.logo_image | img_url: '1000x' }}" class="mx-auto" alt="image">
+            </div>
+        </div>
+    </div>
+</div>
+{% schema %}
+
+{
+    "name": "Signature",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo_image",
+            "label": "Badge Logo"
+         }
+    ],
+    "blocks": [
+        {
+            "type": "signature",
+            "name": "Founder",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "founder_signature",
+                    "label": "Signature Image"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Signature",
+            "category": "Custom Sections"
+        }
+    ]
+}
+
+{% endschema %}
