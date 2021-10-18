@@ -9,6 +9,7 @@ input[type="number"].input-no-arrows::-webkit-outer-spin-button {
   margin: 0;
 }
 
+
 .mySwiper .swiper-slide img {
   @apply border-b-4 border-transparent pb-4;
 }

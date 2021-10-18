@@ -81,6 +81,9 @@ module.exports = {
                 '5xl': '10rem',
                 '6xl': '12rem',
             },
+            rotate: {
+                30: '-30deg',
+              },
             boxShadow: {
                 DEFAULT: '0px 1px 16px rgba(0, 0, 0, 0.15)',
             },
@@ -99,7 +102,6 @@ module.exports = {
                 "infinite": "999px"
             })
         },
-
         lineHeight: {
             none: '1',
             tight: '1.25',
