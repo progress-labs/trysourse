@@ -10,19 +10,19 @@
       "settings": {
         "background_color": "#efd5e5",
         "title": "Supplements designed with humans in mind",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sem quis nisi vestibulum dignissim at sit amet est. Etiam ligula quam, pulvinar porta lacinia in, iaculis elementum magna. <\/p>",
+        "content": "<p>Vitamin infused chocolates crafted with plant based ingredients proven to revitalize how you look and feel.<\/p>",
         "btn_text": "Shop Now",
         "btn_url": "\/",
-        "desktop_image": "shopify:\/\/shop_images\/bg-home-hero.static.png",
-        "mobile_image": "shopify:\/\/shop_images\/mobile-image_04ee2983-4fce-4adf-a982-e61570929f02.png",
+        "desktop_image": "shopify:\/\/shop_images\/Glow_Bites_Hand_-_resized.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Glow_Bites_Hand_-_resized.jpg",
         "logo_image": "shopify:\/\/shop_images\/logo-badge-purple.static.png"
       }
     },
     "1631280121ce6bcf1b": {
       "type": "images-with-text",
       "settings": {
-        "title": "Our story",
-        "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel sem quis nisi vestibulum dignissim at sit amet est. Etiam ligula quam, pulvinar porta lacinia in, iaculis elementum magna. <\/p>",
+        "title": "Why swallow pills when you can enjoy your vitamins?",
+        "content": "<p> We ♥ chocolate. But did you know it’s natural properties also make it a great delivery system for vitamins? Cocoa is a prebiotic, supporting your microbiome and enhancing your body's ability to absorb nutrients.<\/p>",
         "desktop_image": "shopify:\/\/shop_images\/about-desktop-image.png",
         "mobile_image": "shopify:\/\/shop_images\/about-mobile-image.png",
         "bg_image_01": "shopify:\/\/shop_images\/image_12.png",
@@ -78,7 +78,7 @@
     "16313078400c183d61": {
       "type": "product-blocks",
       "settings": {
-        "title": "Combinations",
+        "title": "Choose your treat(ment)",
         "content": "",
         "collection": "test-collection",
         "products_qty": 3
@@ -90,29 +90,29 @@
         "c102a8a4-2310-41cb-9f87-5104b18890ac": {
           "type": "quote",
           "settings": {
-            "quote_content": "<p>These clean ingredient dark chocolates are infused with plant-based collagen to improve skin moisture, texture, and elasticity in two weeks.<\/p>",
-            "quote_logo": "shopify:\/\/shop_images\/image_18.png"
+            "quote_content": "<p>It’s all the fun of eating adult M&M’s but with actual clinically proven results<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/The_Cut_12.47.29_AM.png"
           }
         },
         "7a078513-0cbf-435d-a424-014a7802a5ac": {
           "type": "quote",
           "settings": {
-            "quote_content": "<p>These clean ingredient dark chocolates are infused with plant-based collagen to improve skin moisture, texture, and elasticity in two weeks.<\/p>",
-            "quote_logo": "shopify:\/\/shop_images\/image_17.png"
+            "quote_content": "<p>Designing clean, delicious functional foods using only sustainable ingredients is kind of Sourse’s thing<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/Byrdie_12.47.29_AM.png"
           }
         },
         "293b4730-2ac0-4cdf-aaad-39684e08cd8e": {
           "type": "quote",
           "settings": {
-            "quote_content": "<p>These clean ingredient dark chocolates are infused with plant-based collagen to improve skin moisture, texture, and elasticity in two weeks.<\/p>",
-            "quote_logo": "shopify:\/\/shop_images\/image_16.png"
+            "quote_content": "<p>Dark chocolate morsels that are as good for you as they are delicious.<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/R29_2_12.47.29_AM.png"
           }
         },
         "09adf3e3-6a47-4982-b779-1cee6ab871a0": {
           "type": "quote",
           "settings": {
-            "quote_content": "<p>These clean ingredient dark chocolates are infused with plant-based moisture, texture, and elasticity in two weeks.<\/p>",
-            "quote_logo": "shopify:\/\/shop_images\/image_15.png"
+            "quote_content": "<p>Grown-ups don’t want to choke down gross vitamins. And thanks to these … they don’t have to<\/p>",
+            "quote_logo": "shopify:\/\/shop_images\/Forbes_12.47.29_AM.png"
           }
         }
       },
@@ -132,8 +132,8 @@
           "type": "ingredients",
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_10.png",
-            "ingredient_name": "B-12",
-            "ingredient_description": "<p>These clean ingredient dark chocolates are infused.<\/p>"
+            "ingredient_name": "100% plant based",
+            "ingredient_description": "<p>Minimally processed with no animal byproducts.<\/p>"
           }
         },
         "8ed48d66-6f8c-431a-a2b4-d2059d00d38c": {
@@ -141,15 +141,15 @@
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_11.png",
             "ingredient_name": "Chocolate",
-            "ingredient_description": "<p>These clean ingredient dark chocolates are infused.<\/p>"
+            "ingredient_description": "<p>Decadent truffles made with fair trade cocoa.<\/p>"
           }
         },
         "8fd21720-4e71-43fb-b4aa-54de436a5cac": {
           "type": "ingredients",
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_12.png",
-            "ingredient_name": "Collagen",
-            "ingredient_description": "<p>These clean ingredient dark chocolates are infused.<\/p>"
+            "ingredient_name": "Sustainable nutrients",
+            "ingredient_description": "<p>Premium quality and thoughtfully sourced.<\/p>"
           }
         }
       },
@@ -159,14 +159,14 @@
         "8fd21720-4e71-43fb-b4aa-54de436a5cac"
       ],
       "settings": {
-        "title": "Our Ingredients"
+        "title": "Our clean ingredients"
       }
     },
     "16312802913faebe1f": {
       "type": "text-with-image",
       "settings": {
-        "title": "Nothing Artificial",
-        "content": "<p>We created the first vitamin infused candy that you can feel good about. A delicious daily ritual.<\/p>",
+        "title": "More than a vitamin, better than a treat",
+        "content": "<p>We created a better vitamin with organic, whole food ingredients. This means no GMOs, artificial flavors and dyes, refined sugar, or sugar alcohols.<\/p>",
         "desktop_image": "shopify:\/\/shop_images\/image_14.png",
         "feature_image_01": "shopify:\/\/shop_images\/GF_Badge.png",
         "feature_image_02": "shopify:\/\/shop_images\/AF_Badge.png",

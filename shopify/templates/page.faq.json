@@ -14,29 +14,92 @@
         "a59ff82e-bba4-4265-a0b4-c96f426303ba": {
           "type": "text",
           "settings": {
-            "question": "Section Title 1",
-            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in lectus ultrices, vestibulum magna vel, laoreet risus. Nullam placerat massa ex, at placerat nisi tincidunt quis. Quisque at diam vel tellus faucibus placerat vitae ut erat. Maecenas mattis, urna nec feugiat rutrum, neque nisl vehicula lorem, et sodales ante est non diam. Nullam eros erat, venenatis vitae hendrerit id, venenatis euismod sapien. Curabitur non tortor pharetra, viverra turpis sit amet, dictum mi. Donec non suscipit orci.<\/p>"
+            "question": "Is Sourse made with clean ingredients?",
+            "answer": "<p>Clean can mean a lot of things and this is what it means for us. Our bites are made with sustainably sourced, minimally processed plant based ingredients that are free of artificial flavors and dyes, sugar alcohols, and refined sugar. Everything is organic, non GMO, and fair trade.<\/p>"
           }
         },
         "57f95cbe-acdd-4422-8084-c1189aa16dbc": {
           "type": "text",
           "settings": {
-            "question": "Section Title 2",
-            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in lectus ultrices, vestibulum magna vel, laoreet risus. Nullam placerat massa ex, at placerat nisi tincidunt quis. Quisque at diam vel tellus faucibus placerat vitae ut erat. Maecenas mattis, urna nec feugiat rutrum, neque nisl vehicula lorem, et sodales ante est non diam. Nullam eros erat, venenatis vitae hendrerit id, venenatis euismod sapien. Curabitur non tortor pharetra, viverra turpis sit amet, dictum mi. Donec non suscipit orci.<\/p>"
+            "question": "Is Sourse organic and non GMO?",
+            "answer": "<p>Yes, our bites are certified organic and all of our ingredients are non GMO. This means nothing was grown with synthetic pesticides, herbicides, fertilizers, genetic modification, irradiation, or sewage sludge.<\/p>"
           }
         },
         "ada8f02c-c8a0-47d8-997a-eda1e4bab622": {
           "type": "text",
           "settings": {
-            "question": "Section Title 3",
-            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in lectus ultrices, vestibulum magna vel, laoreet risus. Nullam placerat massa ex, at placerat nisi tincidunt quis. Quisque at diam vel tellus faucibus placerat vitae ut erat. Maecenas mattis, urna nec feugiat rutrum, neque nisl vehicula lorem, et sodales ante est non diam. Nullam eros erat, venenatis vitae hendrerit id, venenatis euismod sapien. Curabitur non tortor pharetra, viverra turpis sit amet, dictum mi. Donec non suscipit orci.<\/p>"
+            "question": "Is Sourse fair trade?",
+            "answer": "<p>Yes, our premium cocoa comes from fair trade chocolate farms in Brazil.<\/p>"
           }
         },
         "3177110e-d83f-4015-91fd-67b5d9fa1e18": {
           "type": "text",
           "settings": {
-            "question": "Section Title 4",
-            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in lectus ultrices, vestibulum magna vel, laoreet risus. Nullam placerat massa ex, at placerat nisi tincidunt quis. Quisque at diam vel tellus faucibus placerat vitae ut erat. Maecenas mattis, urna nec feugiat rutrum, neque nisl vehicula lorem, et sodales ante est non diam. Nullam eros erat, venenatis vitae hendrerit id, venenatis euismod sapien. Curabitur non tortor pharetra, viverra turpis sit amet, dictum mi. Donec non suscipit orci.<\/p>"
+            "question": "Is Sourse gluten free?",
+            "answer": "<p>Yes, our bites are manufactured in a certified gluten free facility with strict standards and independent third party testing.<\/p><p><br\/><\/p><p>Glow Bites contain ceramides derived from wheat, which undergo an extraction and purification process that completely eliminates gluten. However, if you have a severe wheat allergy we advise against eating Glow Bites. <\/p>"
+          }
+        },
+        "9ae72967-ad85-4fb4-b119-3c5e5280435e": {
+          "type": "text",
+          "settings": {
+            "question": "Is Sourse vegan?",
+            "answer": "<p>Yes. Our bites are made with 100% plant based ingredients—some of which are alternatives to ones commonly animal-derived—making Sourse a great option for vegans and vegetarians.<\/p><p><br\/><\/p><p>While we don’t add any dairy, we do manufacture in a shared facility. If you have a severe milk allergy we advise against eating Sourse.<\/p>"
+          }
+        },
+        "62532f05-3acf-4694-bcf6-3d46f652482d": {
+          "type": "text",
+          "settings": {
+            "question": "Is Sourse keto friendly?",
+            "answer": "<p>Yes, our bites are good for anyone on a ketogenic or low carb diet. Each serving (two bites) has just 2 g sugar and 2 g carbs.<\/p>"
+          }
+        },
+        "fd569dca-e1fc-4e2d-8c88-2d746fa0e9b5": {
+          "type": "text",
+          "settings": {
+            "question": "Is Sourse kosher?",
+            "answer": "<p>Yes, our bites are manufactured in a certified kosher facility with strict standards and routine testing by OK Kosher experts. We can be independently verified <a href=\"https:\/\/www.ok.org\/consumers\/kosher-food-guide\" target=\"_blank\" title=\"OK Kosher Product Search\"><span style=\"text-decoration:underline\">here<\/span><\/a>.<\/p>"
+          }
+        },
+        "41686dbb-9861-457d-a969-6b1db99eef41": {
+          "type": "text",
+          "settings": {
+            "question": "Is Sourse safe for those with nut allergies?",
+            "answer": "<p>Our bites are free of nuts, however, we do manufacture in a shared facility. If you have a severe nut allergy we advise against eating Sourse.<\/p>"
+          }
+        },
+        "a9e24874-9be8-465a-b5f4-ca40e00b5330": {
+          "type": "text",
+          "settings": {
+            "question": "Is Sourse safe for children or those pregnant\/breastfeeding?",
+            "answer": "<p>Our bites are formulated for non pregnant\/breastfeeding adults. We recommend consulting with a healthcare practitioner first.<\/p>"
+          }
+        },
+        "c5f5b361-7c53-486c-ac0b-764ed96836ea": {
+          "type": "text",
+          "settings": {
+            "question": "Where is Sourse made?",
+            "answer": "<p>Our bites are made in California and all ingredients, except our cocoa, come from US suppliers.<\/p>"
+          }
+        },
+        "df85a40e-d533-4f70-875d-d6f0a9938d1e": {
+          "type": "text",
+          "settings": {
+            "question": "Where should I store Sourse?",
+            "answer": "<p>We recommend sealing your bites and storing them in a cool, dry place that’s below 75 degrees to prevent melting. Refrigeration optional, but not necessary.<\/p>"
+          }
+        },
+        "776042dc-66e2-474d-a936-dc4659db33ee": {
+          "type": "text",
+          "settings": {
+            "question": "Does Sourse have a shelf life?",
+            "answer": "<p>Our bites have an 18 month shelf life. You can find the expiration date on the back of each pouch.<\/p>"
+          }
+        },
+        "b31b6ea1-ef05-4673-b321-76761288a395": {
+          "type": "text",
+          "settings": {
+            "question": "Where can I buy Sourse?",
+            "answer": "<p>The best place to buy Sourse is right here.<\/p>"
           }
         }
       },
@@ -44,10 +107,19 @@
         "a59ff82e-bba4-4265-a0b4-c96f426303ba",
         "57f95cbe-acdd-4422-8084-c1189aa16dbc",
         "ada8f02c-c8a0-47d8-997a-eda1e4bab622",
-        "3177110e-d83f-4015-91fd-67b5d9fa1e18"
+        "3177110e-d83f-4015-91fd-67b5d9fa1e18",
+        "9ae72967-ad85-4fb4-b119-3c5e5280435e",
+        "62532f05-3acf-4694-bcf6-3d46f652482d",
+        "fd569dca-e1fc-4e2d-8c88-2d746fa0e9b5",
+        "41686dbb-9861-457d-a969-6b1db99eef41",
+        "a9e24874-9be8-465a-b5f4-ca40e00b5330",
+        "c5f5b361-7c53-486c-ac0b-764ed96836ea",
+        "df85a40e-d533-4f70-875d-d6f0a9938d1e",
+        "776042dc-66e2-474d-a936-dc4659db33ee",
+        "b31b6ea1-ef05-4673-b321-76761288a395"
       ],
       "settings": {
-        "category_title": "Header"
+        "category_title": "Product"
       }
     },
     "1631569117a047df2c": {
@@ -56,23 +128,172 @@
         "aedd18c9-18d4-4a38-a5ce-ba20c6094520": {
           "type": "text",
           "settings": {
-            "question": "Section Title 5",
-            "answer": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras in lectus ultrices, vestibulum magna vel, laoreet risus. Nullam placerat massa ex, at placerat nisi tincidunt quis. Quisque at diam vel tellus faucibus placerat vitae ut erat. Maecenas mattis, urna nec feugiat rutrum, neque nisl vehicula lorem, et sodales ante est non diam. Nullam eros erat, venenatis vitae hendrerit id, venenatis euismod sapien. Curabitur non tortor pharetra, viverra turpis sit amet, dictum mi. Donec non suscipit orci.<\/p>"
+            "question": "Is Sourse packaging sustainable?",
+            "answer": "<p>We use 30% post consumer recycled (PCR) content for each pouch and most material, including the packaging your order comes in, is recyclable. The only thing that isn’t recyclable is the compostable insulation that keeps your order fresh. <\/p>"
+          }
+        },
+        "78fd02a2-9da2-47f7-8725-ad8220dbbd75": {
+          "type": "text",
+          "settings": {
+            "question": "How do you package chocolate so it doesn’t melt?",
+            "answer": "<p>We use quick shipping based on your location and compostable insulation to keep everything fresh. When you receive your order, unpack it right away and store your bites in a cool, dry place that’s below 75 degrees.<\/p>"
           }
         }
       },
       "block_order": [
-        "aedd18c9-18d4-4a38-a5ce-ba20c6094520"
+        "aedd18c9-18d4-4a38-a5ce-ba20c6094520",
+        "78fd02a2-9da2-47f7-8725-ad8220dbbd75"
       ],
       "settings": {
-        "category_title": "Header"
+        "category_title": "Packaging"
       }
     },
-    "16315691812b399bb4": {
-      "type": "richtext-with-logo",
+    "16342746985fae4645": {
+      "type": "faq-blocks",
+      "blocks": {
+        "b456ae1e-62bf-47f2-9269-561e358e7c68": {
+          "type": "text",
+          "settings": {
+            "question": "Where does Sourse ship?",
+            "answer": "<p>We currently ship within the US only. We hope to expand soon so check back for updates or sign up for our newsletter to be notified.<\/p>"
+          }
+        },
+        "3198861b-9901-4d89-86cf-816cd4a7d915": {
+          "type": "text",
+          "settings": {
+            "question": "When can I expect my order to arrive?",
+            "answer": "<p>Once your order is placed, we’ll process it within 1 business day. We offer free standard shipping (5-7 days) and $15 expedited shipping (2 days).<\/p>"
+          }
+        },
+        "e3fd6239-43fb-4217-96b8-b0824cf3cc85": {
+          "type": "text",
+          "settings": {
+            "question": "Can I make changes to my order after it’s been placed?",
+            "answer": "<p>If you’d like to make any changes, email us right away at chat@trysourse.com. We’ll do our best to catch your order before it ships.<\/p>"
+          }
+        },
+        "6b21f55c-dacd-4dfa-a6f5-a2211aeded58": {
+          "type": "text",
+          "settings": {
+            "question": "How do I check the status of my order?",
+            "answer": "<p>Once your order ships, we’ll send you a shipping confirmation email with tracking info. If tracking isn’t available yet, give it 24 hours to update.<\/p>"
+          }
+        },
+        "095603fe-1001-4c2d-89db-ce572426f49f": {
+          "type": "text",
+          "settings": {
+            "question": "What if my order arrives damaged or is missing?",
+            "answer": "<p>If anything is wrong with your order or it’s marked delivered but you don’t see it, email us right away at chat@trysourse.com.<\/p>"
+          }
+        },
+        "c81e9ade-3cbb-4926-a6f3-f93aaa0d664d": {
+          "type": "text",
+          "settings": {
+            "question": "What payment methods do you accept?",
+            "answer": "<p>We accept Visa, Mastercard, American Express, Discover, Shop Pay, and Afterpay.<\/p>"
+          }
+        },
+        "a4599ee7-80d3-4532-b350-40c0b42c4229": {
+          "type": "text",
+          "settings": {
+            "question": "What’s your return policy?",
+            "answer": "<p>If you’re not happy with your bites for any reason, email us at chat@trysourse.com. We’ll help arrange a return for any unused portion of the product and refund your purchase in full.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b456ae1e-62bf-47f2-9269-561e358e7c68",
+        "3198861b-9901-4d89-86cf-816cd4a7d915",
+        "e3fd6239-43fb-4217-96b8-b0824cf3cc85",
+        "6b21f55c-dacd-4dfa-a6f5-a2211aeded58",
+        "095603fe-1001-4c2d-89db-ce572426f49f",
+        "c81e9ade-3cbb-4926-a6f3-f93aaa0d664d",
+        "a4599ee7-80d3-4532-b350-40c0b42c4229"
+      ],
       "settings": {
-        "content": "",
-        "logo_image": "shopify:\/\/shop_images\/logo-badge-purple.static.png"
+        "category_title": "Orders & Shipping"
+      }
+    },
+    "1634275531c188eb68": {
+      "type": "faq-blocks",
+      "blocks": {
+        "c7084ae6-5522-444c-97e5-cde9b1c58dcd": {
+          "type": "text",
+          "settings": {
+            "question": "How does the subscription work?",
+            "answer": "<p>We offer subscriptions to support you on your well being journey without interruption. Subscriptions ship monthly or every 2 months—always for free. There’s no minimum commitment and you can cancel at any time.<\/p>"
+          }
+        },
+        "e0d668f3-8a1c-4234-9c32-ee9e99163138": {
+          "type": "text",
+          "settings": {
+            "question": "Can I add or change a product in my subscription order?",
+            "answer": "<p>Yes. To add or remove products in an existing subscription, go to Account &gt; Manage Subscriptions and click \"<strong>Edit\" <\/strong>to the right of the subscription you’d like to update.<\/p>"
+          }
+        },
+        "6e06cc38-e846-4a56-8206-d0aa6ebd1c08": {
+          "type": "text",
+          "settings": {
+            "question": "Can I add one time purchases to my subscription order?",
+            "answer": "<p>Yes. To add a one time purchase to an existing subscription, go to Account &gt; Manage Subscriptions and click \"<strong>Edit\" <\/strong>to the right of the subscription you’d like to add to.<\/p>"
+          }
+        },
+        "a6d94fab-b660-4451-95dc-51c72d3d13c9": {
+          "type": "text",
+          "settings": {
+            "question": "How do I update my shipping address?",
+            "answer": "<p>To add, edit, or delete a shipping address, go to Account &gt; My Addresses. If you’re adding a new address for your next shipment, be sure to set it as your default address.<\/p>"
+          }
+        },
+        "8045c964-a4ff-41c7-938d-1811b33cdc34": {
+          "type": "text",
+          "settings": {
+            "question": "How do I update my billing info?",
+            "answer": "<p>To add or edit a card, go to Account &gt; Billing Info. If you’re adding a new card for your next shipment, be sure to set it as your default card.<\/p>"
+          }
+        },
+        "a87a2463-01be-43ad-af4b-3f1d4ef47442": {
+          "type": "text",
+          "settings": {
+            "question": "How do I update my shipping date?",
+            "answer": "<p>To update your shipping date, go to Account &gt; Manage Subscriptions and click \"<strong>Edit\" <\/strong>to the right of the subscription you’d like to update. You can also skip an upcoming order by clicking \"<strong>Skip<\/strong>.\"<\/p>"
+          }
+        },
+        "8b833923-ae11-4a07-915b-46d5138d2c4a": {
+          "type": "text",
+          "settings": {
+            "question": "When will my subscription be billed?",
+            "answer": "<p>Subscriptions are billed every 30 days on your shipping date. To see your shipping date, go to <span style=\"text-decoration:underline\">Manage Subscriptions<\/span> under your account.<\/p>"
+          }
+        },
+        "da19376a-100a-41cd-b181-f30470af019b": {
+          "type": "text",
+          "settings": {
+            "question": "How do I cancel my subscription?",
+            "answer": "<p>To cancel your subscription, go to <span style=\"text-decoration:underline\">Manage Subscriptions<\/span> under your account and click <strong>Edit <\/strong>to the right of the subscription you’d like to cancel.<\/p>"
+          }
+        },
+        "971598fa-f8a5-4ba2-8cd7-7b5357df73a9": {
+          "type": "text",
+          "settings": {
+            "question": "How do I resume my subscription?",
+            "answer": "<p>To restart your subscription, go to <span style=\"text-decoration:underline\">Manage Subscriptions<\/span> under your account and click <strong>Edit <\/strong>to the right of the subscription you’d like to resume.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "c7084ae6-5522-444c-97e5-cde9b1c58dcd",
+        "e0d668f3-8a1c-4234-9c32-ee9e99163138",
+        "6e06cc38-e846-4a56-8206-d0aa6ebd1c08",
+        "a6d94fab-b660-4451-95dc-51c72d3d13c9",
+        "8045c964-a4ff-41c7-938d-1811b33cdc34",
+        "a87a2463-01be-43ad-af4b-3f1d4ef47442",
+        "8b833923-ae11-4a07-915b-46d5138d2c4a",
+        "da19376a-100a-41cd-b181-f30470af019b",
+        "971598fa-f8a5-4ba2-8cd7-7b5357df73a9"
+      ],
+      "settings": {
+        "category_title": "Subscription"
       }
     }
   },
@@ -80,6 +301,7 @@
     "main",
     "16315690873bcca68b",
     "1631569117a047df2c",
-    "16315691812b399bb4"
+    "16342746985fae4645",
+    "1634275531c188eb68"
   ]
 }
