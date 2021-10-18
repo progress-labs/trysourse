@@ -14,8 +14,7 @@
         "btn_text": "Shop Now",
         "btn_url": "\/",
         "desktop_image": "shopify:\/\/shop_images\/Glow_Bites_Hand_-_resized.jpg",
-        "mobile_image": "shopify:\/\/shop_images\/Glow_Bites_Hand_-_resized.jpg",
-        "logo_image": "shopify:\/\/shop_images\/logo-badge-purple.static.png"
+        "mobile_image": "shopify:\/\/shop_images\/Glow_Bites_Hand_-_resized.jpg"
       }
     },
     "1631280121ce6bcf1b": {
@@ -80,8 +79,8 @@
       "settings": {
         "title": "Choose your treat(ment)",
         "content": "",
-        "collection": "test-collection",
-        "products_qty": 3
+        "collection": "shop-all",
+        "products_qty": 4
       }
     },
     "163129441467bc86ba": {

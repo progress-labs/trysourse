@@ -52,7 +52,6 @@
                      }">
                         <div class="flex gap-7 md:gap-10 mt-10 md:mt-16">
                             <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 border-b-4  tracking-widest border-transparent cursor-pointer"
-                            style="{% if product.metafields.product.accent_color %} border-color: {{ product.metafields.product.accent_color }} !important;{% endif %}"
                             :class="activeTab == 'description' ? '!border-bright-pink' : null" @click="changeTab('description')">Description</div>
                             {% if product.metafields.product_tabs.how_title %}
                                 <div class="font-bold text-xs text-neutrals-gray uppercase pb-2 border-b-4 tracking-widest border-transparent cursor-pointer" :class="activeTab == 'how' ? '!border-bright-pink' : null" @click="changeTab('how')">How to use</div>
@@ -72,7 +71,7 @@
                             </div>
                             <div class="md:w-3/4 md:ml-5 mt-5 md:mt-0">
                                 <div class="flex">
-                                    <div class="font-header font-semibold text-xl md:text-2xl text-neutrals-gray ml-2 py-0.5 product-tab-how-title">
+                                    <div class="font-header font-semibold text-xl md:text-2xl text-neutrals-gray product-tab-how-title">
                                         {{ product.metafields.product_tabs.how_title }}
                                     </div>
                                 </div>
@@ -83,19 +82,29 @@
 
                         </div>
                         {%- comment -%}TAB BENEFITS CONTENT{%- endcomment -%}
-                        <div  v-else-if="activeTab == 'benefits'" class="mt-10 md:mt-16">
+                        <div  v-else-if="activeTab == 'benefits'" class="mt-10 md:mt-14">
+                            {% if product.title == 'Glow Bites' %}
+                                <span class="font-semibold text-lg text-neutrals-gray">After 15 days:</span>
+                            {% endif %}
                             {% for benefit in product.metafields.product_tabs.benefit_name %}
                             <div class="flex items-center mt-4">
                                 <img src="{{ product.metafields.product_tabs.benefit_icon[forloop.index0][0].src }}" alt="" class="h-8 w-8 object-fill">
                                 <span class="block ml-5 font-semibold text-lg text-neutrals-gray">{{ benefit }}</span>
                             </div>
                             {% endfor %}
+                            {% if product.title == 'Glow Bites' %}
+                                <span class="font-semibold text-sm text-neutrals-gray block mt-8">*Results from a randomized controlled clinical study</span>
+                            {% endif %}
+                            {% if product.title == 'Mood Bites' %}
+                                <span class="font-semibold text-sm text-neutrals-gray block mt-8">*Results from a clinical study after two weeks</span>
+                                <span class="font-semibold text-sm text-neutrals-gray block mt-2">**Results from a clinical study after eight weeks</span>
+                        {% endif %}
                         </div>
                     </renderless-product-tabs>
                     <div>
                         <render-product-form :product="{{ product | json | replace: '"', "'" }}" color="{{ product.metafields.product.accent_color | remove: '#'}}"></render-product-form>
                         <div class="text-sm text-neutrals-gray-light mt-8">
-                            Free Shipping. Cancel whenever. Ships in 1 week.
+                            Free Shipping. Cancel whenever.
                         </div>
                     </div>
                 </div>
@@ -128,10 +137,10 @@
                 {% for column in product.metafields.product.columns_two_title %}
                     <div class="flex-1">
                         <div>
-                            <img src="{{ product.metafields.product.columns_two_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-56 h-56" alt="image">
+                            <img src="{{ product.metafields.product.columns_two_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto w-56 h-56" alt="image">
                         </div>
                         <h4 class="font-header font-bold text-bright-pink mt-5 text-center md:text-left text-2xl">{{ column }}</h4>
-                        <div class="font-semibold text-[#858585] pt-3">
+                        <div class="text font-semibold text-[#858585] pt-3">
                             {{ product.metafields.product.columns_two_content[forloop.index0] }}
                         </div>
                     </div>
@@ -148,12 +157,12 @@
         <div class="w-full  mx-auto {% if product.metafields.product.columns_three_title.size == 2 %} lg:w-2/3 {% else %} lg:w-11/12 {% endif %}">
             <div class="flex flex-col md:flex-row justify-center gap-14 md:gap-10 lg:gap-24">
                 {% for column in product.metafields.product.columns_three_title %}
-                    <div class="flex-1">
+                    <div class="flex-1 text-center">
                         <div>
-                            <img src="{{ product.metafields.product.columns_three_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto md:mx-0 w-32 h-32" alt="image">
+                            <img src="{{ product.metafields.product.columns_three_image[forloop.index0][0].src }}" class="border-4 border-bright-pink rounded-full mx-auto w-32 h-32" alt="image">
                         </div>
-                        <h4 class="font-header font-bold text-bright-pink mt-5 text-center md:text-left text-lg">{{ column }}</h4>
-                        <div class="font-semibold text-[#858585] pt-3">
+                        <h4 class="font-header font-bold text-bright-pink mt-5 text-lg">{{ column }}</h4>
+                        <div class="text font-semibold text-[#858585] pt-3">
                             {{ product.metafields.product.columns_three_content[forloop.index0] }}
                         </div>
                     </div>
@@ -172,7 +181,7 @@
                 <div class="transform -rotate-90 text-vertical -translate-y-1/2 absolute -left-12 md:-left-8 top-1/2 bottom-0 font-header font-bold text-bright-pink text-2xl uppercase">
                     {{ product.metafields.product.why_title }}
                 </div>
-                <div class="font-semibold text-neutrals-gray md:text-lg ml-16 md:ml-24">
+                <div class="text font-semibold text-neutrals-gray md:text-lg ml-16 md:ml-24">
                     {{ product.metafields.product.why_content }}
                 </div>
             </div>

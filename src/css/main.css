@@ -44,6 +44,10 @@ html {
   @apply font-body antialiased;
 }
 
+.text * {
+  font-family: 'Surt-Regular', sans-serif !important;
+}
+
 #rc_login {
   display: none !important;
 }

@@ -74,7 +74,7 @@
         :disabled="!isSelectedVariantOutOfStock"
         @click="addToCart"
       >
-        {{ !isSelectedVariantOutOfStock ? "Out of stock" : "Subscribe" }}
+        {{ !isSelectedVariantOutOfStock ? "Out of stock" : doesItHaveSubscription ? "Subscribe" : "Purchase" }}
       </button>
       <div class="w-1/3 md:w-1/6">
         <div
