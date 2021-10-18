@@ -9,7 +9,6 @@ input[type="number"].input-no-arrows::-webkit-outer-spin-button {
   margin: 0;
 }
 
-
 .mySwiper .swiper-slide img {
   @apply border-b-4 border-transparent pb-4;
 }
@@ -45,7 +44,7 @@ html {
 }
 
 .text * {
-  font-family: 'Surt-Regular', sans-serif !important;
+  font-family: "Surt-Regular", sans-serif !important;
 }
 
 #rc_login {
@@ -92,4 +91,34 @@ html {
 .product-item-stars .jdgm-preview-badge .jdgm-star.jdgm-star,
 .product-item-stars .jdgm-prev-badge__text {
   @apply text-primary font-semibold text-sm;
+}
+
+#conjured_save_advocate {
+  @apply font-header font-black text-xl text-bright-lila bg-primary px-10 py-3 rounded-l-5xl rounded-br-5xl inline-block mt-8;
+}
+
+#conjured_referral_name,
+#conjured_referral_email {
+  @apply w-full md:w-1/2 rounded-md text-neutrals-gray;
+}
+
+.template_advocate_signup_heading {
+  @apply font-header font-black text-primary text-5xl md:text-6xl xl:leading-16;
+}
+
+.template_advocate_signup_subheading {
+  @apply font-body font-semibold text-neutrals-gray text-lg my-5 xl:leading-9;
+}
+
+.conjured_image {
+  @apply mb-10;
+}
+
+.conjured_image img {
+  @apply max-h-188 rounded-tl-5xl md:rounded-tl-6xl md:rounded-br-6xl
+  rounded-br-5xl object-cover;
+}
+
+.conjured_content [type="checkbox"] {
+  @apply text-primary;
 }

@@ -78,8 +78,8 @@ const actions = {
         return axios
             .get("/cart.js")
             .then(response => {
-                commit("initCart", response.data)
                 commit('cartLoading');
+                commit("initCart", response.data)
                 return response.data
             })
             .catch(error => error.message)
