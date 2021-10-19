@@ -65,7 +65,7 @@
         class="
           font-header font-black
           text-white text-xl
-          bg-bright-pink
+          bg-bright-pink hover:bg-bright-purple duration-200 transition
           px-12
           py-3
           rounded-l-3xl rounded-br-3xl
@@ -73,7 +73,6 @@
           inline-block
           disabled:opacity-50 disabled:cursor-not-allowed
         "
-        :style="{ backgroundColor: `#${color} !important` }"
         :disabled="!isSelectedVariantOutOfStock"
         @click="addToCart"
       >
