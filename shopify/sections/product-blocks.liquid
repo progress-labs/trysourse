@@ -11,7 +11,7 @@
             </div>
             <div class="relative overflow-x-auto lg:overflow-hidden">
                 <div class=" lg:w-auto pb-6 lg:pb-0 {% if section.settings.products_qty == 3 %} w-2.5/1 md:w-1.5/1 lg:w-auto {% else %} w-3.5/1 md:w-2.05/1 lg:w-auto {% endif %}">
-                    <ul class="flex lg:grid gap-8 md:gap-10 {% if section.settings.products_qty == 2 %} md:grid-cols-2 md:gap-24 {% elsif section.settings.products_qty == 3 %} md:grid-cols-3 md:gap-18 {% else %} lg:grid-cols-4 lg:gap-10 {% endif %}">
+                    <ul class="flex lg:grid gap-8 md:gap-10 {% if section.settings.products_qty == 2 %} md:grid-cols-2 md:gap-24 {% elsif section.settings.products_qty == 3 %} md:grid-cols-3 md:gap-18 {% else %} lg:grid-cols-4 lg:gap-10 2xl:gap-8 {% endif %}">
                         {% for product in collections[section.settings.collection].products limit: section.settings.products_qty %}
                         <li class="">
                             {% render 'product-item', product: product %}
