@@ -24,9 +24,9 @@
         <div>
             <img src="{{ section.settings.mobile_image| img_url: '1000x' }}" class="w-full h-140  rounded-tl-6xl rounded-br-6xl object-cover" alt="image">
         </div>
-        <div class="absolute top-32 md:top-40 left-8 md:left-16 right-8 md:right-16 bottom-0">
+        <div class="pt-16 top-32 md:top-40 left-8 md:left-16 right-8 md:right-16 bottom-0">
             <h1 class="font-header font-black text-primary text-4xl md:text-5xl md:leading-14">{{ section.settings.title }}</h1>
-            <div class="font-body font-semibold text-white md:text-lg mt-5 md:leading-9">
+            <div class="font-body font-semibold text-primary md:text-lg mt-5 md:leading-9">
                 {{ section.settings.content }}
             </div>
             <a href="{{ section.settings.btn_url }}" class="font-header font-black text-xl text-bright-lila bg-primary hover:bg-bright-purple duration-200 transition px-10 py-3 rounded-l-5xl rounded-br-5xl inline-block mt-8">{{ section.settings.btn_text }}</a>
