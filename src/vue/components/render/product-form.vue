@@ -1,7 +1,10 @@
 <template>
   <div>
     <div class="flex flex-col md:flex-row gap-7 md:gap-10 mt-10 md:mt-20">
-      <div class="flex">
+      <div
+        class="flex"
+        v-if="product.title != 'Beauty Bites' && product.title != 'Mood Bites'"
+      >
         <input
           v-model="doesItHaveSubscription"
           class="
@@ -18,7 +21,7 @@
           name="subscription"
           type="radio"
           :value="true"
-        >
+        />
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoneyValue(discountedPrice) }}
@@ -46,7 +49,7 @@
           name="subscription"
           type="radio"
           :value="false"
-        >
+        />
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoney(product.price) }} - One time purchase
@@ -78,8 +81,8 @@
           !isSelectedVariantOutOfStock
             ? "Out of stock"
             : doesItHaveSubscription
-              ? "Subscribe"
-              : "Purchase"
+            ? "Subscribe"
+            : "Purchase"
         }}
       </button>
       <div class="w-1/3 md:w-1/6">
@@ -121,7 +124,7 @@
               font-semibold
               text-md text-neutrals-gray-dark
             "
-          >
+          />
           <button
             class="
               py-0.5
