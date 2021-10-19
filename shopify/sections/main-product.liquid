@@ -98,14 +98,21 @@
                             {% if product.title == 'Mood Bites' %}
                                 <span class="font-semibold text-sm text-neutrals-gray block mt-8">*Results from a clinical study after two weeks</span>
                                 <span class="font-semibold text-sm text-neutrals-gray block mt-2">**Results from a clinical study after eight weeks</span>
-                        {% endif %}
+                            {% endif %}
                         </div>
                     </renderless-product-tabs>
                     <div>
                         <render-product-form :product="{{ product | json | escape | replace: '"', "'" }}" color="{{ product.metafields.product.accent_color | remove: '#'}}"></render-product-form>
-                        <div class="text-sm text-neutrals-gray-light mt-8">
-                            Free Shipping. Cancel whenever.
-                        </div>
+                        {% if product.title == 'Glow Bites' %}
+                            <div class="text-sm text-neutrals-gray-light mt-8">
+                                Free Shipping. Cancel whenever.
+                            </div>
+                        {% endif %}
+                        {% if product.title == 'Hype Bites' %}
+                            <div class="text-sm text-neutrals-gray-light mt-8">
+                                Free Shipping. Cancel whenever.
+                            </div>
+                        {% endif %}
                     </div>
                 </div>
             </div>
