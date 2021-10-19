@@ -9,8 +9,8 @@
       "type": "hero-index",
       "settings": {
         "background_color": "#efd5e5",
-        "title": "Supplements designed with humans in mind",
-        "content": "<p>Vitamin infused chocolates crafted with plant based ingredients proven to revitalize how you look and feel.<\/p>",
+        "title": "The most delicious way to take your supplements",
+        "content": "<p>Vitamin infused chocolates crafted with plant-based ingredients proven to revitalize how you look and feel.<\/p>",
         "btn_text": "Shop Now",
         "btn_url": "shopify:\/\/collections\/shop-all",
         "desktop_image": "shopify:\/\/shop_images\/Glow_Bites_Hand_-_resized.jpg",
@@ -21,11 +21,11 @@
       "type": "images-with-text",
       "settings": {
         "title": "Why swallow pills when you can enjoy your vitamins?",
-        "content": "<p> We ♥ chocolate. But did you know it’s natural properties also make it a great delivery system for vitamins? Cocoa is a prebiotic, supporting your microbiome and enhancing your body's ability to absorb nutrients.<\/p>",
-        "desktop_image": "shopify:\/\/shop_images\/about-desktop-image.png",
-        "mobile_image": "shopify:\/\/shop_images\/about-mobile-image.png",
+        "content": "<p> We ♥ chocolate. But did you know it’s natural properties also make it a great delivery system for vitamins? Chocolate is a prebiotic, supporting your microbiome and enhancing your body's ability to absorb nutrients.<\/p>",
+        "desktop_image": "shopify:\/\/shop_images\/Bites_Home_page.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Bites_Home_page.jpg",
         "bg_image_01": "shopify:\/\/shop_images\/image_12.png",
-        "bg_image_02": "shopify:\/\/shop_images\/image_13.png"
+        "bg_image_02": "shopify:\/\/shop_images\/Mood_Bites_Hero_-_resized.jpg"
       }
     },
     "1631215439ea1860d6": {
@@ -132,7 +132,7 @@
           "type": "ingredients",
           "settings": {
             "ingredients_image": "shopify:\/\/shop_images\/Ellipse_10.png",
-            "ingredient_name": "100% plant based",
+            "ingredient_name": "100% plant-based",
             "ingredient_description": "<p>Minimally processed with no animal byproducts.<\/p>"
           }
         },
