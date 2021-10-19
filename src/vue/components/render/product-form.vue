@@ -18,7 +18,7 @@
           name="subscription"
           type="radio"
           :value="true"
-        >
+        />
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoneyValue(discountedPrice) }}
@@ -46,7 +46,7 @@
           name="subscription"
           type="radio"
           :value="false"
-        >
+        />
         <div class="ml-2">
           <span class="active:font-bold text-neutrals-gray block">
             {{ formatMoney(product.price) }} - One time purchase
@@ -74,7 +74,13 @@
         :disabled="!isSelectedVariantOutOfStock"
         @click="addToCart"
       >
-        {{ !isSelectedVariantOutOfStock ? "Out of stock" : doesItHaveSubscription ? "Subscribe" : "Purchase" }}
+        {{
+          !isSelectedVariantOutOfStock
+            ? "Out of stock"
+            : doesItHaveSubscription
+            ? "Subscribe"
+            : "Purchase"
+        }}
       </button>
       <div class="w-1/3 md:w-1/6">
         <div
@@ -115,7 +121,7 @@
               font-semibold
               text-md text-neutrals-gray-dark
             "
-          >
+          />
           <button
             class="
               py-0.5
@@ -194,10 +200,6 @@ export default {
     ...mapActions("cart", ["addItem"]),
     addToCart() {
       this.addItem([
-        {
-          id: this.selectedVariantId,
-          quantity: this.quantity,
-        },
         ...(this.doesItHaveSubscription
           ? [
               {
@@ -207,7 +209,12 @@ export default {
                   this.product.selling_plan_groups[0].selling_plans[0].id,
               },
             ]
-          : []),
+          : [
+              {
+                id: this.selectedVariantId,
+                quantity: this.quantity,
+              },
+            ]),
       ]);
     },
     decreaseQuantity() {

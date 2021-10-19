@@ -34,10 +34,7 @@
       />
       <div class="m-5 md:m-10 relative flex-1 flex flex-col justify-between">
         <div>
-          <span
-            class="cursor-pointer block"
-            @click="toggle"
-          >
+          <span class="cursor-pointer block" @click="toggle">
             <svg
               class="ml-auto"
               width="23"
@@ -66,9 +63,7 @@
               md:pb-8
             "
           >
-            <h4 class="font-semibold text-primary text-3xl">
-              Your cart
-            </h4>
+            <h4 class="font-semibold text-primary text-3xl">Your cart</h4>
             <div class="flex items-center">
               <span>
                 <svg
@@ -102,28 +97,24 @@
               :key="product.id"
               class="flex mb-5 md:mb-10"
             >
-              <a
-                href="/"
-                class="w-1/6"
-              >
+              <a href="/" class="w-1/6">
                 <img
                   :src="product.featured_image.url"
                   class="w-12 md:w-20 h-auto mx-auto"
                   alt="product image"
-                >
+                />
               </a>
               <div class="ml-5 md:ml-10 w-5/6">
                 <div class="flex justify-between">
                   <div>
-                    <a
-                      href="/"
-                      class="font-bold md:text-lg text-primary"
-                    >{{ product.product_title }}
+                    <a href="/" class="font-bold md:text-lg text-primary"
+                      >{{ product.product_title }}
                       {{
                         product.selling_plan_allocation
                           ? "(Monthly Subscription)"
                           : null
-                      }}</a>
+                      }}</a
+                    >
                     <p class="text-sm text-neutrals-gray block">
                       {{ product.quantity }}-month(s) supply
                     </p>
@@ -171,7 +162,7 @@
                         bg-neutrals-white-bone
                         border-0
                       "
-                    >
+                    />
                     <button
                       class="
                         text-neutrals-gray-dark
@@ -267,7 +258,8 @@
               md:mt-10
               text-center
             "
-          >Free shipping on all subscriptions</span>
+            >Free shipping on all subscriptions</span
+          >
         </div>
       </div>
     </div>

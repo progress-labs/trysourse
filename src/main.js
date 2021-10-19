@@ -3,6 +3,7 @@
  */
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
+import footerForm from "@/vue/components/render/form-subscribe"
 import './css/main.css'
 
 /**
@@ -77,11 +78,19 @@ const createVueApp = () => {
     return app
 }
 
+const createVueFooter = () => {
+    const app = createApp({})
+
+    app.component(footerForm, 'renderFormSubscribe')
+
+    return app
+}
+
 /**
  * create and mount vue instance
  */
 createVueApp().mount('#app')
-createVueApp().mount('#footer')
+createVueFooter().mount('#footer')
 
 /**
  * fixes for Shopify sections
