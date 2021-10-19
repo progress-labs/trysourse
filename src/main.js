@@ -81,7 +81,7 @@ const createVueApp = () => {
 const createVueFooter = () => {
     const app = createApp({})
 
-    app.component(footerForm, 'renderFormSubscribe')
+    app.component('render-form-subscribe', footerForm)
 
     return app
 }
