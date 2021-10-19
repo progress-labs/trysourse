@@ -102,7 +102,7 @@
                         </div>
                     </renderless-product-tabs>
                     <div>
-                        <render-product-form :product="{{ product | json | replace: '"', "'" }}" color="{{ product.metafields.product.accent_color | remove: '#'}}"></render-product-form>
+                        <render-product-form :product="{{ product | json | escape | replace: '"', "'" }}" color="{{ product.metafields.product.accent_color | remove: '#'}}"></render-product-form>
                         <div class="text-sm text-neutrals-gray-light mt-8">
                             Free Shipping. Cancel whenever.
                         </div>
