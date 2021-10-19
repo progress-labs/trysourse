@@ -30,6 +30,7 @@
     },
     "1631215439ea1860d6": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "97910aea-45bd-45a5-bf39-68dfcebf90ce": {
           "type": "testimonial",
