@@ -12,6 +12,7 @@ module.exports = {
     important: true,
     theme: {
         fontFamily: {
+            headerBold: ['Surt-BoldExtended'],
             header: ['Surt-RegularExtended', "sans-serif"],
             body: ['Surt-Regular', "sans-serif"]
         },
