@@ -8,7 +8,7 @@
           <li
               class="mt-6">
               <a
-                  class="text-neutrals-gray md:py-1"
+                  class="text-neutrals-gray hover:text-bright-purple duration-200 transition md:py-1"
                   href="{{ link.url }}">{{ link.title }}</a>
           </li>
           {% endfor %}
@@ -32,7 +32,7 @@
           {% for link in linklists[section.settings.legal_links].links %}
           <li class="md:ml-14">
               <a
-                  class="font-semibold text-neutrals-gray-lighter text-xs"
+                  class="font-semibold text-neutrals-gray-lighter hover:text-bright-purple duration-200 transition text-xs"
                   href="{{ link.url }}">{{ link.title }}</a>
           </li>
           {% endfor %}

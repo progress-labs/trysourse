@@ -117,7 +117,7 @@
                   <div>
                     <a
                       href="/"
-                      class="font-bold md:text-lg text-primary"
+                      class="font-bold md:text-lg text-primary hover:text-bright-purple duration-200 transition"
                     >{{ product.product_title }}
                       {{
                         product.selling_plan_allocation
@@ -185,7 +185,7 @@
                     </button>
                   </div>
                   <button
-                    class="text-neutrals-gray underline"
+                    class="text-neutrals-gray hover:text-bright-purple duration-200 transition underline"
                     @click="remove(product)"
                   >
                     Remove
@@ -245,7 +245,7 @@
               class="
                 font-bold
                 text-white text-xl
-                bg-primary
+                bg-primary hover:bg-bright-purple duration-200 transition
                 px-12
                 py-3
                 rounded-l-3xl rounded-br-3xl

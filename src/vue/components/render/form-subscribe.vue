@@ -25,7 +25,7 @@
       <button
         class="
           w-1/3
-          bg-primary
+          bg-primary hover:bg-bright-purple duration-200 transition
           text-white
           px-3
           md:px-3

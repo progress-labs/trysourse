@@ -35,6 +35,7 @@ module.exports = {
                     'green': '#72BBA6',
                     'red': '#F37572',
                     'yellow': '#F9F5B2',
+                    'purple': '#636aa1',
                 },
             },
             spacing: {

@@ -32,7 +32,7 @@
 
         {% if form.password_needed %}
           <div class="">
-            <label for="CustomerPassword" class="block text-neutrals-gray text-sm pb-1">
+            <label for="CustomerPassword" class="block text-neutrals-gray hover:text-bright-purple duration-200 transition text-sm pb-1">
               {{ 'form.password' | t }}
             </label>
 
@@ -48,7 +48,7 @@
       {% endif %}
 
       <div class="flex flex-col md:flex-row gap-4 sm:gap-6 mt-14">
-        <button type="submit" class="button button-primary font-header font-black text-white text-xl bg-primary text-center px-4 md:px-12
+        <button type="submit" class="button button-primary font-header font-black text-white text-xl bg-primary hover:bg-bright-purple duration-200 transition text-center px-4 md:px-12
         py-3 rounded-l-3xl rounded-br-3xl w-3/5 md:w-auto mx-auto md:mx-0">
           {{ 'action.sign_in' | t }}
         </button>
@@ -56,7 +56,7 @@
         <div class="w-full sm:w-auto flex justify-center items-center">
           <span class="hidden">{{ 'common.or' | t }}&nbsp;</span>
 
-          <a href="{{ routes.root_url }}account/register" class="font-header font-black text-primary text-xl md:ml-10">
+          <a href="{{ routes.root_url }}account/register" class="font-header font-black text-primary hover:text-bright-purple duration-200 transition text-xl md:ml-10">
             {{ 'action.create_account' | t }}
           </a>
         </div>
